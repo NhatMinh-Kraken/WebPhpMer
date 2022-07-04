@@ -1,4 +1,4 @@
-<form class="forms-sample" method="post" action="">
+<form class="forms-sample" method="post" action="Event/XuLy.php">
     <div class="main-content-wrap">
         <div class="container">
             <div class="rows">
@@ -77,7 +77,7 @@
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputKichThuocDRC">Kích thước DxRxC</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputKichThuocDRC" name="kichthuoc-DRC" placeholder="Kích thước DxRxC"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputKichThuocDRC" name="KichThuoc-DRC" placeholder="Kích thước DxRxC"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputChieuDai">Chiều Dài Cơ Sở</label></td>
@@ -89,40 +89,40 @@
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputDungTichCongTac">Dung Tích Công Tác</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputDungTichCongTac" name="Dung-tich-cong-tac" placeholder="Dung Tích Công Tác"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputDungTichCongTac" name="Dung-Tich-Cong-Tac" placeholder="Dung Tích Công Tác"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputDungTichBinhNhienLieu">Dung Tích Bình Nhiên
                                                     Liệu</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputDungTichBinhNhienLieu" name="dung-tich-binh-nhien-lieu" placeholder="Dung Tích Bình Nhiên Liệu"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputDungTichBinhNhienLieu" name="Dung-Tich-Binh-Nhien-Lieu" placeholder="Dung Tích Bình Nhiên Liệu"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputLoaiNhienLieu">Loại Nhiên Liệu</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputLoaiNhienLieu" name="loai-nhien-lieu" placeholder="Loại Nhiên Liệu"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputLoaiNhienLieu" name="Loai-Nhien-Lieu" placeholder="Loại Nhiên Liệu"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputCongSuatCucDai">Công Suất Cực Đại</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputCongSuatCucDai" name="cong-suat-cuc-dai" placeholder="Công Suất Cực Đại"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputCongSuatCucDai" name="Cong-Suat-Cuc-Dai" placeholder="Công Suất Cực Đại"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputMomenXoan">Mô-men Xoắn Cực Đại</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputMomenXoan" name="momen-cuc-dai" placeholder="Mô-men Xoắn Cực Đại"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputMomenXoan" name="Momen-Cuc-Dai" placeholder="Mô-men Xoắn Cực Đại"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputHopSo">Hộp Số</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputHopSo" name="hop-so" placeholder="Hộp Số"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputHopSo" name="Hop-So" placeholder="Hộp Số"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputHeDanDong">Hệ Dẫn Động</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputHeDanDong" name="he-dan-dong" placeholder="Hệ Dẫn Động"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputHeDanDong" name="He-Dan-Dong" placeholder="Hệ Dẫn Động"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputHeThongTreo">Hệ Thống Treo</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputHeThongTreo" name="he-thong-treo" placeholder="Hệ Thống Treo"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputHeThongTreo" name="He-Thong-Treo" placeholder="Hệ Thống Treo"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputTayLaiTroLuc">Tay Lái Trợ Lực</label></td>
-                                            <td><select id="exampleInputTayLaiTroLuc" name="tay-lai-tro-luc" class="form-control">
+                                            <td><select id="exampleInputTayLaiTroLuc" name="Tay-Lai-Tro-Luc" class="form-control">
                                                         <option value="0">Chọn Loại Trợ Lực</option>
                                                         <option value="1">Điện</option>
                                                         <option value="2">Cơ</option>
@@ -144,7 +144,7 @@
                                     <tbody>
                                         <tr>
                                             <td><label for="exampleInputGiaNiemYet">Giá Niêm Yết</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputGiaNiemYet" name="Gia-Niem-yet" placeholder="Giá Niêm Yết"></td>
+                                            <td><input type="text" class="form-control" id="exampleInputGiaNiemYet" name="Gia-Niem-Yet" placeholder="Giá Niêm Yết"></td>
                                         </tr>
                                         <tr>
                                             <td><label for="exampleInputGiaHCM">Giá HCM</label></td>
