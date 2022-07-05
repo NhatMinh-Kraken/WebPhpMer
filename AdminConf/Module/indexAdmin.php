@@ -64,10 +64,6 @@
               {
                 include("Fix Product.php");
               }
-              elseif($tam=='Delete-Product')
-              {
-                include("Delete Product.php");
-              }
               else{
                 include("Admin-IndexAdmin-Content.php");
               }

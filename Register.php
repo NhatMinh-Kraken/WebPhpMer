@@ -2,6 +2,7 @@
     include("Layout/Head.php");
 ?>
 
+
 <div class="Login-scroller">    
         <div class="container-login">
             <div class="row Login-width">
@@ -12,22 +13,22 @@
                             <form>
                                 <div class="form-group">
                                     <label>Username *</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="Username">
                                 </div>
                                 <div class="form-group">
                                     <label>Email *</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password *</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" name="Password">
                                 </div>
                                 <div class="form-group">
                                     <label>Confirm Password *</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" name="Confirm-Password">
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-block enter-btn">Enter</button>
+                                    <button type="submit" class="btn btn-primary btn-block enter-btn" name="DangKy">Enter</button>
                                 </div>
                                 <div class="d-flex">
                                     <button class="btn btn-facebook mr-2">

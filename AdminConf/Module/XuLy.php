@@ -1,11 +1,11 @@
 <?php
-    include('AdminConf/Configure/config.php')
+    include('config.php');
 // --------------------------------------------- khởi tạo dữ liệu ------------------------------------ //
-    $TenXeMer = $_POST['TenXe'];
+    $TenXe = $_POST['TenXe'];
     $DongGIoiThieu1 = $_POST['Dong-GIoi-Thieu1'];
 //Ảnh
-    $hinhanh1 =$_FILES['hinhanh1']['name'];
-    $hinhanh1_tmp =$_FILES['hinhanh1']['tmp_name'];
+    $hinhanh1 = $_FILES['hinhanh1']['name'];
+    $hinhanh1_tmp = $_FILES['hinhanh1']['tmp_name'];
     $hinhanh1 = time().'_'.$hinhanh1;
 //
     $DongGioiThieu2 = $_POST['Dong-GioiThieu-2'];
@@ -185,22 +185,22 @@ if(isset($_POST['ThemSanPhamXe']))
                                             ,DongGioiThieuVanHanh3,DongAnhToan,TieuChuan1,TieuChuan2,TieuChuan3
                                             ,TieuChuan4,TieuChuan5,TieuChuan6,TieuChuan7,TieuChuan8
                                             ,TieuChuan9,TieuChuan10,TieuChuan11,TieuChuan12) 
-                                            VALUE('".$TenXeMer."','".$DongGIoiThieu1."','".$hinhanh1."','".$DongGioiThieu2."','".$SoChoNgoi."','".$KieuXe."' 
-                                                    ,'".$XuatXu."','".$KichThuocDRC."','".$ChieuDaiCoSo."','".$DongCo."','".$DungTichCongTac."' 
-                                                    ,'".$DungTichBinhNhienLieu."','".$LoaiNhienLieu."','".$CongSuatCucDai."','".$MomenCucDai."','".$HopSo."' 
-                                                    ,'".$HeDanDong."','".$HeThongTreo."','".$TayLaiTroLuc."','".$CoMam."','".$GiaNiemYet."' 
-                                                    ,'".$GiaHCM."','".$GiaHN."','".$GiaTinhKhac."','".$AnhMau1."','".$AnhMau2."' 
-                                                    ,'".$AnhMau3."','".$GioiTHieuDienMao1."','".$GioiTHieuDienMao2."','".$AnhDauXe1."','".$GioiTHieuDauXe1."' 
-                                                    ,'".$GioiTHieuDauXe2."','".$AnhDauXe2."','".$GioiTHieuTanNhiet1."','".$GioiTHieuTanNhiet2."','".$AnhThanXe1."' 
-                                                    ,'".$GioiTHieuThanXe1."','".$AnhThanXe2."','".$GioiTHieuThanDuoi1."','".$AnhDuoiXe."','".$GioiTHieuDuoiXe1."' 
-                                                    ,'".$GioiTHieuDuoiXe2."','".$GioiTHieuNoiThat1."','".$GioiTHieuNoiThat2."','".$GioiTHieuNoiThat3."','".$AnhKhoangLai."' 
-                                                    ,'".$GioiTHieuKhoangLai."','".$AnhHangGheTruoc."','".$GioiTHieuHangGheTruoc."','".$AnhHangGheHanhKhach."','".$GioiTHieuKhoangHanhKhach1."' 
-                                                    ,'".$AnhHanhLy."','".$GioiTHieuHanhLy1."','".$GioiTHieuHanhLy2."','".$GioiTHieuTienNghi."','".$AnhTienNghi."' 
-                                                    ,'".$GioiTHieuCongNghe1."','".$GioiTHieuCongNghe2."','".$AnhDongCo."','".$GioiTHieuDongCo1."','".$GioiTHieuDongCo2."' 
-                                                    ,'".$AnhVanHanh."','".$GioiTHieuVanHanh1."','".$GioiTHieuVanHanh2."','".$GioiTHieuVanHanh3."','".$AnToan."' 
-                                                    ,'".$TieuChuan1."','".$TieuChuan2."','".$TieuChuan3."','".$TieuChuan4."','".$TieuChuan5."' 
-                                                    ,'".$TieuChuan6."','".$TieuChuan7."','".$TieuChuan8."','".$TieuChuan9."','".$TieuChuan10."'
-                                                   ,'".$TieuChuan11."','".$TieuChuan12."')";
+                                            VALUE('".$TenXe."','".$DongGIoiThieu1."','".$hinhanh1."','".$DongGioiThieu2."','".$SoChoNgoi."'
+                                                    ,'".$KieuXe."','".$XuatXu."','".$KichThuocDRC."','".$ChieuDaiCoSo."','".$DongCo."'
+                                                    ,'".$DungTichCongTac."','".$DungTichBinhNhienLieu."','".$LoaiNhienLieu."','".$CongSuatCucDai."','".$MomenCucDai."'
+                                                    ,'".$HopSo."' ,'".$HeDanDong."','".$HeThongTreo."','".$TayLaiTroLuc."','".$CoMam."' 
+                                                    ,'".$GiaNiemYet."','".$GiaHCM."','".$GiaHN."','".$GiaTinhKhac."','".$AnhMau1."' 
+                                                    ,'".$AnhMau2."','".$AnhMau3."','".$GioiTHieuDienMao1."','".$GioiTHieuDienMao2."','".$AnhDauXe1."' 
+                                                    ,'".$GioiTHieuDauXe1."','".$GioiTHieuDauXe2."','".$AnhDauXe2."','".$GioiTHieuTanNhiet1."','".$GioiTHieuTanNhiet2."' 
+                                                    ,'".$AnhThanXe1."','".$GioiTHieuThanXe1."','".$AnhThanXe2."','".$GioiTHieuThanDuoi1."','".$AnhDuoiXe."' 
+                                                    ,'".$GioiTHieuDuoiXe1."','".$GioiTHieuDuoiXe2."','".$GioiTHieuNoiThat1."','".$GioiTHieuNoiThat2."','".$GioiTHieuNoiThat3."' 
+                                                    ,'".$AnhKhoangLai."','".$GioiTHieuKhoangLai."','".$AnhHangGheTruoc."','".$GioiTHieuHangGheTruoc."','".$AnhHangGheHanhKhach."' 
+                                                    ,'".$GioiTHieuKhoangHanhKhach1."','".$GioiTHieuKhoangHanhKhach2."','".$AnhHanhLy."','".$GioiTHieuHanhLy1."','".$GioiTHieuHanhLy2."' 
+                                                    ,'".$GioiTHieuTienNghi."','".$AnhTienNghi."','".$GioiTHieuCongNghe1."','".$GioiTHieuCongNghe2."','".$AnhDongCo."' 
+                                                    ,'".$GioiTHieuDongCo1."','".$GioiTHieuDongCo2."','".$AnhVanHanh."','".$GioiTHieuVanHanh1."','".$GioiTHieuVanHanh2."' 
+                                                    ,'".$GioiTHieuVanHanh3."','".$AnToan."','".$TieuChuan1."','".$TieuChuan2."','".$TieuChuan3."' 
+                                                    ,'".$TieuChuan4."','".$TieuChuan5."','".$TieuChuan6."','".$TieuChuan7."','".$TieuChuan8."'
+                                                    ,'".$TieuChuan9."','".$TieuChuan10."','".$TieuChuan11."','".$TieuChuan12."')";
     mysqli_query($mysqli,$sql_them);
 
     move_uploaded_file($hinhanh1_tmp,'Uploads/'.$hinhanh1);
@@ -220,6 +220,11 @@ if(isset($_POST['ThemSanPhamXe']))
     move_uploaded_file($AnhDongCo_tmp,'Uploads/'.$AnhDongCo);
     move_uploaded_file($AnhVanHanh_tmp,'Uploads/'.$AnhVanHanh);
 
-    header('location:/AdminConf/Module/IndexAdmin.php?action=Add-Product');
-}
+    header('location:/WEBs/AdminConf/Module/indexAdmin.php');
+    
+    echo "ThanhCong";
+} 
+else
+    echo "Không Thanh cong. <a href='location:/WEBs/AdminConf/Module/indexAdmin.php?action=Add-Product'>Thử lại</a>";
+
 ?>

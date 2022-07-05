@@ -1,21 +1,23 @@
 <?php
     include("Layout/Head.php");
 ?>
-    <div class="Login-scroller">    
+
+
+    <div class="Login-scroller">
         <div class="container-login">
             <div class="row Login-width">
                 <div class="Login-background">
                     <div class="Login-Card col-lg-4">
                         <div class="Login-Tilte">
                             <h3 class="Login-card-title">Login</h3>
-                            <form>
+                            <form action="" method="post">
                                 <div class="form-group">
                                     <label>Username or email *</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="TK-Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password *</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" name="TK-Pass">
                                 </div>
                                 <div class="form-group d-flex align-items-center justify-content-between">
                                     <div class="form-check">
@@ -28,7 +30,7 @@
                                     <a href="#" class="forgot-pass">Forgot Password</a>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-block enter-btn">Enter</button>
+                                    <button type="submit" class="btn btn-primary btn-block enter-btn" name="DangNhap">Enter</button>
                                 </div>
                                 <div class="d-flex">
                                     <button class="btn btn-facebook mr-2">
@@ -51,6 +53,6 @@
             </div>
         </div>
     </div>
-<?php
+    <?php
     include("Layout/Head-end.php");
 ?>
