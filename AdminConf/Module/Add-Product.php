@@ -1,14 +1,14 @@
-<form class="forms-sample" method="post" action="Event/XuLy.php">
-    <div class="main-content-wrap">
-        <div class="container">
-            <div class="rows">
-                <div class="row-detail-product">
-                    <div class="row-detail-product-header">
-                        <div class="detail-product-header">
-                            <h1 class="entry-title">
-                                Mercedes giá lăn bánh, đánh giá xe, khuyến mãi
-                            </h1>
-                        </div>
+<div class="main-content-wrap">
+    <div class="container">
+        <div class="rows">
+            <div class="row-detail-product">
+                <div class="row-detail-product-header">
+                    <div class="detail-product-header">
+                        <h1 class="entry-title">
+                            Mercedes giá lăn bánh, đánh giá xe, khuyến mãi
+                        </h1>
+                    </div>
+                    <form method="POST" action="XuLy.php" enctype="multipart/form-data">
                         <div class="form-group padding">
                             <div class="Name-Product-Car">
                                 <label for="exampleInputNameCar1">Tên Xe</label>
@@ -560,7 +560,7 @@
                                             Khách 2</label>
                                         <textarea type="text" class="form-control"
                                             id="exampleInputDetailKhoangHanhKhach2"
-                                            placeholder="Dòng Giới Thiệu Khoang Hành Khách 2" name="Gioi-THieu-DienMao-2"></textarea>
+                                            placeholder="Dòng Giới Thiệu Khoang Hành Khách 2" name="Gioi-THieu-KhoangHanhKhach-2"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -814,21 +814,15 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <h3 class="Detalt-Car-title-TK">
-                                Tổng Kết
-                            </h3>
-                            <h3 class="Moneys">5.069.000.000 VNĐ</h3>
                             <div class="footer-laithu">
                                 <div class="button-laithu">
-                                    <a href="#" class="button-laithu-link" role="button">
-                                        <span class="button-laithu-text">Nhận báo giá</span>
-                                    </a>
+                                    <input class="button-laithu-link" type="submit" value="Thêm Sản Phẩm" name="ThemSanPhamXe">
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</form>
+</div>
