@@ -3,16 +3,58 @@
 ?>
 
     <?php
-    if(isset($_POST['DangKy'])){
+    include("AdminConf/Configure/config.php");
+
+    if(isset($_POST['DangKy'])){   
         $Username = $_POST['Username'];
         $Email = $_POST['Email'];
         $SDT = $_POST['SDT'];
-        $Password = md5($_POST['Password']) ;
+        $Password = md5($_POST['Password']);
+        $ConfirmPassword = ($_POST['Confirm-Password']);
         $NgaySinh = $_POST['NgaySinh'];
         $GioiTinh = $_POST['GioiTinh'];
 
-        $sql_dangky = mysqli_query('$mysqli',"INSERT INTO ")
+        
+        $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^"; 
+        if(!preg_match($pattern, $Email))
+        {
+            echo '<script language="javascript"> alert("Email này không hợp lệ. Vui lòng nhập Email khác."); window.location="Register.php";</script>' ;
+        }
+        
+        if(mysqli_num_rows(mysqli_query($mysqli,"SELECT Email FROM taikhoanuser WHERE Email='$Email'")) > 0 )
+        {
+            echo '<script> alert("Email đã được sử dụng. Vui lòng dùng Email khác để đăng ký."); window.location="Register.php";</script>';  
+        }
+    
+        if(!preg_match ("[0-9]", $SDT)){
+            echo '<script> alert("Số điện thoại không hợp lệ."); window.location="Register.php";</script>';
+        }
+    
+        if($SDT < 10 && $SDT > 10)
+        {
+            echo '<script> alert("Số điện thoại phải có 10 số."); window.location="Register.php";</script>';
+        }
+
+        $PassDB = "^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$";
+
+        if(!preg_match($PassDB, $Password))
+        {
+            echo '<script> alert("Mật khẩu không đúng đĩnh dạng. Mật khẩu đúng định dạng bao gồm các ký tự sau : ^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$"); window.location="Register.php";</script>';
+        }
+
+        if($Password != $ConfirmPassword)
+        {
+            echo '<script> alert("Mật khẩu không trùng với Nhập lại mật khẩu"); window.location="Register.php";</script>';
+        }
+        
+        $sql_dangky = mysqli_query($mysqli,"INSERT INTO taikhoanuser(HoVaTen,Email,SDT,pasword,NgaySinh,GioiTinh) VALUE('".$Username."','".$Email."','".$SDT."','".$Password."','".$NgaySinh."','".$GioiTinh."')");
+    
+        if($sql_dangky)
+        {
+            echo '<script> alert(<p stype="color:green">Bạn đã đăng ký thành công</p>); window.location="Login.php";</script>';
+        }
     }
+  
 ?>
 
         <div class="Login-scroller">
@@ -22,7 +64,7 @@
                         <div class="Login-Card">
                             <div class="Login-Tilte">
                                 <h3 class="Login-card-title">Register</h3>
-                                <form>
+                                <form action="" method="POST">
                                     <div class="form-row">
                                         <div class="form-grouper">
                                             <div class="form-group">
