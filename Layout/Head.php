@@ -48,4 +48,4 @@
     <!---->
 </head>
 
-<body class="preloading">
+<body class="preloading" translate="no">

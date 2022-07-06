@@ -2,55 +2,108 @@
     include("Layout/Head.php");
 ?>
 
+    <div class="backgr"></div>
+    <div class="Registration-form">
+        <header>
+            <h1 class="Register-header-h1">
+                Sign Up
+            </h1>
+            <p class="Register-header-p">
+                Fill In A Informations.
+            </p>
+        </header>
+        <form>
+            <div class="input-section username-section">
+                <input class="username-register username" type="text" placeholder="ENTER YOUR USERNAME HERE" autocomplete="off">
 
-<div class="Login-scroller">    
-        <div class="container-login">
-            <div class="row Login-width">
-                <div class="Login-background">
-                    <div class="Login-Card col-lg-4">
-                        <div class="Login-Tilte">
-                            <h3 class="Login-card-title">Register</h3>
-                            <form>
-                                <div class="form-group">
-                                    <label>Username *</label>
-                                    <input type="text" class="form-control" name="Username">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email *</label>
-                                    <input type="text" class="form-control" name="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password *</label>
-                                    <input type="password" class="form-control" name="Password">
-                                </div>
-                                <div class="form-group">
-                                    <label>Confirm Password *</label>
-                                    <input type="password" class="form-control" name="Confirm-Password">
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-block enter-btn" name="DangKy">Enter</button>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-facebook mr-2">
-                                        <i class="bi bi-facebook"></i>
-                                        Facebook
-                                    </button>
-                                    <button class="btn btn-google mr-2">
-                                        <i class="bi bi-google"></i>
-                                        Facebook
-                                    </button>
-                                </div>
-                                <p class="sign-up">
-                                    Do you already have an account ? 
-                                    <a href="Login.php"> Login</a>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
+                <div class="animated-button">
+                    <span class="icon-person-square">
+                        <i class="bi bi-person-square"></i>
+                    </span>
+                    <span class="next-button username">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
                 </div>
             </div>
-        </div>
+            <div class="input-section email-section folder">
+                <input class="email-register email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off">
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <span class="next-button email">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section sdt-section folder">
+                <input class="sdt-register sdt" type="number" placeholder="Number Phone" autocomplete="off">
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-0"></i>
+                    </span>
+                    <span class="next-button sdt">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section password-section folder">
+                <input class="password-register pass" type="password" placeholder="Password" autocomplete="off">
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-0"></i>
+                    </span>
+                    <span class="next-button pass">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section conf-password-section folder">
+                <input class="conf-password-register conf-pass" type="password" placeholder="Conf-Password" autocomplete="off">
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-0"></i>
+                    </span>
+                    <span class="next-button conf-pass">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section Sex-section folder">
+                <select class="Sex-register Sex" type="text" id="Sex-register" name="Sex-register" autocomplete="off">
+                    <option value="0">Chọn GIới TÍnh</option>
+                    <option value="1">Nam</option>
+                    <option value="2">Nữ</option>
+                </select>
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-0"></i>
+                    </span>
+                    <span class="next-button Sex">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section birthday-section folder">
+                <input class="birthday-register birthday" id="birthday" name="birthday" type="date" autocomplete="off">
+
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-0"></i>
+                    </span>
+                    <span class="next-button birthday">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+        </form>
     </div>
-<?php
+
+    <?php
     include("Layout/Head-end.php");
 ?>

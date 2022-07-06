@@ -49,17 +49,17 @@
     .fix {
         padding: 10px;
     }
-
-    button:focus{
+    
+    button:focus {
         outline: 0;
     }
-
-    img{
+    
+    img {
         max-width: 100%;
         height: auto;
     }
-
-    .shadow-box{
+    
+    .shadow-box {
         background: #fff;
     }
     /**/
@@ -228,7 +228,7 @@
         float: right;
         color: #9f9f9f;
     }
-
+    
     .menu-content ul :not(collapsed) .arrow-new:before,
     .menu-content li :not(collapsed) .arrow-new:before {
         font-family: FontAwesome;
@@ -351,7 +351,7 @@
             -o-transform: rotate(360deg);
         }
     }
-
+    
     @-webkit-keyframes xoayvongLoading {
         from {
             -webkit-transform: rotate(0deg);
@@ -388,7 +388,7 @@
         height: 100%;
         z-index: 1;
     }
-
+    
     .menu-content .bl {
         display: none;
     }
@@ -773,8 +773,8 @@
         border-radius: 20px;
         box-shadow: 5px 5px;
     }
-
-    .product-khung::after{
+    
+    .product-khung::after {
         content: '';
         position: absolute;
         pointer-events: none;
@@ -783,7 +783,7 @@
         width: 200%;
         height: 200%;
         opacity: 0;
-        background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100% );
+        background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
     }
     
     .Product-name {
@@ -1304,8 +1304,8 @@
     .footer-thongtin h3 {
         color: #ffcf40;
         font-family: UtmAptimaBold, Helvetica, Arial, sans-serif;
-        font-size: 20px;  
-    } 
+        font-size: 20px;
+    }
     
     .footer-thongtin p {
         color: #fff;
@@ -1434,18 +1434,18 @@
         text-align: center;
         color: #00ef93;
     }
-
     /** Detail-Product **/
-    .main-content-wrap{
+    
+    .main-content-wrap {
         padding: 40px 0px 25px 0px;
     }
     
-    .row-detail-product{
+    .row-detail-product {
         display: block;
         padding: 30px 0;
     }
-
-    .row-detail-product-header{
+    
+    .row-detail-product-header {
         display: block;
         min-height: 1;
         padding-right: 24px;
@@ -1454,19 +1454,19 @@
         padding-top: 20px;
         position: relative;
     }
-
-    .detail-product-header{
+    
+    .detail-product-header {
         text-align: center;
     }
-
-    .detail-product-crumb{
+    
+    .detail-product-crumb {
         min-height: 35px;
         margin-bottom: 9px;
         padding-top: 21px;
     }
-
-    .entry-crumb{
-        font-family: 'Open Sans','Open Sans Regular',sans-serif;
+    
+    .entry-crumb {
+        font-family: 'Open Sans', 'Open Sans Regular', sans-serif;
         font-size: 14px;
         color: #000;
         line-height: 18px;
@@ -1475,35 +1475,33 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-
-    .entry-crumb a:hover{
+    
+    .entry-crumb a:hover {
         color: #00ef93;
         font-weight: bold;
         text-transform: uppercase;
     }
-
-    .entry-crumb .entry-crumb-icon-right{
+    
+    .entry-crumb .entry-crumb-icon-right {
         font-size: 10px;
         margin: 0 5px;
-        
     }
-
-    .entry-crumb-icon-right::before{
+    
+    .entry-crumb-icon-right::before {
         content: '\f149';
     }
-
-    .entry-title{
+    
+    .entry-title {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 35px;
         color: rgb(202, 4, 4);
         text-align: center;
     }
-
-    .Name-Product-Car
-    {
+    
+    .Name-Product-Car {
         font-size: 20px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-align: center;
         color: red;
         font-weight: bold;
@@ -1511,7 +1509,7 @@
         padding-top: 10px;
     }
     
-    .detail-product-content{
+    .detail-product-content {
         display: block;
         min-height: 1;
         float: left;
@@ -1520,93 +1518,93 @@
         position: relative;
     }
     
-    .detail-product-content-p{
+    .detail-product-content-p {
         padding-bottom: 20px;
     }
-
-    .detail-product-content p{
+    
+    .detail-product-content p {
         font-size: 16px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-
-    .detail-product-content .detail-product-content-img{
+    
+    .detail-product-content .detail-product-content-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .detail-product-content .detail-product-content-Note{
+    
+    .detail-product-content .detail-product-content-Note {
         font-size: 12px;
         font-style: italic;
         text-align: center;
         padding-bottom: 20px;
     }
-
-    .detail-product-content-h2 b{
+    
+    .detail-product-content-h2 b {
         font-size: 24px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-align: center;
     }
-
-    .detail-product-content table{
+    
+    .detail-product-content table {
         margin-bottom: 21px;
     }
-
+    
     tr:nth-of-type(odd) {
         background: rgb(150, 148, 148);
     }
-
-    tr{
+    
+    tr {
         border: 1px solid #000;
         text-align: center;
     }
-
-    td{
+    
+    td {
         color: #000;
         font-size: 14px;
         font-weight: 600;
     }
-
-    .detail-product-content-table{
+    
+    .detail-product-content-table {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
     }
-
-    .Gia-Ban-Color{
+    
+    .Gia-Ban-Color {
         color: red;
     }
     
-    .Detalt-Car-title{
+    .Detalt-Car-title {
         font-size: 16px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
         color: red;
         padding-bottom: 20px;
     }
-
-    .detail-product-content li{
+    
+    .detail-product-content li {
         font-size: 16px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         list-style-type: disc;
     }
-
-    .detail-product-content ul li{
+    
+    .detail-product-content ul li {
         margin-left: 21px;
     }
-
-    .Similar-Products{
+    
+    .Similar-Products {
         background-color: #fff;
     }
-
-    .Similar-Products-header{
+    
+    .Similar-Products-header {
         display: flex;
         align-items: center;
         padding-bottom: 0.625rem;
     }
-
-    .Similar-Products-header-title{
+    
+    .Similar-Products-header-title {
         font-size: 1.25rem;
         text-transform: uppercase;
         flex: 1;
@@ -1615,53 +1613,53 @@
         white-space: nowrap;
         margin-right: 1.25rem;
     }
-
-    .Similar-Products-header-title span{
+    
+    .Similar-Products-header-title span {
         font-size: 1rem;
-        color: rgba(0,0,0,.54);
+        color: rgba(0, 0, 0, .54);
         font-weight: 500;
     }
-
-    .Link-Similar-Products{
+    
+    .Link-Similar-Products {
         text-decoration: none!important;
         color: #ee4d2d;
     }
-
-    .Similar-Products-button{
+    
+    .Similar-Products-button {
         position: relative;
         overflow: visible;
         outline: 0;
         padding: 0.3125rem 0.4375rem;
-        color:#ee4d2d !important;
+        color: #ee4d2d !important;
         background-color: transparent;
         border: 0;
         cursor: pointer;
     }
-
-    .bi-chevron-right{
+    
+    .bi-chevron-right {
         color: #ee4d2d !important;
     }
-
-    .Detalt-Car-title-TK{
+    
+    .Detalt-Car-title-TK {
         font-size: 18px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
         color: red;
         padding-bottom: 20px;
         text-align: center;
     }
-
-    .Moneys{
+    
+    .Moneys {
         font-size: 20px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
         color: red;
         padding-bottom: 20px;
         text-align: center;
     }
-
     /** LOGIN **/
-    .container-login{
+    
+    .container-login {
         width: 100%;
         min-height: 100vh;
         display: flex;
@@ -1671,19 +1669,19 @@
         margin-right: auto;
         margin-left: auto;
     }
-
-    .Login-width{
+    
+    .Login-width {
         width: 100% !important;
         margin: 0 !important;
     }
-
-    .Login-scroller{
+    
+    .Login-scroller {
         display: flex;
         position: relative;
         overflow: hidden;
     }
-
-    .Login-background{
+    
+    .Login-background {
         background: url(Image/bg.jpg);
         background-size: cover;
         padding: 1.875rem 1.75rem;
@@ -1692,8 +1690,8 @@
         align-items: center !important;
         display: flex !important;
     }
-
-    .Login-Card{
+    
+    .Login-Card {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1706,25 +1704,25 @@
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
-    .Login-Tilte{
-        padding: 3rem !important;  
+    
+    .Login-Tilte {
+        padding: 3rem !important;
     }
-
-    .Login-card-title{
+    
+    .Login-card-title {
         color: #fff;
-        text-transform: uppercase;  
+        text-transform: uppercase;
     }
-
-    .form-group label{
+    
+    .form-group label {
         font-size: 0.865rem;
         line-height: 1;
         vertical-align: top;
         color: #fff;
         font-weight: bold;
     }
-
-    .form-control{
+    
+    .form-control {
         border: 1px solid #2c2c33;
         height: calc(2.25rem + 2px);
         font-weight: normal;
@@ -1734,13 +1732,13 @@
         border-radius: 2px;
         color: #fff;
     }
-
-    input[type=text]{
+    
+    input[type=text] {
         background-color: #2a3038 !important;
         color: #fff;
     }
-
-    .form-check{
+    
+    .form-check {
         min-height: 18px;
         padding-left: 1.25rem;
         position: relative;
@@ -1748,7 +1746,7 @@
         margin-top: 15px;
         margin-bottom: 10px;
     }
-
+    
     .form-check .form-check-label {
         display: block;
         padding-left: 0.625rem;
@@ -1756,33 +1754,33 @@
         line-height: 1.5;
         color: #6c7293;
     }
-
-    .enter-btn{
+    
+    .enter-btn {
         height: 45px;
         margin-bottom: 28px;
     }
-
-    .btn-facebook{
+    
+    .btn-facebook {
         background: #3b579d;
         color: #fff;
         max-width: 100%;
-        font-size: 0.875rem;  
-        flex-grow: 1;       
+        font-size: 0.875rem;
+        flex-grow: 1;
     }
-
-    .btn-google{
+    
+    .btn-google {
         background: #bf3322;
         color: #fff;
         max-width: 100%;
         font-size: 0.875rem;
         flex-grow: 1;
     }
-
-    .mr-2{
+    
+    .mr-2 {
         margin-right: 0.5rem !important;
     }
-
-    .sign-up{
+    
+    .sign-up {
         font-size: 0.875rem;
         text-align: center;
         margin-top: 30px;
@@ -1790,10 +1788,270 @@
         color: #fff;
         font-weight: bold;
     }
-
+    /** Sign Up **/
+    
+    .backgr {
+        background: linear-gradient(120grad, #00ADEF, #74c8e9);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Registration-form {
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 15%;
+        background: transparent;
+    }
+    
+    .Registration-form header {
+        position: relative;
+        z-index: 7;
+        background: #fff;
+        padding: 20px 40px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .Registration-form header .Register-header-h1 {
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        color: #000;
+        font-size: 23px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .Registration-form header .Register-header-p {
+        word-spacing: 0px;
+        color: rgb(151, 148, 148);
+        font-size: 17px;
+        margin: 0;
+        margin-top: 5px;
+    }
+    
+    .Registration-form form {
+        position: relative;
+    }
+    
+    .Registration-form .input-section {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 75px;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+        z-index: 6;
+        box-shadow: 0px 0px 100px rgb(0 0 0 / 20%);
+        transition: all 0.2s ease-in;
+    }
+    
+    .Registration-form form .username-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .animated-button {
+        width: 20%;
+        background-color: #d4d4ff;
+    }
+    
+    .animated-button span i {
+        color: #9999f8;
+    }
+    
+    .animated-button .next-button {
+        background: transparent;
+        color: #9999f8;
+        font-weight: 100;
+        width: 100%;
+        border: 0;
+    }
+    
+    .animated-button span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 75px;
+        text-align: center;
+        height: 75px;
+        transition: all 0.2s ease-in;
+    }
+    
+    .Registration-form .email-section.folder {
+        width: 90%;
+        margin-top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 5;
+    }
+    
+    .Registration-form .email-section.folder .email-register {
+        background: #00ef93 !important;
+        width: 100%;
+    }
+    
+    .Registration-form .email-section.folder span {
+        background: #00ef93;
+        width: 100%;
+    }
+    
+    .Registration-form .sdt-section.folder {
+        width: 85%;
+        margin-top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 4;
+    }
+    
+    .Registration-form .sdt-section.folder .sdt-register {
+        background: #4363ed !important;
+        width: 100%;
+    }
+    
+    .Registration-form .sdt-section.folder span {
+        background: #4363ed;
+        width: 100%;
+    }
+    
+    .Registration-form .password-section.folder {
+        width: 80%;
+        margin-top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+    }
+    
+    .Registration-form .password-section.folder .password-register {
+        background: #ef45ef !important;
+        width: 100%;
+    }
+    
+    .Registration-form .password-section.folder span {
+        background: #ef45ef;
+        width: 100%;
+    }
+    
+    .Registration-form .conf-password-section.folder {
+        width: 75%;
+        margin-top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+    }
+    
+    .Registration-form .conf-password-section.folder .conf-password-register {
+        background: #e5f293 !important;
+        width: 100%;
+    }
+    
+    .Registration-form .conf-password-section.folder span {
+        background: #e5f293;
+        width: 100%;
+    }
+    
+    .Registration-form .Sex-section.folder {
+        width: 70%;
+        margin-top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+    }
+    
+    .Registration-form .Sex-section.folder .Sex-register {
+        background: rgb(226, 83, 83) !important;
+        width: 100%;
+    }
+    
+    .Registration-form .Sex-section.folder span {
+        background: rgb(226, 83, 83);
+        width: 100%;
+    }
+    
+    .Registration-form .birthday-section.folder {
+        width: 65%;
+        margin-top: 55px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 0;
+    }
+    
+    .Registration-form .birthday-section.folder .birthday-register {
+        background: #e2b865 !important;
+        width: 100%;
+    }
+    
+    .Registration-form .birthday-section.folder span {
+        background: #e2b865;
+        ;
+        width: 100%;
+    }
+    
+    .Registration-form form .email-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .Registration-form form .sdt-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .Registration-form form .password-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .Registration-form form .conf-password-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .Registration-form form .Sex-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    
+    .Registration-form form .birthday-register {
+        background: rgb(220, 217, 217) !important;
+        color: #8f8fd6;
+        width: 80%;
+        border: 0;
+        padding: 20px 40px;
+        margin: 0;
+    }
+    /*******************************/
     /** Loadding **/
-
-    .loadding{
+    
+    .loadding {
         width: 100%;
         padding: 10px 0px;
         display: flex;
@@ -1805,8 +2063,8 @@
         height: 100%;
         overflow: hidden;
     }
-
-    .loadding-top{
+    
+    .loadding-top {
         width: 90px;
         border-radius: 50%;
         overflow: hidden;
@@ -1816,53 +2074,47 @@
         -moz-animation: xoayvongLoading 10s linear 0s infinite;
         -o-animation: xoayvongLoading 10s linear 0s infinite;
     }
-
-
     /** Dang Ky Lai Thu **/
-
-    .DangKy-LaiThu{
+    
+    .DangKy-LaiThu {
         display: flex;
         position: relative;
         overflow: hidden;
     }
-
-    .content{
+    
+    .content {
         max-width: 100%;
         width: 100%;
         display: flex;
     }
-
-    .background-while{
+    
+    .background-while {
         padding: 1.875rem 1.75rem;
         width: 100%;
         flex-grow: 1;
         align-items: center !important;
         display: flex !important;
     }
-
-    @media (min-width: 700px)
-    {
-        .content-gr1{
+    
+    @media (min-width: 700px) {
+        .content-gr1 {
             display: flex;
             max-width: 700px;
             margin: 0 auto;
             margin-top: 5%;
         }
-
-        .shadow-box{
+        .shadow-box {
             box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
         }
-
-        .content .content-left{
+        .content .content-left {
             width: 50%;
         }
-
-        .content-right{
+        .content-right {
             width: 50%;
         }
     }
-
-    .content-left-tittle{
+    
+    .content-left-tittle {
         background: #000;
         color: #fff;
         font-size: 12px;
@@ -1871,10 +2123,10 @@
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        padding-top:30% ;
+        padding-top: 30%;
     }
-
-    .content-left-tittle h3{
+    
+    .content-left-tittle h3 {
         color: #fff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-style: italic;
@@ -1883,14 +2135,13 @@
         text-align: center;
         margin: 0 auto;
     }
-
-    .content .content-left{
+    
+    .content .content-left {
         background: #000;
         position: relative;
-        
     }
-
-    .content .content-left::before{
+    
+    .content .content-left::before {
         content: "";
         position: absolute;
         display: block;
@@ -1898,25 +2149,25 @@
         right: 0;
         bottom: 0;
         height: 100%;
-        background: linear-gradient(to top, rgba(0,0,0,0.75)0%, rgba(0,0,0,0)100%);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.75)0%, rgba(0, 0, 0, 0)100%);
     }
-
-    .content-left-logo{
+    
+    .content-left-logo {
         width: 100%;
         height: auto;
         padding-top: 30%;
         background: #000;
     }
-
-    .content-left-logo img{
+    
+    .content-left-logo img {
         width: 100%;
     }
-
-    .content-form{
+    
+    .content-form {
         padding: 10px;
     }
-
-    .content-header{
+    
+    .content-header {
         text-align: center;
         font-size: 20px;
         font-style: italic;
@@ -1924,70 +2175,71 @@
         text-transform: uppercase;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-
-    .content-form .form-group{
+    
+    .content-form .form-group {
         margin-bottom: 3px;
     }
-
-    .content-form .form-group label{
+    
+    .content-form .form-group label {
         color: #000;
         font-size: 14px;
         font-style: italic;
         text-transform: uppercase;
     }
-
-    .content-form .form-group .form-control{
+    
+    .content-form .form-group .form-control {
         background: #fff !important;
         color: #00ADEF;
     }
-
-    .text-center{
+    
+    .text-center {
         padding: 20px;
     }
-
-    .btn-block-enter{
+    
+    .btn-block-enter {
         text-align: center;
         width: 50%;
         height: 45px;
         color: #fff;
         background: #00ADEF;
     }
-
+    
     .Nut-ANhLaiTHu {
         border-radius: 50%;
         position: relative;
-        width:50px;
-        height:50px;
-        background:#00ADEF;
+        width: 50px;
+        height: 50px;
+        background: #00ADEF;
         top: 60px;
         margin: auto;
-      }
-       
-      .Nut-ANhLaiTHu:before,
-      .Nut-ANhLaiTHu:after {
+    }
+    
+    .Nut-ANhLaiTHu:before,
+    .Nut-ANhLaiTHu:after {
         content: "";
-        position:absolute;
-        background:#fff;
-      }
-       
-      /* the vertical line */
-      .Nut-ANhLaiTHu:before {
-        left:50%;
-        top:4px; /* this defines how much black "border" there should be */
-        bottom:4px;
-        width:2px;
-        transform:translateX(-50%);
-      }
-       
-      /* the horizontal line */
-      .Nut-ANhLaiTHu:after {
-        top:50%;
-        left:4px;
-        right:4px;
-        height:2px;
-        transform:translateY(-50%);
-      }
-
-      .Nut-ANhLaiTHu:hover{
+        position: absolute;
+        background: #fff;
+    }
+    /* the vertical line */
+    
+    .Nut-ANhLaiTHu:before {
+        left: 50%;
+        top: 4px;
+        /* this defines how much black "border" there should be */
+        bottom: 4px;
+        width: 2px;
+        transform: translateX(-50%);
+    }
+    /* the horizontal line */
+    
+    .Nut-ANhLaiTHu:after {
+        top: 50%;
+        left: 4px;
+        right: 4px;
+        height: 2px;
+        transform: translateY(-50%);
+    }
+    
+    .Nut-ANhLaiTHu:hover {
         background: #00ef93;
-      }
+    }
