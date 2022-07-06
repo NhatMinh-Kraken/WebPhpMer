@@ -1712,6 +1712,8 @@
     .Login-card-title {
         color: #fff;
         text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 20px;
     }
     
     .form-group label {
@@ -1722,9 +1724,13 @@
         font-weight: bold;
     }
     
+    .form-group input {
+        display: flex;
+        justify-items: flex-start;
+    }
+    
     .form-control {
         border: 1px solid #2c2c33;
-        height: calc(2.25rem + 2px);
         font-weight: normal;
         font-size: 0.875rem;
         padding: 0.625rem 0.6875rem;
@@ -1757,7 +1763,6 @@
     
     .enter-btn {
         height: 45px;
-        margin-bottom: 28px;
     }
     
     .btn-facebook {
@@ -1783,270 +1788,19 @@
     .sign-up {
         font-size: 0.875rem;
         text-align: center;
-        margin-top: 30px;
         margin-bottom: 0;
         color: #fff;
         font-weight: bold;
     }
-    /** Sign Up **/
+    /** Đăng Ký **/
     
-    .backgr {
-        background: linear-gradient(120grad, #00ADEF, #74c8e9);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .Registration-form {
-        width: 400px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        top: 15%;
-        background: transparent;
-    }
-    
-    .Registration-form header {
-        position: relative;
-        z-index: 7;
-        background: #fff;
-        padding: 20px 40px;
-        border-radius: 15px 15px 0 0;
-    }
-    
-    .Registration-form header .Register-header-h1 {
-        font-weight: 900;
-        letter-spacing: 1.5px;
-        color: #000;
-        font-size: 23px;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    
-    .Registration-form header .Register-header-p {
-        word-spacing: 0px;
-        color: rgb(151, 148, 148);
-        font-size: 17px;
-        margin: 0;
-        margin-top: 5px;
-    }
-    
-    .Registration-form form {
-        position: relative;
-    }
-    
-    .Registration-form .input-section {
-        width: 100%;
-        position: absolute;
+    .form-row {
         display: flex;
-        left: 50%;
-        transform: translate(-50%, 0);
-        height: 75px;
-        border-radius: 0 0 15px 15px;
-        overflow: hidden;
-        z-index: 6;
-        box-shadow: 0px 0px 100px rgb(0 0 0 / 20%);
-        transition: all 0.2s ease-in;
     }
     
-    .Registration-form form .username-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .animated-button {
-        width: 20%;
-        background-color: #d4d4ff;
-    }
-    
-    .animated-button span i {
-        color: #9999f8;
-    }
-    
-    .animated-button .next-button {
-        background: transparent;
-        color: #9999f8;
-        font-weight: 100;
-        width: 100%;
-        border: 0;
-    }
-    
-    .animated-button span {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        line-height: 75px;
-        text-align: center;
-        height: 75px;
-        transition: all 0.2s ease-in;
-    }
-    
-    .Registration-form .email-section.folder {
-        width: 90%;
-        margin-top: 10px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 5;
-    }
-    
-    .Registration-form .email-section.folder .email-register {
-        background: #00ef93 !important;
-        width: 100%;
-    }
-    
-    .Registration-form .email-section.folder span {
-        background: #00ef93;
-        width: 100%;
-    }
-    
-    .Registration-form .sdt-section.folder {
-        width: 85%;
-        margin-top: 20px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 4;
-    }
-    
-    .Registration-form .sdt-section.folder .sdt-register {
-        background: #4363ed !important;
-        width: 100%;
-    }
-    
-    .Registration-form .sdt-section.folder span {
-        background: #4363ed;
-        width: 100%;
-    }
-    
-    .Registration-form .password-section.folder {
-        width: 80%;
-        margin-top: 30px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 3;
-    }
-    
-    .Registration-form .password-section.folder .password-register {
-        background: #ef45ef !important;
-        width: 100%;
-    }
-    
-    .Registration-form .password-section.folder span {
-        background: #ef45ef;
-        width: 100%;
-    }
-    
-    .Registration-form .conf-password-section.folder {
-        width: 75%;
-        margin-top: 40px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 2;
-    }
-    
-    .Registration-form .conf-password-section.folder .conf-password-register {
-        background: #e5f293 !important;
-        width: 100%;
-    }
-    
-    .Registration-form .conf-password-section.folder span {
-        background: #e5f293;
-        width: 100%;
-    }
-    
-    .Registration-form .Sex-section.folder {
-        width: 70%;
-        margin-top: 50px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 1;
-    }
-    
-    .Registration-form .Sex-section.folder .Sex-register {
-        background: rgb(226, 83, 83) !important;
-        width: 100%;
-    }
-    
-    .Registration-form .Sex-section.folder span {
-        background: rgb(226, 83, 83);
-        width: 100%;
-    }
-    
-    .Registration-form .birthday-section.folder {
-        width: 65%;
-        margin-top: 55px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 0;
-    }
-    
-    .Registration-form .birthday-section.folder .birthday-register {
-        background: #e2b865 !important;
-        width: 100%;
-    }
-    
-    .Registration-form .birthday-section.folder span {
-        background: #e2b865;
-        ;
-        width: 100%;
-    }
-    
-    .Registration-form form .email-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .Registration-form form .sdt-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .Registration-form form .password-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .Registration-form form .conf-password-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .Registration-form form .Sex-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
-    }
-    
-    .Registration-form form .birthday-register {
-        background: rgb(220, 217, 217) !important;
-        color: #8f8fd6;
-        width: 80%;
-        border: 0;
-        padding: 20px 40px;
-        margin: 0;
+    .form-grouper {
+        width: 50%;
+        padding: 0 30px;
     }
     /*******************************/
     /** Loadding **/
