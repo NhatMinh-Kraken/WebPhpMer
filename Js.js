@@ -175,10 +175,7 @@ class Slideshow {
             startAt: { scaleX: 0 },
             scaleX: 1,
         });
-
-
     }
-
 }
 
 const slideshow = new Slideshow(document.querySelector('.slideshow'));
@@ -192,4 +189,4 @@ $(window).on('load', function(event) {
 });
 
 
-/********************************************** Đăng Ký ********************************************/
+/********************************************** Show eye ********************************************/

@@ -5,58 +5,50 @@
     <?php
     include("AdminConf/Configure/config.php");
 
-    if(isset($_POST['DangKy'])){   
+        if(isset($_POST['DangKy'])){ 
+
         $Username = $_POST['Username'];
         $Email = $_POST['Email'];
         $SDT = $_POST['SDT'];
-        $Password = md5($_POST['Password']);
+        $Password = ($_POST['Password']);
         $ConfirmPassword = ($_POST['Confirm-Password']);
         $NgaySinh = $_POST['NgaySinh'];
         $GioiTinh = $_POST['GioiTinh'];
 
         
-        $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^"; 
+        $pattern = "/([a-z0-9_]+|[a-z0-9_]+\.[a-z0-9_]+)@(([a-z0-9]|[a-z0-9]+\.[a-z0-9]+)+\.([a-z]{2,4}))/i "; 
         if(!preg_match($pattern, $Email))
         {
             echo '<script language="javascript"> alert("Email này không hợp lệ. Vui lòng nhập Email khác."); window.location="Register.php";</script>' ;
-        }
-        
-        if(mysqli_num_rows(mysqli_query($mysqli,"SELECT Email FROM taikhoanuser WHERE Email='$Email'")) > 0 )
-        {
-            echo '<script> alert("Email đã được sử dụng. Vui lòng dùng Email khác để đăng ký."); window.location="Register.php";</script>';  
-        }
-    
-        if(!preg_match ("[0-9]", $SDT)){
-            echo '<script> alert("Số điện thoại không hợp lệ."); window.location="Register.php";</script>';
+            exit;
         }
     
         if($SDT < 10 && $SDT > 10)
         {
             echo '<script> alert("Số điện thoại phải có 10 số."); window.location="Register.php";</script>';
+            exit;
         }
 
-        $PassDB = "^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$";
-
+        $PassDB = "/^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/ ";
         if(!preg_match($PassDB, $Password))
         {
             echo '<script> alert("Mật khẩu không đúng đĩnh dạng. Mật khẩu đúng định dạng bao gồm các ký tự sau : ^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$"); window.location="Register.php";</script>';
+            exit;
         }
 
         if($Password != $ConfirmPassword)
         {
             echo '<script> alert("Mật khẩu không trùng với Nhập lại mật khẩu"); window.location="Register.php";</script>';
+            exit;
         }
-        
-        $sql_dangky = mysqli_query($mysqli,"INSERT INTO taikhoanuser(HoVaTen,Email,SDT,pasword,NgaySinh,GioiTinh) VALUE('".$Username."','".$Email."','".$SDT."','".$Password."','".$NgaySinh."','".$GioiTinh."')");
     
-        if($sql_dangky)
+        if(mysqli_query($mysqli,"INSERT INTO taikhoanuser(HoVaTen,Email,SDT,pasword,NgaySinh,GioiTinh) VALUE('".$Username."','".$Email."','".$SDT."','".(md5($Password))."','".$NgaySinh."','".$GioiTinh."')"))
         {
-            echo '<script> alert(<p stype="color:green">Bạn đã đăng ký thành công</p>); window.location="Login.php";</script>';
-        }
+            //header("location:Login.php");
+            echo '<script> alert("Bạn đã đăng ký thành công");window.location="Login.php";</script>';   
+        }   
     }
-  
 ?>
-
         <div class="Login-scroller">
             <div class="container-login">
                 <div class="row Login-width">
@@ -69,25 +61,25 @@
                                         <div class="form-grouper">
                                             <div class="form-group">
                                                 <label>Username *</label>
-                                                <input type="text" class="form-control" name="Username">
+                                                <input type="text" class="form-control" name="Username" placeholder="Họ và tên">
                                             </div>
                                             <div class="form-group">
                                                 <label>Email *</label>
-                                                <input type="text" class="form-control" name="Email">
+                                                <input type="text" class="form-control" name="Email" placeholder="Email">
                                             </div>
                                             <div class="form-group">
                                                 <label>Password *</label>
-                                                <input type="password" class="form-control" name="Password">
+                                                <input type="password" class="form-control" name="Password" placeholder="Password">
                                             </div>
                                             <div class="form-group">
                                                 <label>Confirm Password *</label>
-                                                <input type="password" class="form-control" name="Confirm-Password">
+                                                <input type="password" class="form-control" name="Confirm-Password" placeholder="Confirm-Password">
                                             </div>
                                         </div>
                                         <div class="form-grouper">
                                             <div class="form-group">
                                                 <label>Số Điện Thoại *</label>
-                                                <input type="number" class="form-control" name="SDT">
+                                                <input type="number" class="form-control" name="SDT" placeholder="Số điện thoại">
                                             </div>
                                             <div class="form-group">
                                                 <label>Giới Tính *</label>
