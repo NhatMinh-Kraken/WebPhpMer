@@ -1,9 +1,21 @@
 <?php
+    session_start();
+?>
+
+<?php
     include("Layout/Head.php");
 ?>
     <?php
         include("Loadding.php");    
     ?>
+
+    <?php
+        if(isset($_SESSION['dangnhap']))
+        {
+            include("Profile/Profile.php");
+        }
+    ?>
+
     <!---Menu-nav-->
     <?php
         include("page/menu-nav.php");

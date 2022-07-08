@@ -1,4 +1,11 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['dangnhap'])){
+        header('Location:Login.php');
+    }
+?>
+
+<?php
     include("Layout/Head.php");
 ?>
 <div class="DangKy-LaiThu">

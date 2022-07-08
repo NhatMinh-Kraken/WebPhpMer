@@ -17,24 +17,24 @@
                 echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu."); window.location="Login.php";</script>' ;
                 exit;
             }
-                $TKPass = md5($TKPass);
+            $TKPass = md5($TKPass);
 
-                $TextTKEmail = mysqli_query($mysqli,"SELECT Email, pasword FROM taikhoanuser WHERE Email='$TKEmail'");
-                if(mysqli_num_rows($TextTKEmail) == 0)
-                {
-                    echo '<script language="javascript"> alert("Email không tồn tại."); window.location="Login.php";</script>' ;
-                    exit;
-                }
+            $TextTKEmail = mysqli_query($mysqli,"SELECT Email, pasword FROM taikhoanuser WHERE Email='$TKEmail'");
+            if(mysqli_num_rows($TextTKEmail) == 0)
+            {
+                echo '<script language="javascript"> alert("Email không tồn tại."); window.location="Login.php";</script>' ;
+                exit;
+            }
 
-                $row = mysqli_fetch_array($TextTKEmail);
+            $row = mysqli_fetch_array($TextTKEmail);
 
-                if($TKPass != $row['pasword'])
-                {
-                    echo '<script language="javascript: history.go(-1)"> alert("MẬT KHẨU KHÔNG ĐÚNG"); window.location="Login.php";</script>' ;
-                    exit;
-                }   
-            
-            echo '<script> alert("Bạn đã đăng ký thành công");window.location="Index.php";</script>';
+            if($TKPass != $row['pasword'])
+            {
+                echo '<script language="javascript: history.go(-1)"> alert("MẬT KHẨU KHÔNG ĐÚNG"); window.location="Login.php";</script>' ;
+                exit;
+            }   
+            $_SESSION['dangnhap'] = $TKEmail;
+            echo '<script> alert("Bạn đã đăng nhập thành công");window.location="Index.php";</script>';
         }
     ?>
 
@@ -46,7 +46,7 @@
                         <div class="Login-Card col-lg-4">
                             <div class="Login-Tilte">
                                 <h3 class="Login-card-title">Login</h3>
-                                <form action="" method="post">
+                                <form action="" method="post" autocomplete="off">
                                     <div class="form-group">
                                         <label>Email *</label>
                                         <input type="text" class="form-control" name="TK-Email" placeholder="Email">
