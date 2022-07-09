@@ -12,14 +12,14 @@
             $TKEmail = $_POST['TK-Email'];
             $TKPass = $_POST['TK-Pass'];
 
-            if(!$TKEmail || !$TKEmail)
+            if(!$TKEmail || !$TKPass)
             {
                 echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu."); window.location="Login.php";</script>' ;
                 exit;
             }
             $TKPass = md5($TKPass);
 
-            $TextTKEmail = mysqli_query($mysqli,"SELECT Email, pasword FROM taikhoanuser WHERE Email='$TKEmail'");
+            $TextTKEmail = mysqli_query($mysqli,"SELECT Email, pasword, HoVaTen FROM taikhoanuser WHERE Email='$TKEmail'");
             if(mysqli_num_rows($TextTKEmail) == 0)
             {
                 echo '<script language="javascript"> alert("Email không tồn tại."); window.location="Login.php";</script>' ;

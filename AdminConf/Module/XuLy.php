@@ -165,6 +165,20 @@
 
 
 // --------------------------------------------------- XỬ lý dữ liệu -------------------------------- //
+if(!$TenXe || !$DongGIoiThieu1 || !$hinhanh1 || !$DongGioiThieu2 || !$SoChoNgoi || !$KieuXe || !$XuatXu || !$KichThuocDRC || !$ChieuDaiCoSo || !$DongCo || !$DungTichCongTac 
+|| !$DungTichBinhNhienLieu || !$LoaiNhienLieu || !$CongSuatCucDai || !$MomenCucDai || !$HopSo || !$HeDanDong || !$HeThongTreo || !$TayLaiTroLuc 
+|| !$CoMam || !$GiaNiemYet || !$GiaHCM || !$GiaHN || !$GiaTinhKhac || !$AnhMau1 || !$AnhMau2 || !$AnhMau3 || !$GioiTHieuDienMao1 || !$GioiTHieuDienMao2 
+|| !$AnhDauXe1 || !$GioiTHieuDauXe1 || !$GioiTHieuDauXe2 || !$AnhDauXe2 || !$GioiTHieuTanNhiet1 || !$GioiTHieuTanNhiet2 || !$AnhThanXe1 || !$GioiTHieuThanXe1 
+|| !$AnhThanXe2 || !$GioiTHieuThanDuoi1 || !$AnhDuoiXe || !$GioiTHieuDuoiXe1 || !$GioiTHieuDuoiXe2 || !$GioiTHieuNoiThat1 || !$GioiTHieuNoiThat2 
+|| !$GioiTHieuNoiThat3 || !$AnhKhoangLai || !$GioiTHieuKhoangLai || !$AnhHangGheTruoc || !$GioiTHieuHangGheTruoc || !$AnhHangGheHanhKhach 
+|| !$GioiTHieuKhoangHanhKhach1 || !$GioiTHieuKhoangHanhKhach2 || !$AnhHanhLy || !$GioiTHieuHanhLy1 || !$GioiTHieuHanhLy2 || !$GioiTHieuTienNghi
+|| !$AnhTienNghi || !$GioiTHieuCongNghe1 || !$GioiTHieuCongNghe2 || !$AnhDongCo || !$GioiTHieuDongCo1 || !$GioiTHieuDongCo2 || !$AnhVanHanh
+|| !$GioiTHieuVanHanh1 || !$GioiTHieuVanHanh2 || !$GioiTHieuVanHanh3 || !$AnToan || !$TieuChuan1 || !$TieuChuan2 || !$TieuChuan3 || !$TieuChuan4
+|| !$TieuChuan5 || !$TieuChuan6 || !$TieuChuan7 || !$TieuChuan8 || !$TieuChuan9 || !$TieuChuan10 || !$TieuChuan11 || !$TieuChuan12
+){
+    echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="IndexAdmin.php?action=Add-Product";</script>' ;
+    exit;
+}
 
 if(isset($_POST['ThemSanPhamXe']))
 {
@@ -220,11 +234,11 @@ if(isset($_POST['ThemSanPhamXe']))
     move_uploaded_file($AnhDongCo_tmp,'Uploads/'.$AnhDongCo);
     move_uploaded_file($AnhVanHanh_tmp,'Uploads/'.$AnhVanHanh);
 
-    header('location:/WEBs/AdminConf/Module/indexAdmin.php');
     
-    echo "ThanhCong";
+    echo '<script> alert("Bạn đã thêm thành công");window.location="indexAdmin.php";</script>';
+
 } 
 else
-    echo "Không Thanh cong. <a href='location:/WEBs/AdminConf/Module/indexAdmin.php?action=Add-Product'>Thử lại</a>";
-
+echo '<script> alert("Bạn đã thêm không thành công");window.location="Add-Product.php";</script>';
+    exit;
 ?>

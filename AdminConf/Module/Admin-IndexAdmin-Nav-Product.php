@@ -38,7 +38,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Add Product</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?action=Fix-Product">Details Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Default-Product-Car">Details Product</a></li>
               </ul>
             </div>
           </li>

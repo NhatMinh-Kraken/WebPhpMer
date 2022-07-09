@@ -60,9 +60,9 @@
               if($tam=='Add-Product'){
                 include("Add-Product.php");
               }
-              elseif($tam=='Fix-Product')
+              elseif($tam=='Default-Product-Car')
               {
-                include("Fix Product.php");
+                include("Default-Product-Car.php");
               }
               else{
                 include("Admin-IndexAdmin-Content.php");

@@ -2,32 +2,49 @@
     <?php
         include("AdminConf/Configure/config.php");
     ?>
+
+    <?php
+        if(isset($_GET['action']) == 'dangxuat'){
+            unset($_SESSION['dangnhap']);
+            header('Location:Login.php');
+        }
+    ?>
+
     <div class="body">
         <div class="menu-profile">
             <ul id="menu-profile">
                 <li class="ItemProfile">
-                    <a href="#">
+                    <div class="Click-drop">
                         <span class="IconProfile"><i class="bi bi-person-badge"></i></span>
                         <span class="NameProfile">User</span>
-                    </a>
+                    </div>
+                    <div class="cont-drobdown-menu">
+                        <ul>
+                            <li>
+                            
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="ItemProfile">
-                    <a href="#">
+                    <div class="Click-drop">
                         <span class="IconProfile"><i class="bi bi-list-check"></i></span>
                         <span class="NameProfile">Thông Tin</span>
-                    </a>
+                    </div>
+                    
                 </li>
                 <li class="ItemProfile">
-                    <a href="#">
+                    <div class="Click-drop">
                         <span class="IconProfile"><i class="bi bi-basket"></i></span>
                         <span class="NameProfile">Giỏ Hàng</span>
-                    </a>
+                    </div>
                 </li>
                 <li class="ItemProfile">
-                    <a href="#">
+                    <a href="Index.php?action=dangxuat">
                         <span class="IconProfile"><i class="bi bi-box-arrow-right"></i></span>
                         <span class="NameProfile">Đăng Xuất</span>
                     </a>
+
                 </li>
             </ul>
             <div class="Btn-Profile">
