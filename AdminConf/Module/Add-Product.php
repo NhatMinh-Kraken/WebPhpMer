@@ -373,15 +373,6 @@
                                     </span>
                                 </p>
                             </div>
-                            <div class="form-group padding">
-                                <p class="detail-product-content-p">
-                                    <span style="font-weight: 400;">
-                                        <label for="exampleInputDetailThanXe2">Dòng Giới Thiệu Thân Xe 2</label>
-                                        <textarea type="text" class="form-control" id="exampleInputDetailThanXe2"
-                                            placeholder="Dòng Giới Thiệu Thân Xe 2" name="Gioi-THieu-ThanXe-2"></textarea>
-                                    </span>
-                                </p>
-                            </div>
                             <p>
                                 <div>
                                     <img loading="lazy" id="imagePreview7" class="detail-product-content-img" src="Images/default.jpg" title="Ảnh Xem Trước" width="640" height="auto" sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
