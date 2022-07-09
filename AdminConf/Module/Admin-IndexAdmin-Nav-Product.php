@@ -28,26 +28,27 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basicc" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Product</span>
+              <span class="menu-title">Sản Phẩm Xe</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="ui-basicc">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Add Product</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?action=Default-Product-Car">Details Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Product-Car">Thêm Loại Xe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Thêm Xe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Default-Product">Xem chi tiết Xe</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
+                <i class="mdi mdi-laptop"></i>
               </span>
-              <span class="menu-title">Form Elements</span>
+              <span class="menu-title">Chi Tiết Sản Phẩm</span>
             </a>
           </li>
           <li class="nav-item menu-items">

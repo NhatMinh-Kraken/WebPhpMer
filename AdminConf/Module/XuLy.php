@@ -2,6 +2,7 @@
     include('config.php');
 // --------------------------------------------- khởi tạo dữ liệu ------------------------------------ //
     $TenXe = $_POST['TenXe'];
+    $LoaiXe = $_POST['loaixe'];
     $DongGIoiThieu1 = $_POST['Dong-GIoi-Thieu1'];
 //Ảnh
     $hinhanh1 = $_FILES['hinhanh1']['name'];
@@ -165,7 +166,7 @@
 
 
 // --------------------------------------------------- XỬ lý dữ liệu -------------------------------- //
-if(!$TenXe || !$DongGIoiThieu1 || !$hinhanh1 || !$DongGioiThieu2 || !$SoChoNgoi || !$KieuXe || !$XuatXu || !$KichThuocDRC || !$ChieuDaiCoSo || !$DongCo || !$DungTichCongTac 
+if(!$TenXe || !$LoaiXe || !$DongGIoiThieu1 || !$hinhanh1 || !$DongGioiThieu2 || !$SoChoNgoi || !$KieuXe || !$XuatXu || !$KichThuocDRC || !$ChieuDaiCoSo || !$DongCo || !$DungTichCongTac 
 || !$DungTichBinhNhienLieu || !$LoaiNhienLieu || !$CongSuatCucDai || !$MomenCucDai || !$HopSo || !$HeDanDong || !$HeThongTreo || !$TayLaiTroLuc 
 || !$CoMam || !$GiaNiemYet || !$GiaHCM || !$GiaHN || !$GiaTinhKhac || !$AnhMau1 || !$AnhMau2 || !$AnhMau3 || !$GioiTHieuDienMao1 || !$GioiTHieuDienMao2 
 || !$AnhDauXe1 || !$GioiTHieuDauXe1 || !$GioiTHieuDauXe2 || !$AnhDauXe2 || !$GioiTHieuTanNhiet1 || !$GioiTHieuTanNhiet2 || !$AnhThanXe1 || !$GioiTHieuThanXe1 
@@ -183,7 +184,7 @@ if(!$TenXe || !$DongGIoiThieu1 || !$hinhanh1 || !$DongGioiThieu2 || !$SoChoNgoi 
 if(isset($_POST['ThemSanPhamXe']))
 {
     //Them
-    $sql_them = "INSERT INTO chitietsanpham(TenXe,DongGioiThieu1,HinhAnh1,DongGioiTHieu2,SoChoNgoi
+    $sql_them = "INSERT INTO chitietsanpham(TenXe,IdLoaiXe,DongGioiThieu1,HinhAnh1,DongGioiTHieu2,SoChoNgoi
                                             ,KieuXe,XuatXu,KichThuoc,ChieuDaiCoSo,DongCo
                                             ,DungTichCongTac,DungTichBinhNhienLieu,LoaiNhienLieu,CongSuatCucDai,Momen
                                             ,HopSo,HeDanDong,HeThongTreo,TayLaiTroLuc,CoMam
@@ -199,7 +200,7 @@ if(isset($_POST['ThemSanPhamXe']))
                                             ,DongGioiThieuVanHanh3,DongAnhToan,TieuChuan1,TieuChuan2,TieuChuan3
                                             ,TieuChuan4,TieuChuan5,TieuChuan6,TieuChuan7,TieuChuan8
                                             ,TieuChuan9,TieuChuan10,TieuChuan11,TieuChuan12) 
-                                            VALUE('".$TenXe."','".$DongGIoiThieu1."','".$hinhanh1."','".$DongGioiThieu2."','".$SoChoNgoi."'
+                                            VALUE('".$TenXe."','".$LoaiXe."','".$DongGIoiThieu1."','".$hinhanh1."','".$DongGioiThieu2."','".$SoChoNgoi."'
                                                     ,'".$KieuXe."','".$XuatXu."','".$KichThuocDRC."','".$ChieuDaiCoSo."','".$DongCo."'
                                                     ,'".$DungTichCongTac."','".$DungTichBinhNhienLieu."','".$LoaiNhienLieu."','".$CongSuatCucDai."','".$MomenCucDai."'
                                                     ,'".$HopSo."' ,'".$HeDanDong."','".$HeThongTreo."','".$TayLaiTroLuc."','".$CoMam."' 
@@ -239,6 +240,6 @@ if(isset($_POST['ThemSanPhamXe']))
 
 } 
 else
-echo '<script> alert("Bạn đã thêm không thành công");window.location="Add-Product.php";</script>';
+    echo '<script> alert("Bạn đã thêm không thành công");window.location="Add-Product.php";</script>';
     exit;
 ?>

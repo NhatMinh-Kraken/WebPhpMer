@@ -16,6 +16,30 @@
                             </div>
                         </div>
 
+                        <div class="form-group padding">
+                            <div class="Name-Product-Car">
+                                <label for="exampleInputNameCar1">Loại Xe</label>
+                                <select id="loaixe" name="loaixe" class="form-control">
+                                    <option value="">Chọn loại xe</option>
+                                    <?php
+                                        include('config.php');
+                                        $sql = "SELECT IdLoaiXe, tenloaixe FROM loaixe"; 
+                                        $ktloaixe = mysqli_query($mysqli,$sql);
+                                        $num = mysqli_num_rows($ktloaixe);
+                                        if($num > 0){
+                                            while($row = mysqli_fetch_array($ktloaixe))
+                                            {   
+                                    ?>
+                                    <option value="<?php echo $row['IdLoaiXe'] ?>"><?php echo $row['tenloaixe'] ?></option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </select>
+                                
+                            </div>
+                        </div>
+
                         <div class="detail-product-content">
                             <div class="form-group padding">
                                 <div class="Name-Product-Car">
@@ -54,10 +78,6 @@
                                 </h2>
                                 <table class="detail-product-content-table" border="1" cellpadding="1">
                                     <tbody>
-                                        <tr>
-                                            <td><label for="exampleInputTenXe">Tên Xe</label></td>
-                                            <td><input type="text" class="form-control" id="exampleInputTenXe" placeholder="Tên Xe" readonly></td>
-                                        </tr>
                                         <tr>
                                             <td><label for="exampleInputSoChoNgoi">Số Chỗ Ngồi</label></td>
                                             <td><input type="number" class="form-control" id="exampleInputSoChoNgoi" placeholder="Số Chỗ Ngồi" name="So-Cho-Ngoi"></td>

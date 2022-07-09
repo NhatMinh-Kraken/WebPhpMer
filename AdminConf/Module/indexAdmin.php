@@ -60,9 +60,20 @@
               if($tam=='Add-Product'){
                 include("Add-Product.php");
               }
+              elseif($tam=='Default-Product')
+              {
+                include("Default-Product.php");
+              }
+              elseif($tam=='Add-Product-Car'){
+                include("Add-Product-Car.php");
+              }
               elseif($tam=='Default-Product-Car')
               {
                 include("Default-Product-Car.php");
+              }
+              elseif($tam=='Add-Type-Product-Car')
+              {
+                include("Add-LoaiXe.php");
               }
               else{
                 include("Admin-IndexAdmin-Content.php");

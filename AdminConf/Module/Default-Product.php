@@ -1,5 +1,5 @@
 <?php
-    include("AdminConf/Configure/config.php");
+    include("config.php");
 ?>
 
 <?php
