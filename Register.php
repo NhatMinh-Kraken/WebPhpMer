@@ -112,6 +112,6 @@
                 </div>
             </div>
         </div>
-        <?php
+<?php
     include("Layout/Head-end.php");
 ?>

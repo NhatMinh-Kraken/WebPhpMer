@@ -107,6 +107,18 @@
     .Btn-Profile:hover {
         box-shadow: 0px 0px 10px #00ADEF, 0px 0px 50px #00ADEF, 0px 0px 90px;
     }
+    .Default-Profile-User {
+        width: 20%;
+        justify-content: center;
+        padding: 10px 10px;
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .Default-Profile-User .NameProfile {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -162,5 +174,8 @@
     }
     .footer-icon-laithu {
         width: 30%;
+    }
+    .Default-Profile-User .NameProfile {
+        display: none;
     }
 }
