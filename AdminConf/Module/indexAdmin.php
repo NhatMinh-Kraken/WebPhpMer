@@ -54,15 +54,20 @@
               if(isset($_GET['action']))
               {
                 $tam = $_GET['action'];
+                
               }else{
                 $tam = '';
+                
               }
               if($tam=='Add-Product'){
                 include("Add-Product.php");
               }
-              elseif($tam=='Default-Product')
+              elseif($tam =='Fix-Product'){
+                include("Fix-Product.php");
+              }
+              elseif($tam=='Xem-Loai-Xe')
               {
-                include("Default-Product.php");
+                include("Xem-Loai-Xe.php");
               }
               elseif($tam=='Add-Type-Product-Car')
               {

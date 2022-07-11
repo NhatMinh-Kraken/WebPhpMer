@@ -33,7 +33,7 @@
                 echo '<script language="javascript: history.go(-1)"> alert("MẬT KHẨU KHÔNG ĐÚNG"); window.location="Login.php";</script>' ;
                 exit;
             }   
-            $_SESSION['dangnhap'] = $TKEmail;
+            $_SESSION['dangnhap'] = $row['HoVaTen'];
             echo '<script> alert("Bạn đã đăng nhập thành công");window.location="Index.php";</script>';
         }
     ?>

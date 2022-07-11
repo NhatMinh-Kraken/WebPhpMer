@@ -119,6 +119,11 @@
     .Default-Profile-User .NameProfile {
         display: none;
     }
+    .logo-mer-profile {
+        display: flex;
+        width: 20%;
+        padding: 10px 10px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -177,5 +182,10 @@
     }
     .Default-Profile-User .NameProfile {
         display: none;
+    }
+    .logo-mer-profile {
+        display: flex;
+        width: 20%;
+        padding: 10px 10px;
     }
 }

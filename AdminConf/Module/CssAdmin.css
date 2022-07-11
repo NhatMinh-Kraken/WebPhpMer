@@ -1882,3 +1882,63 @@
     #ImageUploadInputt15 {
         display: none;
     }
+    
+    .Muc-TieuDe {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    
+    .Muc-TieuDe-id {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-right: 5px solid #000;
+        border-bottom: 5px solid #000;
+        color: #000;
+    }
+    
+    .Muc-TieuDe-name {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-right: 5px solid #000;
+        border-bottom: 5px solid #000;
+        color: #000;
+    }
+    
+    .Muc-TieuDe-trangthai {
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-right: 5px solid #000;
+        border-bottom: 5px solid #000;
+        color: #000;
+    }
+    
+    .button-laithu-link-1 {
+        text-transform: uppercase;
+        background-color: #00ADEF;
+        border-radius: 2px 2px 2px 2px;
+        font-size: 16px;
+        padding-right: 10px;
+        margin-right: 10px;
+        text-align: center;
+        content: 'f623';
+    }
+    
+    .button-laithu-link-1:hover {
+        text-transform: uppercase;
+        background-color: #00ef93;
+        border-radius: 2px 2px 2px 2px;
+        font-size: 16px;
+        padding-right: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }

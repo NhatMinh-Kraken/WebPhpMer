@@ -23,12 +23,8 @@ if(isset($_POST['ThemLoaiXe']))
 
     mysqli_query($mysqli,$sql_themloaixe);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="indexAdmin.php";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Xem-Loai-Xe";</script>';
 }
-else
-{
-    echo '<script> alert("Bạn đã thêm không thành công");window.location="IndexAdmin.php?action=Add-Type-Product-Car";</script>';
-    exit;
-}
-    
+
+
 ?>

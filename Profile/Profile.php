@@ -7,6 +7,9 @@
             unset($_SESSION['dangnhap']);
             header('Location:Login.php');
         }
+
+        $User = mysqli_query($mysqli,"SELECT * FROM taikhoanuser WHERE IdUser");
+        $row = mysqli_fetch_array($User);
     ?>
 
         <div class="body">
@@ -15,22 +18,24 @@
                     <li class="ItemProfile">
                         <a class="Click-drop" data-toggle="collapse" href="#ui-basic" aria-controls="ui-basic">
                             <span class="IconProfile"><i class="bi bi-person-badge"></i></span>
-                            <span class="NameProfile">User</span>
-                            <span class="IconProfileLeft"><i class="bi bi-arrow-down-left-square"></i></span>
+                            <span class="NameProfile"> 
+                            <?php if(isset($_SESSION['dangnhap'])){
+                               echo $_SESSION['dangnhap'];
+                            } ?></span>
                         </a>
                     </li>
                     <li class="ItemProfile">
-                        <a class="Click-drop" data-toggle="collapse" href="#ui-basic" aria-controls="ui-basic">
+                        <a href="Default-Profile.php?IdUser=<?php echo $row['IdUser'] ?>" class="Click-drop" >
                             <span class="IconProfile"><i class="bi bi-list-check"></i></span>
                             <span class="NameProfile">Thông Tin</span>
-                            <span class="IconProfileLeft"><i class="bi bi-arrow-down-left-square"></i></span>
+                            
                         </a>
                     </li>
                     <li class="ItemProfile">
                         <a class="Click-drop" data-toggle="collapse" href="#ui-basic" aria-controls="ui-basic">
                             <span class="IconProfile"><i class="bi bi-basket"></i></span>
                             <span class="NameProfile">Giỏ Hàng</span>
-                            <span class="IconProfileLeft"><i class="bi bi-arrow-down-left-square"></i></span>
+                            
                         </a>
                     </li>
                     <li class="ItemProfile">

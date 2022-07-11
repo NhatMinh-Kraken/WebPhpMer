@@ -39,7 +39,6 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Product-Car">Thêm Loại Xe</a></li>
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Thêm Xe</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?action=Default-Product">Xem chi tiết Xe</a></li>
               </ul>
             </div>
           </li>
@@ -49,7 +48,13 @@
                 <i class="mdi mdi-laptop"></i>
               </span>
               <span class="menu-title">Chi Tiết Sản Phẩm</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="?action=Xem-Loai-Xe">Xem Loại Xe</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="pages/tables/basic-table.html">
