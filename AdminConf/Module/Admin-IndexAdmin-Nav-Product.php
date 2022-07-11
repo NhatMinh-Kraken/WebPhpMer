@@ -53,6 +53,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?action=Xem-Loai-Xe">Xem Loại Xe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Xem-Xe">Xem Xe</a></li>
               </ul>
             </div>
           </li>

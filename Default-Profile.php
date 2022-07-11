@@ -6,7 +6,7 @@
     include("AdminConf/Configure/config.php");
 
     
-    $sql_xemthongtin = "SELECT * FROM taikhoanuser Where idUser='$_GET['IdUser']' LIMIT 1"
+    $sql_xemthongtin = "SELECT * FROM taikhoanuser Where idUser='$_GET['IdUser']' LIMIT 1";
 ?>
 
     <div class="Default-Profile">

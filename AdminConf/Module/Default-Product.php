@@ -1,9 +1,10 @@
 <?php
     include('config.php');
 
-    $sql_lietke_product_car = "SELECT * FROM chitietsanpham ORDER BY idchitietsanpham DESC"; 
+    $sql_lietke_product_car = "SELECT * FROM chitietsanpham, loaixe WHere chitietsanpham.IdLoaiXe = loaixe.IdLoaiXe and idchitietsanpham='$_GET[idchitietxe]'";
     $query_lietke_product_car = mysqli_query($mysqli,$sql_lietke_product_car);
 
+    
 ?>
 
 
@@ -43,35 +44,7 @@
                                     <label for="exampleInputLoaiCar1">Loại Xe</label>
                                     <input type="text" class="form-control" id="exampleInputLoaiCar1" name="LoaiXe" placeholder="Loại Xe" 
                                     value="<?php
-                                        if($row['IdLoaiXe'] == 1)
-                                        {
-                                            echo 'E-Class';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 2)
-                                        {
-                                            echo 'C-Class';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 3)
-                                        {
-                                            echo 'CLA';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 4)
-                                        {
-                                            echo 'GLA';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 5)
-                                        {
-                                            echo 'GLC';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 6)
-                                        {
-                                            echo 'GLS';
-                                        }
-                                        elseif($row['IdLoaiXe'] == 7)
-                                        {
-                                            echo 'S-Class';
-                                        }
-                                        
+                                        echo $row['tenloaixe'];
                                     ?>">
                                 </div>
                             </div>
@@ -192,19 +165,19 @@
                                         <tbody>
                                             <tr>
                                                 <td><label for="exampleInputGiaNiemYet">Giá Niêm Yết</label></td>
-                                                <td><input type="text" class="form-control" id="exampleInputGiaNiemYet" name="Gia-Niem-Yet" placeholder="Giá Niêm Yết" value="<?php echo $row['GiaXeNiemYet'] ?>"></td>
+                                                <td><input type="text" class="form-control" id="exampleInputGiaNiemYet" name="Gia-Niem-Yet" placeholder="Giá Niêm Yết" value="<?php echo $row['GiaXeNiemYet']?> VNĐ"></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="exampleInputGiaHCM">Giá HCM</label></td>
-                                                <td><input type="text" class="form-control" id="exampleInputGiaHCM" name="Gia-HCM" placeholder="Giá HCM" value="<?php echo $row['GiaHCM'] ?>"></td>
+                                                <td><input type="text" class="form-control" id="exampleInputGiaHCM" name="Gia-HCM" placeholder="Giá HCM" value="<?php echo $row['GiaHCM'] ?> VNĐ"></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="exampleInputGiaHaNoi">Giá Hà Nội</label></td>
-                                                <td><input type="text" class="form-control" id="exampleInputGiaHaNoi" name="Gia-HN" placeholder="Giá Hà Nội" value="<?php echo $row['GiaHN'] ?>"></td>
+                                                <td><input type="text" class="form-control" id="exampleInputGiaHaNoi" name="Gia-HN" placeholder="Giá Hà Nội" value="<?php echo $row['GiaHN'] ?> VNĐ"></td>
                                             </tr>
                                             <tr>
                                                 <td><label for="exampleInputGiaTinhKhac">Giá Các Tỉnh Khác</label></td>
-                                                <td><input type="text" class="form-control" id="exampleInputGiaTinhKhac" name="Gia-Tinh-Khac" placeholder="Giá Tỉnh Khác" value="<?php echo $row['GiaTinhKhac'] ?>"></td>
+                                                <td><input type="text" class="form-control" id="exampleInputGiaTinhKhac" name="Gia-Tinh-Khac" placeholder="Giá Tỉnh Khác" value="<?php echo $row['GiaTinhKhac'] ?> VNĐ"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -674,8 +647,7 @@
                             </div>
                             <div class="footer-laithu">
                                 <div class="button-laithu">
-                                    <a href="XuLy.php?idsanpham=<?php echo $row['idchitietsanpham'] ?>" class="button-laithu-link" name="SuaCTXe">Sửa Chi Tiết Xe</a>
-                                    <a href="?action=Edit-Product&Query=sua&idchitietsanpham=<?php echo $row['idchitietsanpham'] ?>" class="button-laithu-link" name="SuaCTXe">Xóa Chi Tiết Xe</a>
+                                    <a href="XuLyXoaChiTietXe.php?idchitietsanpham=<?php echo $row['idchitietsanpham'] ?>" class="button-laithu-link" name="SuaCTXe"><i class="bi bi-trash">Xóa Chi Tiết Xe</i></a>
                                 </div>
                             </div>
                         <?php

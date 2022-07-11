@@ -38,8 +38,8 @@
                                     <span class="Muc-TieuDe-id"><?php echo $row['IdLoaiXe'] ?></span>
                                     <span class="Muc-TieuDe-name"><?php echo $row['tenloaixe'] ?></span>
                                     <span class="Muc-TieuDe-trangthai">
-                                        <a href="?action=Fix-Product&idloaixe=<?php echo $row['IdLoaiXe'] ?>" class="button-laithu-link-1">Sửa</i></a>
-                                        <a href="XuLyXoaLoaiXe.php?id=<?php echo $row['IdLoaiXe'] ?>" class="button-laithu-link-1">Xóa</a>
+                                        <a href="?action=Fix-Product&idloaixe=<?php echo $row['IdLoaiXe'] ?>" class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
+                                        <a href="XuLyXoaLoaiXe.php?id=<?php echo $row['IdLoaiXe'] ?>" class="button-laithu-link-1"><i class="bi bi-trash"></i></a>
                                     </span>
                                 </div>
                             </div>

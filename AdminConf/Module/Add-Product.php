@@ -283,7 +283,7 @@
                                 <div id="uploadFileStatus4"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Đầu Xe Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -322,7 +322,7 @@
                                 <div id="uploadFileStatus5"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Tản Nhiệt Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -362,7 +362,7 @@
                                 <div id="uploadFileStatus6"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Thân Xe Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -390,7 +390,7 @@
                                 <div id="uploadFileStatus7"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Thân Dưới Xe Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -421,7 +421,6 @@
                                 <div id="uploadFileStatus8"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Đuôi Xe Mercedes-Benz GLS 450 4Matic 2022
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -491,7 +490,7 @@
                                 <div id="uploadFileStatus9"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Khoang Lái Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -519,7 +518,7 @@
                                 <div id="uploadFileStatus10"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Hàng Ghế Trước Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -551,7 +550,7 @@
                                 <div id="uploadFileStatus11"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Khoang Hành Khách Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -595,7 +594,7 @@
                                 <div id="uploadFileStatus12"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Khoang Hành Lý Mercedes-Benz GLS 450 4Matic 2022
+                               
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -646,7 +645,7 @@
                                 <div id="uploadFileStatus13"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Công Nghệ Của Xe Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -686,7 +685,7 @@
                                 <div id="uploadFileStatus14"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                Động Cơ Mercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
@@ -726,7 +725,7 @@
                                 <div id="uploadFileStatus15"></div>
                             </p>
                             <p class="detail-product-content-Note">
-                                ercedes-Benz GLS 450 4Matic 2022
+                                
                             </p>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">

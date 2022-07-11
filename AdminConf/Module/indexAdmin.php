@@ -27,6 +27,8 @@
     <!-- inject:css -->
     <!-- endinject -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
   </head>
   <body>
 
@@ -65,6 +67,12 @@
               elseif($tam =='Fix-Product'){
                 include("Fix-Product.php");
               }
+              elseif($tam =='Default-Product'){
+                include("Default-Product.php");
+              }
+              elseif($tam =='Fix-Default-Product'){
+                include("Fix-Default-Product.php");
+              }
               elseif($tam=='Xem-Loai-Xe')
               {
                 include("Xem-Loai-Xe.php");
@@ -72,6 +80,10 @@
               elseif($tam=='Add-Type-Product-Car')
               {
                 include("Add-LoaiXe.php");
+              }
+              elseif($tam=='Xem-Xe')
+              {
+                include("Xem-Xe.php");
               }
               else{
                 include("Admin-IndexAdmin-Content.php");
