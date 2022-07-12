@@ -2,92 +2,124 @@
     include("Layout/Head.php");
 ?>
 
-<?php
+    <?php
+    session_start();
+    if(!isset($_SESSION['dangnhap'])){
+        header('Location:Login.php');
+    }
     include("AdminConf/Configure/config.php");
 
     
-    $sql_xemthongtin = "SELECT * FROM taikhoanuser Where idUser='$_GET['IdUser']' LIMIT 1";
+    $sql_xemthongtin = "SELECT * FROM taikhoanuser Where idUser='$_GET[IdUser]' LIMIT 1";
+    $sql_profile = mysqli_query($mysqli,$sql_xemthongtin);
+    $row = mysqli_fetch_array($sql_profile);
 ?>
 
-    <div class="Default-Profile">
-        <div class="nav-menu-default-profile">
 
-            <div class="logo-mer-profile">
-                <div class="logo-top navbar-left">
-                    <a href="Index.php"><img src="Images/logo.png" alt="Mercedes-Benz">
-                </div>
-                <div class="Title-logo">
-                    <a href="Index.php">
-                        <h4>Mercedes-Benz</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="Default-Prodile-Search">
-                <ul class="navbar-nav-search w-100">
-                    <li class="nav-item-search w-100">
-                        <form class="nav-search">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </form>
-                    </li>
-                </ul>
-            </div>
-            <div class="Default-Profile-User">
-                <div class="Btn-Default-User">
-                    <span class="IconProfile">
-                        <i id="iconX" class="bi bi-person-square"></i>
-                    </span>
 
+        <div class="Default-Profile">
+            <div class="nav-menu-default-profile">
+
+                <div class="logo-mer-profile">
+                    <div class="logo-top navbar-left">
+                        <a href="Index.php"><img src="Images/logo.png" alt="Mercedes-Benz">
+                    </div>
+                    <div class="Title-logo">
+                        <a href="Index.php">
+                            <h4>Mercedes-Benz</h4>
+                        </a>
+                    </div>
                 </div>
-                <span class="NameProfile">Nguyễn Nhật Minh</span>
+                <div class="Default-Prodile-Search">
+                    <ul class="navbar-nav-search w-100">
+                        <li class="nav-item-search w-100">
+                            <form class="nav-search">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Default-Profile-User">
+                    <div class="Btn-Default-User">
+                        <span class="IconProfile">
+                                <i id="iconX" class="bi bi-person-square"></i>
+                            </span>
+                    </div>
+                    <span class="NameProfile"><?php echo $row['HoVaTen'] ?></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="Body-Default-Profile">
-        <div class="ThongTin-Profile">
-            <div class="row">
-                <div class="Khung-Profile">
-                <div class="ThongTin-Profile-Left">
-                    <div class="ThongTin-Left">
-                        <div class="ThongTinCaNhan-AnhDaiDien-Left">
-                            <a href="#">
-                                <div class="avatar">
-                                    <div class="avater-placeholder"></div>
-                                </div>
-                            </a>
-                            <div class="Name-Avatar">
-                                <div class="Name-Avatar-1">Nguyễn Nhật Minh</div>
-                                <div class="Edit-ThongTinCaNhan">
-                                    <a href="">
-                                        <div class="IconEdit">
-                                            <span class="IconEdit-ThongTinCaNhan"><i class="bi bi-pencil"></i></span>
-                                            <span>Sửa Hồ Sơ </span>
+
+
+        <div class="Body-Default-Profile">
+            <div class="ThongTin-Profile">
+                <div class="row">
+                    <div class="Khung-Profile">
+
+                        <div class="ThongTin-Profile-Left">
+                            <div class="ThongTin-Left">
+                                <div class="ThongTinCaNhan-AnhDaiDien-Left">
+                                    <a href="#">
+                                        <div class="avatar">
+                                            <div class="avater-placeholder"></div>
                                         </div>
+                                    </a>
+                                    <div class="Name-Avatar">
+                                        <div class="Name-Avatar-1">
+                                            <?php echo $row['HoVaTen'] ?>
+                                        </div>
+                                        <div class="Edit-ThongTinCaNhan">
+                                            <a href="">
+                                                <div class="IconEdit">
+                                                    <span class="IconEdit-ThongTinCaNhan"><i class="bi bi-pencil"></i></span>
+                                                    <span>Sửa Hồ Sơ </span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ThongTinCaNhan-Left">
+                                    <a href="?Profile=thongtincanhan&IdUser=<?php echo $row['IdUser'] ?>">
+                                        <span class="ThongTinCaNhan-Icon"><i class="bi bi-person-bounding-box"></i></span>
+                                        <span class="ThongTinCaNhan-TieuDe">Thông Tin Cá Nhân</span>
+                                    </a>
+                                </div>
+                                <div class="DonMua-Left">
+                                    <a href="">
+                                        <span class="DonMua-Icon"><i class="bi bi-clipboard-minus"></i></span>
+                                        <span class="DonMua-TieuDe">Thông Tin Giỏ Hàng</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ThongTinCaNhan-Left">
-                            <a href="">
-                                <span class="ThongTinCaNhan-Icon"><i class="bi bi-person-bounding-box"></i></span>
-                                <span class="ThongTinCaNhan-TieuDe">Thông Tin Cá Nhân</span>
-                            </a>
-                        </div>
-                        <div class="DonMua-Left">
-                            <a href="">
-                                <span class="DonMua-Icon"><i class="bi bi-clipboard-minus"></i></span>
-                                <span class="DonMua-TieuDe">Thông Tin Giỏ Hàng</span>
-                            </a>
+
+                        <div class="NganCach"></div>
+                        <div class="ThongTin-Profile-Right">
+                            <?php
+                                if(isset($_GET['Profile']))
+                                {
+                                    $tam = $_GET['Profile'];
+                                }
+                                else{
+                                    $tam = '';
+                                }
+
+                                if($tam == 'thongtincanhan')
+                                {
+                                    include("ThongTinCaNhan-User.php");
+                                }
+                                elseif($tam == 'thongtingiohang')
+                                {
+                                    include("ThongTinGioHang-User.php");
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
-                <div class="NganCach"></div>
-                <div class="ThongTin-Profile-Right"></div>
-                </div>
-                
             </div>
         </div>
-    </div>
 
-    <?php
+
+        <?php
     include("Layout/Head-end.php");
 ?>
