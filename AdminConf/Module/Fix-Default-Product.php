@@ -17,7 +17,7 @@
                                 Mercedes giá lăn bánh, đánh giá xe, khuyến mãi
                             </h1>
                         </div>
-                        <form method="POST" action="XuLySuaCTXe.php?idchitietxe=<?php echo $_GET['idchitietxe'] ?>">
+                        <form method="POST" action="XuLySuaCTXe.php?idchitietxe=<?php echo $_GET['idchitietxe'] ?>" enctype="multipart/form-data">
                             <?php
                                 $i = 0;
                                 while($row = mysqli_fetch_array($query_Sua_Xe)) 

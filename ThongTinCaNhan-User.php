@@ -18,31 +18,37 @@
                     $i++;
                 
             ?>
-            <form action="">
+            <form method="POST" action="XuLySuaThongTinUser.php?IdUser=<?php echo $_GET['IdUser'] ?>">
                 <div class="form-group">
                     <lable>Họ và Tên:</lable>
-                    <input class="form-control" value="<?php echo $row['HoVaTen'] ?>">
+                    <input type="text" name="HoVaTen" class="form-control" value="<?php echo $row['HoVaTen'] ?>">
                 </div>
                 
                 <div class="form-group">
                     <lable>Email:</lable>
-                    <input class="form-control" value="<?php echo $row['Email'] ?>">
+                    <input type="text" name="Email" class="form-control" readonly value="<?php echo $row['Email'] ?>">
                 </div>
 
                 <div class="form-group">
                     <lable>Số điện thoại</lable>
-                    <input class="form-control" value="<?php echo $row['SDT'] ?>">
+                    <input type="number" name="SDT" class="form-control" value="<?php echo $row['SDT'] ?>">
                 </div>
 
                 <div class="form-group">
                     <lable>Ngày Sinh</lable>
-                    <input class="form-control" value="<?php echo $row['NgaySinh'] ?>">   
+                    <input type="date" name="NgaySinh" class="form-control" value="<?php echo $row['NgaySinh'] ?>">   
                 </div>
 
                 <div class="form-group">
                     <lable>GioiTinh</lable>
-                    <input class="form-control" value="<?php echo $row['GioiTinh'] ?>">
+                    <input type="text" name="GioiTinh" class="form-control" value="<?php if($row['GioiTinh'] == 1 ) {echo 'Nam';} else{echo 'Nữ';}?>">
                 </div>
+
+                <div class="footer-laithu">
+                            <div class="button-laithu">
+                                <input class="button-laithu-link" type="submit" value="Sửa Thông Tin" name="SuaTTCaNhan">
+                            </div>
+                        </div>
             </form>
 
             <?php

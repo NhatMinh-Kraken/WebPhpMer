@@ -166,16 +166,16 @@
     
     
     // --------------------------------------------------- XỬ lý dữ liệu -------------------------------- //
-    // if($TenXe!= || !$LoaiXe!= || $DongGIoiThieu1!= || $hinhanh1!= || $DongGioiThieu2!= || $SoChoNgoi!= || $KieuXe!= || $XuatXu!= || $KichThuocDRC!= || $ChieuDaiCoSo!= || $DongCo!= || $DungTichCongTac!= 
-    // || $DungTichBinhNhienLieu!= || $LoaiNhienLieu!= || $CongSuatCucDai!= || $MomenCucDai!= || $HopSo!= || $HeDanDong!= || $HeThongTreo!= || $TayLaiTroLuc!= 
-    // || $CoMam!= || $GiaNiemYet!= || $GiaHCM!= || $GiaHN!= || $GiaTinhKhac!= || $AnhMau1!= || $AnhMau2!= || $AnhMau3!= || $GioiTHieuDienMao1!= || $GioiTHieuDienMao2!= 
-    // || $AnhDauXe1!= || $GioiTHieuDauXe1!= || $GioiTHieuDauXe2!= || $AnhDauXe2!= || $GioiTHieuTanNhiet1!= || $GioiTHieuTanNhiet2!= || $AnhThanXe1!= || $GioiTHieuThanXe1!= 
-    // || $AnhThanXe2!= || $GioiTHieuThanDuoi1!= || $AnhDuoiXe!= || $GioiTHieuDuoiXe1!= || $GioiTHieuDuoiXe2!= || $GioiTHieuNoiThat1!= || $GioiTHieuNoiThat2!= 
-    // || $GioiTHieuNoiThat3!= || $AnhKhoangLai!= || $GioiTHieuKhoangLai!= || $AnhHangGheTruoc!= || $GioiTHieuHangGheTruoc!= || $AnhHangGheHanhKhach!= 
-    // || $GioiTHieuKhoangHanhKhach1!= || $GioiTHieuKhoangHanhKhach2!= || $AnhHanhLy!= || $GioiTHieuHanhLy1!= || $GioiTHieuHanhLy2!= || $GioiTHieuTienNghi!=
-    // || $AnhTienNghi!= || $GioiTHieuCongNghe1!= || $GioiTHieuCongNghe2!= || $AnhDongCo!= || $GioiTHieuDongCo1!= || $GioiTHieuDongCo2!= || $AnhVanHanh!=
-    // || $GioiTHieuVanHanh1!= || $GioiTHieuVanHanh2!= || $GioiTHieuVanHanh3!= || $AnToan!= || $TieuChuan1!= || $TieuChuan2!= || $TieuChuan3!= || $TieuChuan4!=
-    // || $TieuChuan5!= || $TieuChuan6!= || $TieuChuan7!= || $TieuChuan8!= || $TieuChuan9!= || $TieuChuan10!= || $TieuChuan11!= || $TieuChuan12!=
+    // if($TenXe== || =$LoaiXe== || $DongGIoiThieu1== || $hinhanh1== || $DongGioiThieu2== || $SoChoNgoi== || $KieuXe== || $XuatXu== || $KichThuocDRC== || $ChieuDaiCoSo== || $DongCo== || $DungTichCongTac== 
+    // || $DungTichBinhNhienLieu== || $LoaiNhienLieu== || $CongSuatCucDai== || $MomenCucDai== || $HopSo== || $HeDanDong== || $HeThongTreo== || $TayLaiTroLuc== 
+    // || $CoMam== || $GiaNiemYet== || $GiaHCM== || $GiaHN== || $GiaTinhKhac== || $AnhMau1== || $AnhMau2== || $AnhMau3== || $GioiTHieuDienMao1== || $GioiTHieuDienMao2== 
+    // || $AnhDauXe1== || $GioiTHieuDauXe1== || $GioiTHieuDauXe2== || $AnhDauXe2== || $GioiTHieuTanNhiet1== || $GioiTHieuTanNhiet2== || $AnhThanXe1== || $GioiTHieuThanXe1== 
+    // || $AnhThanXe2== || $GioiTHieuThanDuoi1== || $AnhDuoiXe== || $GioiTHieuDuoiXe1== || $GioiTHieuDuoiXe2== || $GioiTHieuNoiThat1== || $GioiTHieuNoiThat2== 
+    // || $GioiTHieuNoiThat3== || $AnhKhoangLai== || $GioiTHieuKhoangLai== || $AnhHangGheTruoc== || $GioiTHieuHangGheTruoc== || $AnhHangGheHanhKhach== 
+    // || $GioiTHieuKhoangHanhKhach1== || $GioiTHieuKhoangHanhKhach2== || $AnhHanhLy== || $GioiTHieuHanhLy1== || $GioiTHieuHanhLy2== || $GioiTHieuTienNghi==
+    // || $AnhTienNghi== || $GioiTHieuCongNghe1== || $GioiTHieuCongNghe2== || $AnhDongCo== || $GioiTHieuDongCo1== || $GioiTHieuDongCo2== || $AnhVanHanh==
+    // || $GioiTHieuVanHanh1== || $GioiTHieuVanHanh2== || $GioiTHieuVanHanh3== || $AnToan== || $TieuChuan1== || $TieuChuan2== || $TieuChuan3== || $TieuChuan4==
+    // || $TieuChuan5== || $TieuChuan6== || $TieuChuan7== || $TieuChuan8== || $TieuChuan9== || $TieuChuan10== || $TieuChuan11== || $TieuChuan12==
     // ){
     //     echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="indexAdmin.php?action=Xem-Xe";</script>' ;
     //     //exit;
@@ -183,27 +183,13 @@
     
     if(isset($_POST['SuaCTXe']))
     {
-        if($hinhanh1!="" || $AnhMau1!="" || $AnhMau2!="" || $AnhMau3!="" || $AnhDauXe1!="" || $AnhDauXe2!="" || $AnhThanXe1!="" || $AnhThanXe2!="" || $AnhDuoiXe!="" || $AnhKhoangLai!="" || $AnhHangGheTruoc!="" || $AnhHangGheHanhKhach!="" || $AnhHanhLy!="" || $AnhTienNghi!="" || $AnhDongCo!="" || $AnhVanHanh!="")       
+        if($hinhanh1 =='' || $AnhMau1=='' || $AnhMau2=='' || $AnhMau3=='' || $AnhDauXe1=='' || $AnhDauXe2=='' || $AnhThanXe1=='' || $AnhThanXe2=='' || $AnhDuoiXe=='' || $AnhKhoangLai=='' || $AnhHangGheTruoc=='' || $AnhHangGheHanhKhach=='' || $AnhHanhLy=='' || $AnhTienNghi=='' || $AnhDongCo=='' || $AnhVanHanh=='')       
         {
-                move_uploaded_file($hinhanh1_tmp,'Uploads/'.$hinhanh1);
-                move_uploaded_file($AnhMau1_tmp,'Uploads/'.$AnhMau1);
-                move_uploaded_file($AnhMau2_tmp,'Uploads/'.$AnhMau2);
-                move_uploaded_file($AnhMau3_tmp,'Uploads/'.$AnhMau3);
-                move_uploaded_file($AnhDauXe1_tmp,'Uploads/'.$AnhDauXe1);
-                move_uploaded_file($AnhDauXe2_tmp,'Uploads/'.$AnhDauXe2);
-                move_uploaded_file($AnhThanXe1_tmp,'Uploads/'.$AnhThanXe1);
-                move_uploaded_file($AnhThanXe2_tmp,'Uploads/'.$AnhThanXe2);
-                move_uploaded_file($AnhDuoiXe_tmp,'Uploads/'.$AnhDuoiXe);
-                move_uploaded_file($AnhKhoangLai_tmp,'Uploads/'.$AnhKhoangLai);
-                move_uploaded_file($AnhHangGheTruoc_tmp,'Uploads/'.$AnhHangGheTruoc);
-                move_uploaded_file($AnhHangGheHanhKhach_tmp,'Uploads/'.$AnhHangGheHanhKhach);
-                move_uploaded_file($AnhHanhLy_tmp,'Uploads/'.$AnhHanhLy);
-                move_uploaded_file($AnhTienNghi_tmp,'Uploads/'.$AnhTienNghi);
-                move_uploaded_file($AnhDongCo_tmp,'Uploads/'.$AnhDongCo);
-                move_uploaded_file($AnhVanHanh_tmp,'Uploads/'.$AnhVanHanh);
-
-            $id=$_GET['idchitietxe'];
-            $sqlXoa = "SELECT * FROM chitietsanpham WHERE idchitietsanpham ='$id' LIMIT 1";
+            echo '<script> alert("Vui lòng không để trống ảnh");window.location="indexAdmin.php?action=Xem-Xe";</script>';
+            exit;
+        }
+                   
+            $sqlXoa = "SELECT * FROM chitietsanpham WHERE idchitietsanpham = '$_GET[idchitietxe]' LIMIT 1";
             $query = mysqli_query($mysqli,$sqlXoa);
         
             while($row = mysqli_fetch_array($query)){
@@ -224,27 +210,38 @@
                 unlink('Uploads/'.$row['AnhDongCo']);
                 unlink('Uploads/'.$row['AnhVanHanh']);
             }
-        
-                $sql_sua = "UPDATE chitietsanpham SET TenXe='".$TenXe."', IdLoaiXe='".$LoaiXe."', DongGioiThieu1='".$DongGIoiThieu1."',HinhAnh1='".$hinhanh1."', DongGioiTHieu2='".$DongGioiThieu2."'
-                ,SoChoNgoi='".$SoChoNgoi."', KieuXe='".$KieuXe."', XuatXu='".$XuatXu."', KichThuoc='".$KichThuocDRC."', ChieuDaiCoSo='".$ChieuDaiCoSo."', DongCo='".$DongCo."'
-                ,DungTichCongTac='".$DungTichCongTac."',DungTichBinhNhienLieu='".$DungTichBinhNhienLieu."',LoaiNhienLieu='".$LoaiNhienLieu."',CongSuatCucDai='".$CongSuatCucDai."',Momen='".$MomenCucDai."',HopSo='".$HopSo."',HeDanDong='".$HeDanDong."',HeThongTreo='".$HeThongTreo."',TayLaiTroLuc='".$TayLaiTroLuc."',CoMam='".$CoMam."',GiaXeNiemYet='".$GiaNiemYet."',GiaHCM='".$GiaHCM."',GiaHN='".$GiaHN."',GiaTinhKhac='".$GiaTinhKhac."',MauSac1='".$AnhMau1."'
-                ,MauSac2='".$AnhMau2."',MauSac3='".$AnhMau3."',DongDienMao1='".$GioiTHieuDienMao1."',DongDienMao2='".$GioiTHieuDienMao2."',AnhDauXe1='".$AnhDauXe1."',DongGioiThieuDauXe1='".$GioiTHieuDauXe1."',DongGioiThieuDauXe2='".$GioiTHieuDauXe2."',AnhDauXe2='".$AnhDauXe2."',DongGioiThieuTanNhiet1='".$GioiTHieuTanNhiet1."',DongGioiThieuTanNhiet2='".$GioiTHieuTanNhiet2."'
-                ,AnhThanXe1='".$AnhThanXe1."',DongGioiThieuThanXe1='".$GioiTHieuThanXe1."',AnhThanXe2='".$AnhThanXe2."',DongGioiThieuThanDuoi1='".$GioiTHieuThanDuoi1."',AnhDuoiXe='".$AnhDuoiXe."',DongGioiThieuDuoiXe1='".$GioiTHieuDuoiXe1."',DongGioiThieuDuoiXe2='".$GioiTHieuDuoiXe2."',DongGioiThieuNoiThat1='".$GioiTHieuNoiThat1."',DongGioiThieuNoiThat2='".$GioiTHieuNoiThat2."',DongGioiThieuNoiThat3='".$GioiTHieuNoiThat3."',AnhKhoangLai1='".$AnhKhoangLai."',DongGioiThieuKhoangLai='".$GioiTHieuKhoangLai."',AnhGheTruoc='".$AnhHangGheTruoc."',DongGioiThieuHangGheTruoc='".$GioiTHieuHangGheTruoc."',AnhKhoangHanhKhach='".$AnhHangGheHanhKhach."'
-                ,DongGioiThieuKhoangHanhKhach1='".$GioiTHieuKhoangHanhKhach1."',DongGioiThieuKhoangHanhKhach2='".$GioiTHieuKhoangHanhKhach2."',AnhKhoangHanhLy='".$AnhHanhLy."',DongGioiThieuKhoangHanhLy1='".$GioiTHieuHanhLy1."',DongGioiThieuKhoangHanhLy2='".$GioiTHieuHanhLy2."',DongGioiThieuTienNghi='".$GioiTHieuTienNghi."',AnhTienNghi='".$AnhTienNghi."',DongGioiThieuCongNghe1='".$GioiTHieuCongNghe1."',DongGioiThieuCongNghe2='".$GioiTHieuCongNghe2."',AnhDongCo='".$AnhDongCo."'
-                ,DongGioiThieuDongCo1='".$GioiTHieuDongCo1."',DongGioiThieuDongCo2='".$GioiTHieuDongCo2."',AnhVanHanh='".$AnhVanHanh."',DongGioiThieuVanHanh1='".$GioiTHieuVanHanh1."',DongGioiThieuVanHanh2='".$GioiTHieuVanHanh2."',DongGioiThieuVanHanh3='".$GioiTHieuVanHanh3."',DongAnhToan='".$AnToan."',TieuChuan1='".$TieuChuan1."',TieuChuan2='".$TieuChuan2."',TieuChuan3='".$TieuChuan3."'
-                ,TieuChuan4='".$TieuChuan4."',TieuChuan5='".$TieuChuan5."',TieuChuan6='".$TieuChuan6."',TieuChuan7='".$TieuChuan7."',TieuChuan8='".$TieuChuan8."',TieuChuan9='".$TieuChuan9."',TieuChuan10='".$TieuChuan10."',TieuChuan11='".$TieuChuan11."',TieuChuan12='".$TieuChuan12."' WHERE idchitietsanpham='$_GET[idchitietxe]'";
+             
+                $sql_sua = "UPDATE chitietsanpham SET TenXe='$TenXe', IdLoaiXe='$LoaiXe', DongGioiThieu1='$DongGIoiThieu1',HinhAnh1='$hinhanh1', DongGioiTHieu2='$DongGioiThieu2'
+                ,SoChoNgoi='$SoChoNgoi', KieuXe='$KieuXe', XuatXu='$XuatXu', KichThuoc='$KichThuocDRC', ChieuDaiCoSo='$ChieuDaiCoSo', DongCo='$DongCo'
+                ,DungTichCongTac='$DungTichCongTac',DungTichBinhNhienLieu='$DungTichBinhNhienLieu',LoaiNhienLieu='$LoaiNhienLieu',CongSuatCucDai='$CongSuatCucDai',Momen='$MomenCucDai',HopSo='$HopSo',HeDanDong='$HeDanDong',HeThongTreo='$HeThongTreo',TayLaiTroLuc='$TayLaiTroLuc',CoMam='$CoMam',GiaXeNiemYet='$GiaNiemYet',GiaHCM='$GiaHCM',GiaHN='$GiaHN',GiaTinhKhac='$GiaTinhKhac',MauSac1='$AnhMau1'
+                ,MauSac2='$AnhMau2',MauSac3='$AnhMau3',DongDienMao1='$GioiTHieuDienMao1',DongDienMao2='$GioiTHieuDienMao2',AnhDauXe1='$AnhDauXe1',DongGioiThieuDauXe1='$GioiTHieuDauXe1',DongGioiThieuDauXe2='$GioiTHieuDauXe2',AnhDauXe2='$AnhDauXe2',DongGioiThieuTanNhiet1='$GioiTHieuTanNhiet1',DongGioiThieuTanNhiet2='$GioiTHieuTanNhiet2'
+                ,AnhThanXe1='$AnhThanXe1',DongGioiThieuThanXe1='$GioiTHieuThanXe1',AnhThanXe2='$AnhThanXe2',DongGioiThieuThanDuoi1='$GioiTHieuThanDuoi1',AnhDuoiXe='$AnhDuoiXe',DongGioiThieuDuoiXe1='$GioiTHieuDuoiXe1',DongGioiThieuDuoiXe2='$GioiTHieuDuoiXe2',DongGioiThieuNoiThat1='$GioiTHieuNoiThat1',DongGioiThieuNoiThat2='$GioiTHieuNoiThat2',DongGioiThieuNoiThat3='$GioiTHieuNoiThat3',AnhKhoangLai1='$AnhKhoangLai',DongGioiThieuKhoangLai='$GioiTHieuKhoangLai',AnhGheTruoc='$AnhHangGheTruoc',DongGioiThieuHangGheTruoc='$GioiTHieuHangGheTruoc',AnhKhoangHanhKhach='$AnhHangGheHanhKhach'
+                ,DongGioiThieuKhoangHanhKhach1='$GioiTHieuKhoangHanhKhach1',DongGioiThieuKhoangHanhKhach2='$GioiTHieuKhoangHanhKhach2',AnhKhoangHanhLy='$AnhHanhLy',DongGioiThieuKhoangHanhLy1='$GioiTHieuHanhLy1',DongGioiThieuKhoangHanhLy2='$GioiTHieuHanhLy2',DongGioiThieuTienNghi='$GioiTHieuTienNghi',AnhTienNghi='$AnhTienNghi',DongGioiThieuCongNghe1='$GioiTHieuCongNghe1',DongGioiThieuCongNghe2='$GioiTHieuCongNghe2',AnhDongCo='$AnhDongCo'
+                ,DongGioiThieuDongCo1='$GioiTHieuDongCo1',DongGioiThieuDongCo2='$GioiTHieuDongCo2',AnhVanHanh='$AnhVanHanh',DongGioiThieuVanHanh1='$GioiTHieuVanHanh1',DongGioiThieuVanHanh2='$GioiTHieuVanHanh2',DongGioiThieuVanHanh3='$GioiTHieuVanHanh3',DongAnhToan='$AnToan',TieuChuan1='$TieuChuan1',TieuChuan2='$TieuChuan2',TieuChuan3='$TieuChuan3'
+                ,TieuChuan4='$TieuChuan4',TieuChuan5='$TieuChuan5',TieuChuan6='$TieuChuan6',TieuChuan7='$TieuChuan7',TieuChuan8='$TieuChuan8',TieuChuan9='$TieuChuan9',TieuChuan10='$TieuChuan10',TieuChuan11='$TieuChuan11',TieuChuan12='$TieuChuan12' Where idchitietsanpham = '$_GET[idchitietxe]'";
                 
-            }
-        // else{
-        //     //echo '<script> alert("Vui lòng không để trống ảnh");window.location="indexAdmin.php?action=Xem-Xe";</script>';
-        //     //exit;
-        // }
+
         mysqli_query($mysqli,$sql_sua);
 
-                
+        move_uploaded_file($hinhanh1_tmp,'Uploads/'.$hinhanh1);
+        move_uploaded_file($AnhMau1_tmp,'Uploads/'.$AnhMau1);
+        move_uploaded_file($AnhMau2_tmp,'Uploads/'.$AnhMau2);
+        move_uploaded_file($AnhMau3_tmp,'Uploads/'.$AnhMau3);
+        move_uploaded_file($AnhDauXe1_tmp,'Uploads/'.$AnhDauXe1);
+        move_uploaded_file($AnhDauXe2_tmp,'Uploads/'.$AnhDauXe2);
+        move_uploaded_file($AnhThanXe1_tmp,'Uploads/'.$AnhThanXe1);
+        move_uploaded_file($AnhThanXe2_tmp,'Uploads/'.$AnhThanXe2);
+        move_uploaded_file($AnhDuoiXe_tmp,'Uploads/'.$AnhDuoiXe);
+        move_uploaded_file($AnhKhoangLai_tmp,'Uploads/'.$AnhKhoangLai);
+        move_uploaded_file($AnhHangGheTruoc_tmp,'Uploads/'.$AnhHangGheTruoc);
+        move_uploaded_file($AnhHangGheHanhKhach_tmp,'Uploads/'.$AnhHangGheHanhKhach);
+        move_uploaded_file($AnhHanhLy_tmp,'Uploads/'.$AnhHanhLy);
+        move_uploaded_file($AnhTienNghi_tmp,'Uploads/'.$AnhTienNghi);
+        move_uploaded_file($AnhDongCo_tmp,'Uploads/'.$AnhDongCo);
+        move_uploaded_file($AnhVanHanh_tmp,'Uploads/'.$AnhVanHanh);    
 
         
 
-        //echo '<script> alert("Bạn đã sửa thành công");window.location="indexAdmin.php?action=Xem-Xe";</script>';
+        echo '<script> alert("Bạn đã sửa thành công");window.location="indexAdmin.php?action=Xem-Xe";</script>';
     } 
 ?>
