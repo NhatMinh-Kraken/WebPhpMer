@@ -2062,3 +2062,69 @@
     .button-laithu-1 .button-laithu-link-3:hover {
         background-color: #00ef93;
     }
+    /****************************************************************************** Accesory *********************************************************************************/
+    
+    .sidebar {
+        min-height: calc(70vh - 30px);
+    }
+    
+    .sidebar-Accesory {
+        width: 100%;
+        display: flex;
+    }
+    
+    .nav-item-menu {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin: 15px;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-items {
+        border: 1px solid #00ADEF;
+    }
+    
+    .NganCach {
+        border: 2px solid #191c24;
+    }
+    
+    .nav-link-bg {
+        background-color: #00ADEF;
+    }
+    
+    .sidebar .nav.sub-menu .nav-item {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 200;
+        text-align: start;
+        margin-bottom: 5px;
+        padding-top: 10px;
+    }
+    
+    .sidebar .nav.sub-menu {
+        padding: 0 0 0 3.0rem;
+        padding-bottom: 20px;
+    }
+    
+    .sidebar .nav.nav-assesory {
+        padding-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+    
+    .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1 {
+        color: #00ADEF;
+    }
+    
+    .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1:hover {
+        color: red;
+    }
+    
+    .sidebar .nav .nav-item {
+        padding-right: 0px;
+    }

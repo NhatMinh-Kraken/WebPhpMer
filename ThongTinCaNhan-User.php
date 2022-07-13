@@ -41,7 +41,7 @@
 
                 <div class="form-group">
                     <lable>GioiTinh</lable>
-                    <input type="text" name="GioiTinh" class="form-control" value="<?php if($row['GioiTinh'] == 1 ) {echo 'Nam';} else{echo 'Nữ';}?>">
+                    <input type="text" name="GioiTinh" class="form-control" value="<?php echo $row['GioiTinh']?>">
                 </div>
 
                 <div class="footer-laithu">

@@ -2273,7 +2273,7 @@
     
     .ThongTin-Profile-Left {
         display: flex;
-        width: 25%;
+        width: 28%;
         padding-bottom: 30px;
         background: #FFF;
         border: 1px solid #f4f6f7;
@@ -2299,6 +2299,7 @@
     
     .ThongTin-Left {
         padding-left: 30px;
+        padding-right: 30px;
     }
     
     .ThongTinCaNhan-AnhDaiDien-Left {
