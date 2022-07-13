@@ -32,13 +32,15 @@
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
-              <span class="menu-title">Sản Phẩm Xe</span>
+              <span class="menu-title">Thêm Sản Phẩm</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basicc">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Product-Car">Thêm Loại Xe</a></li>
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Thêm Xe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Accesory">Thêm Loại Phụ Kiện</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Add-Accesory">Thêm Phụ Kiện</a></li>
               </ul>
             </div>
           </li>
@@ -58,12 +60,19 @@
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/tables/basic-table.html">
+            <a class="nav-link" data-toggle="collapse" href="#Accesory" aria-expanded="false" aria-controls="Accesory">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">Phụ Kiện</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="Accesory">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="?action=Default-Type-Accesory">Xem Loại Phụ Kiện</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Default-Accesory">Xem Phụ Kiện</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">

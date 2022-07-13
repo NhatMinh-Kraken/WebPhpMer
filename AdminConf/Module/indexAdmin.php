@@ -85,6 +85,34 @@
               {
                 include("Xem-Xe.php");
               }
+              elseif($tam=='Add-Type-Accesory')
+              {
+                include("Add-Type-Accesory.php");
+              }
+              elseif($tam=='Add-Type-Accesory-Body')
+              {
+                include("Add-Type-Accesory-Body.php");
+              }
+              elseif($tam=='Add-Type-Accesory-BaoVe')
+              {
+                include("Add-Type-Accesory-BaoVe.php");
+              }
+              elseif($tam=='Add-Type-Accesory-TienNghi')
+              {
+                include("Add-Type-Accesory-TienNghi.php");
+              }
+              elseif($tam=='Add-Type-Accesory-TrangTri')
+              {
+                include("Add-Type-Accesory-TrangTri.php");
+              }
+              elseif($tam=='Add-Type-Accesory-MamXe')
+              {
+                include("Add-Type-Accesory-MamXe.php");
+              }
+              elseif($tam=='Default-Type-Accesory')
+              {
+                include("Default-Type-Accesory.php");
+              }
               else{
                 include("Admin-IndexAdmin-Content.php");
               }
