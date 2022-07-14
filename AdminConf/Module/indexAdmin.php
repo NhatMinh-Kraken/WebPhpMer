@@ -113,6 +113,26 @@
               {
                 include("Default-Type-Accesory.php");
               }
+              elseif($tam=='Edit-Type-Accesory1')
+              {
+                include("Edit-Type-Accesory1.php");
+              }
+              elseif($tam=='Edit-Type-Accesory2')
+              {
+                include("Edit-Type-Accesory2.php");
+              }
+              elseif($tam=='Edit-Type-Accesory3')
+              {
+                include("Edit-Type-Accesory3.php");
+              }
+              elseif($tam=='Edit-Type-Accesory4')
+              {
+                include("Edit-Type-Accesory4.php");
+              }
+              elseif($tam=='Edit-Type-Accesory5')
+              {
+                include("Edit-Type-Accesory5.php");
+              }
               else{
                 include("Admin-IndexAdmin-Content.php");
               }

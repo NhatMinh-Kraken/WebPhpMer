@@ -2115,6 +2115,7 @@
         padding-left: 10px;
         margin-bottom: 10px;
         padding-top: 30px;
+        width: 100%;
     }
     
     .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1 {
@@ -2127,4 +2128,26 @@
     
     .sidebar .nav .nav-item {
         padding-right: 0px;
+    }
+
+    .Muc-TieuDe-trangthai-Accesory{
+        display: flex;
+        width: 50%;
+    }
+
+    .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        
+    }
+
+    .nav-item-name{
+        display: flex;
+        width: 90%;
+    }
+
+    .nav-item-names{
+        display: flex;
     }

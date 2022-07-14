@@ -22,7 +22,7 @@ if(isset($_POST['ThemLoaiPhuKienBody']))
 
     mysqli_query($mysqli,$sql_ThemLoaiPhuKienBody);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Add-Type-Accesory-Body";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
 }
 
 
@@ -48,7 +48,7 @@ if(isset($_POST['ThemLoaiPhuKienBaoVe']))
 
     mysqli_query($mysqli,$sql_ThemLoaiPhuKienBaoVe);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Add-Type-Accesory-BaoVe";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
 }
 
 
@@ -74,7 +74,7 @@ if(isset($_POST['ThemLoaiPhuKienTienNghi']))
 
     mysqli_query($mysqli,$sql_ThemLoaiPhuKienTienNghi);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Add-Type-Accesory-TienNghi";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
 }
 
 
@@ -100,7 +100,7 @@ if(isset($_POST['ThemLoaiPhuKienTrangTri']))
 
     mysqli_query($mysqli,$sql_ThemLoaiPhuKienTrangTri);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Add-Type-Accesory-TrangTri";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
 }
 
 
@@ -127,7 +127,7 @@ if(isset($_POST['ThemLoaiPhuKienMamXe']))
 
     mysqli_query($mysqli,$sql_ThemLoaiPhuKienMamXe);
 
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Add-Type-Accesory-TrangTri";</script>';
+    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
 }
 
 
