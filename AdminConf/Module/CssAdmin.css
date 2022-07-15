@@ -2154,6 +2154,45 @@
         justify-content: center;
     }
 
-    .nav-item-names{
+    .nav-item-name{
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 200;
+        justify-content: center;
+    }
 
+    .nav-item-namee{
+        display: flex;
+        width: 100%;
+    }
+
+    .Muc-TieuDe-trangthai-Accesory1{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    .Muc-TieuDe-trangthai-Accesory1 .button-laithu-link-01{
+        padding-right: 20px;
+        color: #00ADEF;
+    }
+
+    .Muc-TieuDe-trangthai-Accesory1 .button-laithu-link-01:hover{
+        color: red;
+    }
+
+    .NganCach1{
+        border: 2px solid #00ADEF;
+    }
+
+    .nav-item-name1{
+        display: flex;
+        width: 50%;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 200;
+        justify-content: flex-start;
+        padding-left: 15px;
     }

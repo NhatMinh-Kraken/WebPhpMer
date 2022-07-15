@@ -138,6 +138,28 @@
                 include("Edit-Type-Accesory5.php");
               }
 
+              elseif($tam=='Default-Accesory-Body')
+              {
+                include("Default-Accesory-Body.php");
+              }
+              elseif($tam=='Default-Accesory-BaoVe')
+              {
+                include("Default-Accesory-BaoVe.php");
+              }
+              elseif($tam=='Default-Accesory-TienNghi')
+              {
+                include("Default-Accesory-TienNghi.php");
+              }
+              elseif($tam=='Default-Accesory-TrangTri')
+              {
+                include("Default-Accesory-TrangTri.php");
+              }
+              elseif($tam=='Default-Accesory-MamXe')
+              {
+                include("Default-Accesory-MamXe.php");
+              }
+
+
 
               elseif($tam=='Default-Accesory1')
               {
@@ -183,6 +205,29 @@
               elseif($tam=='Add-Accesory5')
               {
                 include("Add-Accesory5.php");
+              }
+
+
+
+              elseif($tam=='Edit-Accesory-Body')
+              {
+                include("Edit-Accesory-Body.php");
+              }
+              elseif($tam=='Edit-Accesory-BaoVe')
+              {
+                include("Edit-Accesory-BaoVe.php");
+              }
+              elseif($tam=='Edit-Accesory-TienNghi')
+              {
+                include("Edit-Accesory-TienNghi.php");
+              }
+              elseif($tam=='Edit-Accesory-TrangTri')
+              {
+                include("Edit-Accesory-TrangTri.php");
+              }
+              elseif($tam=='Edit-Accesory-MamXe')
+              {
+                include("Edit-Accesory-MamXe.php");
               }
 
               else{
