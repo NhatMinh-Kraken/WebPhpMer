@@ -2095,6 +2095,7 @@
     
     .nav-link-bg {
         background-color: #00ADEF;
+        height: 60px;
     }
     
     .sidebar .nav.sub-menu .nav-item {
@@ -2116,6 +2117,7 @@
         margin-bottom: 10px;
         padding-top: 30px;
         width: 100%;
+        padding-right: 10px;
     }
     
     .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1 {
@@ -2132,7 +2134,7 @@
 
     .Muc-TieuDe-trangthai-Accesory{
         display: flex;
-        width: 50%;
+        width:100%;
     }
 
     .Muc-TieuDe-trangthai-Accesory .button-laithu-link-1{
@@ -2145,9 +2147,13 @@
 
     .nav-item-name{
         display: flex;
-        width: 90%;
+        width: 100%;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 200;
+        justify-content: center;
     }
 
     .nav-item-names{
-        display: flex;
+
     }

@@ -109,10 +109,14 @@
               {
                 include("Add-Type-Accesory-MamXe.php");
               }
+
+
               elseif($tam=='Default-Type-Accesory')
               {
                 include("Default-Type-Accesory.php");
               }
+
+
               elseif($tam=='Edit-Type-Accesory1')
               {
                 include("Edit-Type-Accesory1.php");
@@ -133,6 +137,54 @@
               {
                 include("Edit-Type-Accesory5.php");
               }
+
+
+              elseif($tam=='Default-Accesory1')
+              {
+                include("Default-Accesory1.php");
+              }
+              elseif($tam=='Default-Accesory2')
+              {
+                include("Default-Accesory2.php");
+              }
+              elseif($tam=='Default-Accesory3')
+              {
+                include("Default-Accesory3.php");
+              }
+              elseif($tam=='Default-Accesory4')
+              {
+                include("Default-Accesory4.php");
+              }
+              elseif($tam=='Default-Accesory5')
+              {
+                include("Default-Accesory5.php");
+              }
+
+              elseif($tam=='Add-Accesory')
+              {
+                include("Add-Accesory.php");
+              }
+              elseif($tam=='Add-Accesory1')
+              {
+                include("Add-Accesory1.php");
+              }
+              elseif($tam=='Add-Accesory2')
+              {
+                include("Add-Accesory2.php");
+              }
+              elseif($tam=='Add-Accesory3')
+              {
+                include("Add-Accesory3.php");
+              }
+              elseif($tam=='Add-Accesory4')
+              {
+                include("Add-Accesory4.php");
+              }
+              elseif($tam=='Add-Accesory5')
+              {
+                include("Add-Accesory5.php");
+              }
+
               else{
                 include("Admin-IndexAdmin-Content.php");
               }

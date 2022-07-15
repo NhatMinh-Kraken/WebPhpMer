@@ -57,6 +57,8 @@
                                                 </div>
 
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory1&idaccesory=<?php echo $row1['IdLoaiPhuKienBody'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Type-Accesory1&idaccesory=<?php echo $row1['IdLoaiPhuKienBody'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
                                                     <a href="XuLyXoaLoaiPhuKien1.php?idaccesory=<?php echo $row1['IdLoaiPhuKienBody'] ?>"
@@ -97,6 +99,8 @@
                                                     <?php echo $row2['TenLoaiPhuKienBaoVe']; ?>
                                                 </div>
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory2&idaccesory=<?php echo $row2['IdLoaiPhuKienBaoVe'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Type-Accesory2&idaccesory=<?php echo $row2['IdLoaiPhuKienBaoVe'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i>
                                                     </a>
@@ -138,6 +142,8 @@
                                                     <?php echo $row3['TenLoaiPhuKienTienNghi']; ?>
                                                 </div>
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory3&idaccesory=<?php echo $row3['IdLoaiPhuKienTienNghi'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Type-Accesory3&idaccesory=<?php echo $row3['IdLoaiPhuKienTienNghi'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
                                                     <a href="XuLyXoaLoaiPhuKien3.php?idaccesory=<?php echo $row3['IdLoaiPhuKienTienNghi'] ?>"
@@ -178,6 +184,8 @@
                                                     <?php echo $row4['TenLoaiPhuKienTrangTri']; ?>
                                                 </div>
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory4&idaccesory=<?php echo $row4['IdLoaiPhuKienTrangTri'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Type-Accesory4&idaccesory=<?php echo $row4['IdLoaiPhuKienTrangTri'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
                                                     <a href="XuLyXoaLoaiPhuKien4.php?idaccesory=<?php echo $row4['IdLoaiPhuKienTrangTri'] ?>"
@@ -218,6 +226,8 @@
                                                     <?php echo $row5['TenLoaiPhuKienMamXe']; ?>
                                                 </div>
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory5&idaccesory=<?php echo $row5['IdLoaiPhuKienMamXe'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Type-Accesory5&idaccesory=<?php echo $row5['IdLoaiPhuKienMamXe'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
                                                     <a href="XuLyXoaLoaiPhuKien5.php?idaccesory=<?php echo $row5['IdLoaiPhuKienMamXe'] ?>"
