@@ -197,13 +197,7 @@
                                 </p>
                             </div>
                             
-                        <div class="footer-laithu">
-                            <div class="button-laithu">
-                                <a href="XuLyXoaChiTietXe.php?idchitietsanpham=<?php echo $row['IdChiTietPhuKienMamXe'] ?>"
-                                    class="button-laithu-link" name="SuaCTXe"><i class="bi bi-trash">Xóa Chi Tiết
-                                        Phụ Kiện</i></a>
-                            </div>
-                        </div>
+                        
                         <?php
                             }
                         ?>

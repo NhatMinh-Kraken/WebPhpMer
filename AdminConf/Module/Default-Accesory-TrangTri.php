@@ -43,7 +43,7 @@
                                                 <span class="Muc-TieuDe-trangthai-Accesory1">
                                                     <a href="?action=Default-Accesory4&idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-eye"></i></a>
-                                                    <a href="?action=Edit-Type-Accesory1&idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
+                                                    <a href="?action=Edit-Accesory-TrangTri&idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-pencil"></i></a>
                                                     <a href="XuLyXoaLoaiPhuKien1.php?idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-trash"></i>

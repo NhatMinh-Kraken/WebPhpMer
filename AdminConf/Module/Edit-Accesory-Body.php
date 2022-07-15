@@ -17,7 +17,7 @@
                             Phụ Kiện Body Mercesde-Benz, Chất Lượng, Uy Tín Đặt Lên Hàng Đầu
                         </h1>
                     </div>
-                    <form method="POST" action="XuLySuaPhuKien.php" enctype="multipart/form-data">
+                    <form method="POST" action="XuLySuaPhuKien.php?idaccesory=<?php echo $_GET['idaccesory'] ?>" enctype="multipart/form-data">
                         <?php
                             while($row = mysqli_fetch_array($query_sua_PhuKien))
                             {

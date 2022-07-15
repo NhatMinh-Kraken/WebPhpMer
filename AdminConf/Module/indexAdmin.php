@@ -237,11 +237,7 @@
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <?php
-              include("Admin-IndexAdmin-Footer.php");
-            ?>
-          </footer>
+          
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
