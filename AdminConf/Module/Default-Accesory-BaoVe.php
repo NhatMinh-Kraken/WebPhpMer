@@ -44,7 +44,7 @@
                                                     <a href="?action=Default-Accesory2&idaccesory=<?php echo $row1['IdChiTietPhuKienBaoVe'] ?>" class="button-laithu-link-01"><i class="bi bi-eye"></i></a>
                                                     <a href="?action=Edit-Accesory-BaoVe&idaccesory=<?php echo $row1['IdChiTietPhuKienBaoVe'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-pencil"></i></a>
-                                                    <a href="XuLyXoaLoaiPhuKien1.php?idaccesory=<?php echo $row1['IdChiTietPhuKienBaoVe'] ?>"
+                                                    <a href="XuLyXoaPhuKien2.php?idaccesory=<?php echo $row1['IdChiTietPhuKienBaoVe'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-trash"></i>
                                                     </a>
                                                 </span>

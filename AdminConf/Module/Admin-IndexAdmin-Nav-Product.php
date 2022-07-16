@@ -70,7 +70,6 @@
             <div class="collapse" id="Accesory">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?action=Default-Type-Accesory">Xem Loại Phụ Kiện</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?action=Default-Accesory-Body">Xem Phụ Kiện</a></li>
               </ul>
             </div>
           </li>
