@@ -21,7 +21,7 @@
                                         <p>Tìm xe có sẵn tại đại lý và nhận báo giá</p>
                                     </div>
                                     <div class="button-deafault">
-                                        <a href="#" class="button-deafault-link" role="button">
+                                        <a href="Register-LaiThu.php" class="button-deafault-link" role="button">
                                             <span class="button-deafault-text">Nhận báo giá</span>
                                         </a>
                                     </div>
@@ -40,7 +40,7 @@
                                         <p>Tìm xe có sẵn tại đại lý và nhận báo giá</p>
                                     </div>
                                     <div class="button-deafault">
-                                        <a href="#" class="button-deafault-link" role="button">
+                                        <a href="Register-LaiThu.php" class="button-deafault-link" role="button">
                                             <span class="button-deafault-text">Nhận báo giá</span>
                                         </a>
                                     </div>
@@ -59,7 +59,7 @@
                                         <p>Tìm xe có sẵn tại đại lý và nhận báo giá</p>
                                     </div>
                                     <div class="button-deafault">
-                                        <a href="#" class="button-deafault-link" role="button">
+                                        <a href="Register-LaiThu.php" class="button-deafault-link" role="button">
                                             <span class="button-deafault-text">Nhận báo giá</span>
                                         </a>
                                     </div>

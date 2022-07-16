@@ -48,7 +48,11 @@
             }
             if($tam =='danhmucsanpham'){
                 include("Product/Product-Type.php");
-            }else{
+            }
+            elseif($tam =='Product-Detail'){
+                include("Product/Product-Detail.php");
+            }
+            else{
                 include("Product/Product-car.php");
             }
         ?>
