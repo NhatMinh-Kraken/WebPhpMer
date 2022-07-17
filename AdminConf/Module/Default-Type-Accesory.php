@@ -1,6 +1,9 @@
 <?php
     include('config.php');
 
+    $sql_lietke_loaiphukien_0 = "SELECT * FROM loaiphukiennoithatngoaithat ORDER BY TenLoaiPhuKienNoiThatNgoaiThat	ASC";
+    $query_lietke_loaiphukien_0 = mysqli_query($mysqli,$sql_lietke_loaiphukien_0);
+
     $sql_lietke_loaiphukien_1 = "SELECT * FROM loaiphukienbody ORDER BY IdLoaiPhuKienBody ASC";
     $query_lietke_loaiphukien_1 = mysqli_query($mysqli,$sql_lietke_loaiphukien_1);
     
@@ -34,6 +37,48 @@
                 </div>
                 <div class="sidebar sidebar-Accesory" id="sidebar">
                     <ul class="nav-item-menu">
+                    <li class="nav-item menu-items nav-items">
+                            <a class="nav-link nav-link-bg" data-toggle="collapse" href="#LoaiPhuKienNgoaiThatNoiThat"
+                                aria-expanded="false" aria-controls="LoaiPhuKienNgoaiThatNoiThat">
+                                <span class="menu-icon">
+                                    <i class="mdi mdi-table-large"></i>
+                                </span>
+                                <span class="menu-title">Phụ Kiện Ngoại Thất - Nội Thất</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <?php
+                                    while($row0 = mysqli_fetch_array($query_lietke_loaiphukien_0))
+                                    {
+                                ?>
+                            <div class="collapse" id="LoaiPhuKienNgoaiThatNoiThat">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="nav flex-column nav-assesory">
+                                            <li class="nav-item nav-item-names">
+                                                <div class="nav-item-name">
+                                                    <?php echo $row0['TenLoaiPhuKienNoiThatNgoaiThat']; ?>
+                                                </div>
+
+                                                <span class="Muc-TieuDe-trangthai-Accesory">
+                                                    <a href="?action=Default-Accesory-NoiThatNgoaiThat"
+                                                        class="button-laithu-link-1"><i class="bi bi-list"></i></a>
+                                                    <a href="?action=Edit-Type-Accesory0&idaccesory=<?php echo $row0['IdLoaiPhuKienNoiThatNgoaiThat'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>
+                                                    <a href="XuLyXoaLoaiPhuKien0.php?idaccesory=<?php echo $row0['IdLoaiPhuKienNoiThatNgoaiThat'] ?>"
+                                                        class="button-laithu-link-1"><i class="bi bi-trash"></i>
+                                                    </a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <?php    
+                                    }
+                                ?>
+                        </li>
+                        <div class="NganCach"></div>
                         <li class="nav-item menu-items nav-items">
                             <a class="nav-link nav-link-bg" data-toggle="collapse" href="#LoaiPhuKienBody"
                                 aria-expanded="false" aria-controls="LoaiPhuKienBody">

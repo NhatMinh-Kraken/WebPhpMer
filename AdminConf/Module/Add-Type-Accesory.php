@@ -11,6 +11,7 @@
                     </div>
                         <div class="footer-laithu-1">
                             <div class="button-laithu-1">
+                                <a href="?action=Add-Type-Accesory-NgoaiThatNoiThat" class="button-laithu-link-3" type="submit">Phụ Kiện Ngoại-Nội Thất</a>
                                 <a href="?action=Add-Type-Accesory-Body" class="button-laithu-link-3" type="submit">Phụ Kiện Body</a>
                                 <a href="?action=Add-Type-Accesory-BaoVe" class="button-laithu-link-3" type="submit">Phụ Kiện Bảo Vệ</a>
                                 <a href="?action=Add-Type-Accesory-TienNghi" class="button-laithu-link-3" type="submit">Phụ Kiện Tiện Nghi</a>

@@ -1,6 +1,33 @@
 <?php
 include('config.php');
 
+if(isset($_POST['SuaLoaiPhuKien0']))
+{
+    $LoaiPhuKien0 = $_POST['LoaiPhuKienNoiThatNgoaiThat'];
+
+    if(!$LoaiPhuKien0)
+    {
+        echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>' ;
+        exit;
+    }
+
+    $ktLoaiPhuKien0 = mysqli_query($mysqli,"SELECT TenLoaiPhuKienNoiThatNgoaiThat FROM loaiphukiennoithatngoaithat WHERE TenLoaiPhuKienNoiThatNgoaiThat='$LoaiPhuKien0'");
+
+    if(mysqli_num_rows($ktLoaiPhuKien0) == 1)
+    {
+        echo '<script language="javascript"> alert("Loại Kiện đã tồn tại."); window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>' ;
+        exit;
+    }
+
+
+    $sql_sualoaiphukien0 = "UPDATE loaiphukiennoithatngoaithat SET TenLoaiPhuKienNoiThatNgoaiThat='".$LoaiPhuKien0."' Where IdLoaiPhuKienNoiThatNgoaiThat='$_GET[idaccesory]'";
+
+    mysqli_query($mysqli,$sql_sualoaiphukien0);
+
+    echo '<script> alert("Bạn đã sửa thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
+}
+
+
 if(isset($_POST['SuaLoaiPhuKien1']))
 {
     $LoaiPhuKien1 = $_POST['LoaiPhuKienBody'];

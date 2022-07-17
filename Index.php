@@ -46,12 +46,13 @@
             }else{
                 $tam ='';
             }
-            if($tam =='danhmucsanpham'){
+            if($tam =='danhmucsanphamxe'){
                 include("Product/Product-Type.php");
             }
             elseif($tam =='Product-Detail'){
                 include("Product/Product-Detail.php");
             }
+            
             else{
                 include("Product/Product-car.php");
             }

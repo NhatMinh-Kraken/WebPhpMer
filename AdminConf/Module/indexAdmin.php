@@ -89,6 +89,10 @@
               {
                 include("Add-Type-Accesory.php");
               }
+              elseif($tam=='Add-Type-Accesory-NgoaiThatNoiThat')
+              {
+                include("Add-Type-Accesory-NgoaiThatNoiThat.php");
+              }
               elseif($tam=='Add-Type-Accesory-Body')
               {
                 include("Add-Type-Accesory-Body.php");
@@ -115,7 +119,10 @@
               {
                 include("Default-Type-Accesory.php");
               }
-
+              elseif($tam=='Edit-Type-Accesory0')
+              {
+                include("Edit-Type-Accesory0.php");
+              }
 
               elseif($tam=='Edit-Type-Accesory1')
               {
@@ -138,6 +145,16 @@
                 include("Edit-Type-Accesory5.php");
               }
 
+              elseif($tam=='Edit-Accesory-NoiThatNgoaiThat')
+              {
+                include("Edit-Accesory-NoiThatNgoaiThat.php");
+              }
+
+
+              elseif($tam=='Default-Accesory-NoiThatNgoaiThat')
+              {
+                include("Default-Accesory-NoiThatNgoaiThat.php");
+              }
               elseif($tam=='Default-Accesory-Body')
               {
                 include("Default-Accesory-Body.php");
@@ -160,7 +177,10 @@
               }
 
 
-
+              elseif($tam=='Default-Accesory0')
+              {
+                include("Default-Accesory0.php");
+              }
               elseif($tam=='Default-Accesory1')
               {
                 include("Default-Accesory1.php");
@@ -182,9 +202,15 @@
                 include("Default-Accesory5.php");
               }
 
+
+
               elseif($tam=='Add-Accesory')
               {
                 include("Add-Accesory.php");
+              }
+              elseif($tam=='Add-Accesory0')
+              {
+                include("Add-Accesory0.php");
               }
               elseif($tam=='Add-Accesory1')
               {
@@ -208,7 +234,10 @@
               }
 
 
-
+              elseif($tam=='Edit-Accesory-NoiThatNgoaiThat')
+              {
+                include("Edit-Accesory-NoiThatNgoaiThat.php");
+              }
               elseif($tam=='Edit-Accesory-Body')
               {
                 include("Edit-Accesory-Body.php");

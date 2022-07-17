@@ -1,10 +1,5 @@
 
-<script>
-    $(window).on('load', function(event) {
-    $('body').removeClass('preloading');
-    $('.loadding').delay(200).fadeOut('fast');
-});
-</script>
+
 
 <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

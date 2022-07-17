@@ -22,13 +22,14 @@
                 <div class="col-12 col-sm-6 col-md-4 product-khung">
                     <div class="Product-img">
                         <a href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['HinhAnh1'] ?>">
+                            <img src="AdminConf/Module/Uploads/<?php echo $row['HinhAnh1'] ?> ">
 
                     </div>
                     <div class="Product-loaixe">
+                        <span>Loại Xe: </span>
                         <span><?php
                                 echo $row['tenloaixe']
-                            ?>:</span>
+                            ?></span>
                     </div>
                     <div class="Product-name">
                         <a href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
@@ -44,10 +45,11 @@
                             <div class="spleft spright"></div>
                         </a>
                     </div>
-                    <?php
+                    
+                </div>
+                <?php
                     }
                 ?>
-                </div>
             </div>
         </div>
     </div>

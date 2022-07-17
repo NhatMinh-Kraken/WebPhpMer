@@ -2,6 +2,87 @@
     include('config.php');
 // --------------------------------------------- khởi tạo dữ liệu ------------------------------------ //
 
+
+if(isset($_POST['ThemPhuKienNoiThatNgoaiThat']))
+{
+
+$TenPhuKienNoiThatNgoaiThat = $_POST['TenPhuKienNoiThatNgoaiThat'];
+$loaiphukienNoiThatNgoaiThat = $_POST['loaiphukienNoiThatNgoaiThat'];
+//Ảnh
+$AnhPhuKienNoiThatNgoaiThat1 = $_FILES['AnhPhuKienNoiThatNgoaiThat1']['name'];
+$AnhPhuKienNoiThatNgoaiThat1_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat1']['tmp_name'];
+$AnhPhuKienNoiThatNgoaiThat1 = time().'_'.$AnhPhuKienNoiThatNgoaiThat1;
+//Ảnh
+$AnhPhuKienNoiThatNgoaiThat2 = $_FILES['AnhPhuKienNoiThatNgoaiThat2']['name'];
+$AnhPhuKienNoiThatNgoaiThat2_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat2']['tmp_name'];
+$AnhPhuKienNoiThatNgoaiThat2 = time().'_'.$AnhPhuKienNoiThatNgoaiThat2;
+//Ảnh
+$AnhPhuKienNoiThatNgoaiThat3 = $_FILES['AnhPhuKienNoiThatNgoaiThat3']['name'];
+$AnhPhuKienNoiThatNgoaiThat3_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat3']['tmp_name'];
+$AnhPhuKienNoiThatNgoaiThat3 = time().'_'.$AnhPhuKienNoiThatNgoaiThat3;
+//Ảnh
+$AnhPhuKienNoiThatNgoaiThat4 = $_FILES['AnhPhuKienNoiThatNgoaiThat4']['name'];
+$AnhPhuKienNoiThatNgoaiThat4_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat4']['tmp_name'];
+$AnhPhuKienNoiThatNgoaiThat4 = time().'_'.$AnhPhuKienNoiThatNgoaiThat4;
+//Ảnh
+$AnhPhuKienNoiThatNgoaiThat5 = $_FILES['AnhPhuKienNoiThatNgoaiThat5']['name'];
+$AnhPhuKienNoiThatNgoaiThat5_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat5']['tmp_name'];
+$AnhPhuKienNoiThatNgoaiThat5 = time().'_'.$AnhPhuKienNoiThatNgoaiThat5;
+
+$XuatXuNoiThatNgoaiThat = $_POST['XuatXuNoiThatNgoaiThat'];
+$ChatLuongNoiThatNgoaiThat = $_POST['ChatLuongNoiThatNgoaiThat'];
+$BoPhuKienNoiThatNgoaiThat = $_POST['BoPhuKienNoiThatNgoaiThat'];
+$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-1'];
+$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-2'];
+$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-3'];
+$GiaBanNoiThatNgoaiThat = $_POST['GiaBanNoiThatNgoaiThat'];
+$SoLuongNoiThatNgoaiThat = $_POST['SoLuongNoiThatNgoaiThat'];
+$TinhTrangNoiThatNgoaiThat = $_POST['TinhTrangNoiThatNgoaiThat'];
+
+
+// --------------------------------------------------- XỬ lý dữ liệu -------------------------------- //
+if(!$TenPhuKienNoiThatNgoaiThat
+|| !$loaiphukienNoiThatNgoaiThat
+|| !$AnhPhuKienNoiThatNgoaiThat1
+|| !$AnhPhuKienNoiThatNgoaiThat2
+|| !$AnhPhuKienNoiThatNgoaiThat3
+|| !$AnhPhuKienNoiThatNgoaiThat4
+|| !$AnhPhuKienNoiThatNgoaiThat5
+|| !$XuatXuNoiThatNgoaiThat
+|| !$ChatLuongNoiThatNgoaiThat
+|| !$BoPhuKienNoiThatNgoaiThat
+|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1
+|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2
+|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3
+|| !$GiaBanNoiThatNgoaiThat
+|| !$SoLuongNoiThatNgoaiThat
+|| !$TinhTrangNoiThatNgoaiThat)
+{
+    echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>' ;
+    exit;
+}
+
+    //Them
+    $sql_themphukiennoithatngoaithat = "INSERT INTO chitietphukiennoithatngoaithat(TenPhuKienNoiThatNgoaiThat,IdLoaiPhuKienNoiThatNgoaiThat,AnhPhuKienNoiThatNgoaiThat1,AnhPhuKienNoiThatNgoaiThat2,AnhPhuKienNoiThatNgoaiThat3,AnhPhuKienNoiThatNgoaiThat4,AnhPhuKienNoiThatNgoaiThat5,XuatXuNoiThatNgoaiThat,ChatLieuNoiThatNgoaiThat,BoDayDuNoiThatNgoaiThat,DongGioiThieuPhuKienNoiThatNgoaiThat1,DongGioiThieuPhuKienNoiThatNgoaiThat2,DongGioiThieuPhuKienNoiThatNgoaiThat3,GiaCaNoiThatNgoaiThat,SoLuongNoiThatNgoaiThat,TinhTrangNoiThatNgoaiThat) 
+                                            VALUE('".$TenPhuKienNoiThatNgoaiThat."', '".$loaiphukienNoiThatNgoaiThat."', '".$AnhPhuKienNoiThatNgoaiThat1."', '".$AnhPhuKienNoiThatNgoaiThat2."', '".$AnhPhuKienNoiThatNgoaiThat3."', '".$AnhPhuKienNoiThatNgoaiThat4."', '".$AnhPhuKienNoiThatNgoaiThat5."', '".$XuatXuNoiThatNgoaiThat."', 
+                                                    '".$ChatLuongNoiThatNgoaiThat."', '".$BoPhuKienNoiThatNgoaiThat."', '".$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1."', '".$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2."', '".$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3."', '".$GiaBanNoiThatNgoaiThat."', '".$SoLuongNoiThatNgoaiThat."', '".$TinhTrangNoiThatNgoaiThat."')";
+    mysqli_query($mysqli,$sql_themphukiennoithatngoaithat);
+
+                move_uploaded_file($AnhPhuKienNoiThatNgoaiThat1_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat1);
+                move_uploaded_file($AnhPhuKienNoiThatNgoaiThat2_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat2);
+                move_uploaded_file($AnhPhuKienNoiThatNgoaiThat3_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat3);
+                move_uploaded_file($AnhPhuKienNoiThatNgoaiThat4_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat4);
+                move_uploaded_file($AnhPhuKienNoiThatNgoaiThat5_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat5);
+                
+
+    
+    echo '<script> alert("Bạn đã thêm thành công");window.location="indexAdmin.php?action=Default-Type-Accesory";</script>';
+
+}
+
+
+
+
 if(isset($_POST['ThemPhuKien']))
 {
 

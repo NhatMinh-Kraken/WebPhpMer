@@ -29,7 +29,7 @@
                             {
                         ?>
                         <li>
-                            <a href="quanly=danhmucsanpham&id=<?php echo $row['IdLoaiXe']  ?>"><?php echo $row['tenloaixe'] ?></a>
+                            <a href="?quanly=danhmucsanphamxe&idloaisanphamxe=<?php echo $row['IdLoaiXe']  ?>"><?php echo $row['tenloaixe'] ?></a>
                         </li>
                         <?php
                             }
@@ -48,7 +48,7 @@
                 </li>
                 <!-- Single Item -->
                 <li data-toggle="collapse" data-target="#PK" class="collapsed">
-                    <a class="border-left-blue" href="#">Phụ Kiện Xe <span class="arrow-new"></span></a>
+                    <a class="border-left-blue" href="Accesory.php">Phụ Kiện Xe <span class="arrow-new"></span></a>
                 </li>
                 <!-- Single Item -->
                 <?php 

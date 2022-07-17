@@ -183,7 +183,10 @@ const slideshow = new Slideshow(document.querySelector('.slideshow'));
 
 // js: Loading
 
-
+$(window).on('load', function(event) {
+    $('body').removeClass('preloading');
+    $('.loadding').delay(200).fadeOut('fast');
+});
 
 
 /********************************************** dropdown ********************************************/
