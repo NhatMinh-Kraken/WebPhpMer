@@ -1,101 +1,79 @@
-<?php
-    session_start();
-?>
-
-<?php
-    include("Layout/Head.php");
-?>
-
-<?php
-        if(isset($_SESSION['dangnhap']))
-        {
-            include("Profile/Profile.php");
-        }
-    ?>
-
-<!---Menu-nav-->
-<?php
-        include("page/menu-nav.php");
-    ?>
 <!---->
-<div id="wrapper">
-    <!--nav-->
-        <?php
-            include("page/nav.php");
-        ?>
 
-        <?php
-            include("page/Dropdown-Type-Accesory.php");
-        ?>
+<!--nav-->
 
-
-    <?php
-        include("AdminConf/Configure/config.php");
-    ?>
-
-    <?php
-    $sql_xe = "SELECT * FROM chitietphukiennoithatngoaithat, loaiphukiennoithatngoaithat WHere chitietphukiennoithatngoaithat.IdLoaiPhuKienNoiThatNgoaiThat = loaiphukiennoithatngoaithat.IdLoaiPhuKienNoiThatNgoaiThat Order by idchitietsanphamnoithatngoaithat DESC LIMIT 6";
+<?php
+    $sql_xe = "SELECT * FROM chitietphukien, loaiphukienbody,loaiphukienbaove,loaiphukientiennghi,loaiphukientrangtri,loaiphukienmamxe WHERE chitietphukien.IdLoaiPhuKienBody = loaiphukienbody.IdLoaiPhuKienBody OR chitietphukien.IdLoaiPhuKienBaoVe = loaiphukienbaove.IdLoaiPhuKienBaoVe OR chitietphukien.IdLoaiPhuKienTienNghi = loaiphukientiennghi.IdLoaiPhuKienTienNghi or chitietphukien.IdLoaiPhuKienTrangTri = loaiphukientrangtri.IdLoaiPhuKienTrangTri OR chitietphukien.IdLoaiPhuKienMamXe = loaiphukienmamxe.IdLoaiPhuKienMamXe LIMIT 6";
     $query_xe = mysqli_query($mysqli,$sql_xe);
     
 ?>
-<div class="section1"></div>
-    <div class="Product-Website">
-        <div class="Title-Product">
-            <h1 class="Title-Product-car">Các Loại Phụ Kiện Mercedes</h1>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="row-product">
-                    <?php
+
+<div class="Product-Website">
+    <div class="Title-Product">
+        <h1 class="Title-Product-car">Các Loại Phụ Kiện Mercedes</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="row-product">
+                <?php
                     while($row = mysqli_fetch_array($query_xe))
                     {
                     ?>
-                    <div class="col-12 col-sm-6 col-md-4 product-khung">
-                        <div class="Product-img">
-                            <a
-                                href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanphamnoithatngoaithat'] ?>">
-                                <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKienNoiThatNgoaiThat1'] ?>">
+                <div class="col-12 col-sm-6 col-md-4 product-khung">
+                    <div class="Product-img">
+                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['IdChiTietPhuKien'] ?>">
+                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien1'] ?>">
 
-                        </div>
-                        <div class="Product-loaixe">
-                            <span>Loại Xe: </span>
-                            <span><?php
-                                echo $row['TenLoaiPhuKienNoiThatNgoaiThat']
-                            ?>:</span>
-                        </div>
-                        <div class="Product-name">
-                            <a
-                                href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanphamnoithatngoaithat'] ?>">
-                                <span><?php
-                                echo $row['TenPhuKienNoiThatNgoaiThat']
+                    </div>
+                    <div class="Product-loaixe">
+                        <span>Loại Phụ Kiện: </span>
+                        <span><?php
+                                if($row['IdLoaiPhuKienBody']!='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
+                                {
+                                    echo $row['TenLoaiPhuKienBody'];
+                                } 
+                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']!='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
+                                {
+                                    echo $row['TenLoaiPhuKienBaoVe'];
+                                }
+                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']!='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
+                                {
+                                    echo $row['TenLoaiPhuKienTienNghi'];
+                                }
+                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']!='' && $row['IdLoaiPhuKienMamXe']=='')
+                                {
+                                    echo $row['TenLoaiPhuKienTrangTri'];
+                                }
+                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']!='')
+                                {
+                                    echo $row['TenLoaiPhuKienMamXe'];
+                                }
                             ?></span>
-                            </a>
-                        </div>
-                        <div class="Product-money">
-                            <a
-                                href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanphamnoithatngoaithat'] ?>">
-                                <span class="spleft"></span>
-                                <span class="Money">Giá: <?php echo $row['GiaCaNoiThatNgoaiThat'] ?>
-                                    VNĐ</span>
-                                <div class="spleft spright"></div>
-                            </a>
-                        </div>
-                        <?php
+                    </div>
+                    <div class="Product-name">
+                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['IdChiTietPhuKien'] ?>">
+                            <span><?php
+                                echo $row['TenChiTietPhuKien']
+                            ?></span>
+                        </a>
+                    </div>
+                    <div class="Product-money">
+                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['IdChiTietPhuKien'] ?>">
+                            <span class="spleft"></span>
+                            <span class="Money">Giá: <?php echo $row['GiaCaPhuKien'] ?>
+                                VNĐ</span>
+                            <div class="spleft spright"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <?php
                     }
                 ?>
-                    </div>
-                </div>
             </div>
         </div>
-
-
-
-        <?php
-            include("page/Footer.php");
-        ?>
-        <!---->
     </div>
 
-    <?php
-    include("Layout/Head-end.php");
-?>
+
+
+    <

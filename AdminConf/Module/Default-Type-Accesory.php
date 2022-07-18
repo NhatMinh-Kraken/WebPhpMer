@@ -58,7 +58,7 @@
                                                 </div>
 
                                                 <span class="Muc-TieuDe-trangthai-Accesory">
-                                                    <a href="?action=Default-Accesory-Body"
+                                                    <a href="?action=Default-Accesory-Body&idaccesory=<?php echo $row1['IdLoaiPhuKienBody'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-list"></i></a>
                                                     <a href="?action=Edit-Type-Accesory1&idaccesory=<?php echo $row1['IdLoaiPhuKienBody'] ?>"
                                                         class="button-laithu-link-1"><i class="bi bi-pencil"></i></a>

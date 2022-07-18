@@ -3,7 +3,7 @@
     include('config.php');
 
     $id=$_GET['idaccesory'];
-    $sqlXoa = "SELECT * FROM chitietphukienbody WHERE IdPhuKienBody ='$id' LIMIT 1";
+    $sqlXoa = "SELECT * FROM chitietphukien WHERE IdChiTietPhuKien ='$id' LIMIT 1";
     $query = mysqli_query($mysqli,$sqlXoa);
 
     while($row = mysqli_fetch_array($query)){
@@ -14,7 +14,7 @@
         unlink('Uploads/'.$row['AnhPhuKien5']);
     }
 
-    $sql_xoachitietphukien = "DELETE From chitietphukienbody WHERE IdPhuKienBody ='".$id."'";
+    $sql_xoachitietphukien = "DELETE From chitietphukien WHERE IdChiTietPhuKien ='".$id."'";
 
     mysqli_query($mysqli,$sql_xoachitietphukien);
     echo '<script> alert("Bạn đã xóa thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';

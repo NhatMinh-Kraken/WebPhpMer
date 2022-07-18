@@ -1,7 +1,7 @@
 <?php
     include('config.php');
 
-    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukien, loaiphukienbody WHERE chitietphukien.IdLoaiPhuKienBody = loaiphukienbody.IdLoaiPhuKienBody";
+    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukien, loaiphukienbody WHERE chitietphukien.IdLoaiPhuKienBody = loaiphukienbody.IdLoaiPhuKienBody And chitietphukien.IdLoaiPhuKienBody = '$_GET[idaccesory]'";
     $query_lietke_loaiphukien_1 = mysqli_query($mysqli,$sql_lietke_loaiphukien_1);
     
 ?>

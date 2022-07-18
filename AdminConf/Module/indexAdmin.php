@@ -116,10 +116,7 @@
               {
                 include("Default-Type-Accesory.php");
               }
-              elseif($tam=='Edit-Type-Accesory0')
-              {
-                include("Edit-Type-Accesory0.php");
-              }
+              
 
               elseif($tam=='Edit-Type-Accesory1')
               {
@@ -168,10 +165,7 @@
               }
 
 
-              elseif($tam=='Default-Accesory0')
-              {
-                include("Default-Accesory0.php");
-              }
+              
               elseif($tam=='Default-Accesory1')
               {
                 include("Default-Accesory1.php");

@@ -48,7 +48,7 @@
                 </li>
                 <!-- Single Item -->
                 <li data-toggle="collapse" data-target="#PK" class="collapsed">
-                    <a class="border-left-blue" href="Accesory.php">Phụ Kiện Xe <span class="arrow-new"></span></a>
+                    <a class="border-left-blue" href="?quanly=Accesory">Phụ Kiện Xe <span class="arrow-new"></span></a>
                 </li>
                 <!-- Single Item -->
                 <?php 

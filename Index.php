@@ -52,6 +52,9 @@
             elseif($tam =='Product-Detail'){
                 include("Product/Product-Detail.php");
             }
+            elseif($tam =='Accesory'){
+                include("Accesory.php");
+            }
             
             else{
                 include("Product/Product-car.php");

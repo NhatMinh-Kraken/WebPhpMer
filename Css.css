@@ -71,8 +71,8 @@
         width: 100% !important;
     }
 
-    #height-Accesory{
-       
+    #height-Accesory {
+
         position: relative;
         z-index: 1000;
         background-color: #f6f3f2;
@@ -112,7 +112,7 @@
         -webkit-transition: all linear 500ms;
         transition: all linear 500ms;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-        
+
     }
 
     #wrapper.karl-side-menu-open {
@@ -642,6 +642,7 @@
         width: 100%;
         height: 100vh;
     }
+
     .section1 {
         width: 100%;
         height: 90px;
@@ -818,13 +819,15 @@
         display: flex;
         width: 100%;
         padding: 30px 0;
+        flex-wrap: wrap;
     }
-    .Product-img{
+
+    .Product-img {
         display: flex;
         width: 350px;
     }
 
-    .Product-img img{
+    .Product-img img {
         height: 220px;
     }
 
@@ -834,7 +837,8 @@
         display: flex;
         flex: 32%;
         width: 32%;
-        flex-flow: column   ;
+        flex-flow: column;
+        padding-bottom: 10px;
     }
 
     .product-khung::after {
@@ -854,7 +858,7 @@
         padding-bottom: 10px;
         display: flex;
         margin-right: 10px;
-        
+
         justify-content: flex-start;
         margin-left: 10px;
     }
@@ -1024,6 +1028,7 @@
         border-radius: 2px 2px 2px 2px;
         font-size: 16px;
         padding: 15px 30px;
+        border: 1px solid #00ADEF;
     }
 
     .button-deafault-link:hover {
@@ -2562,3 +2567,101 @@
     .body-thongtin {
         padding: 15px;
     }
+
+
+    /*************************************************************** Chi tiết phụ kiên *******************************************************************/
+
+    .Product {
+        padding: 100px 0;
+    }
+
+    .product-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-content-left {
+        width: 50%;
+        background: #fff;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .product-content-right {
+        width: 50%;
+        padding-left: 20px;
+        display: flex;
+        flex-flow: column;
+        margin-left: 20px;
+        background: #fff;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .product-content-left-big-img {
+        width: 80%;
+        padding-right: 20px;
+        border-right: 5px solid rgb(230, 229, 229);
+       
+    }
+
+    .product-content-left-big-img img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .product-content-left-small-img {
+        width: 20%;
+        
+    }
+
+    .product-content-left-small-img img {
+        width: 100%;
+        border-left: 5px solid rgb(230, 229, 229);
+        border-right: 5px solid rgb(230, 229, 229);
+        border-bottom: 10px solid rgb(230, 229, 229);
+    }
+
+    .product-content-right-product-name h1{
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+
+    .product-content-right-product-name p{
+        color: #00ADEF;
+        font-size: 14px;
+    }
+
+    .product-content-right-product-price{
+        margin: 12px 0;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .product-content-right-product-quantity{
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .product-content-right-product-quantity input{
+        width: 35px;
+        height: 35px;
+        padding-left: 3px;
+    }
+
+    .product-content-right-product-button {
+        
+        padding-bottom: 10px;
+    }
+
+    .product-content-right-product-thongtin p{
+        padding-bottom: 10px;
+    }
+
+   
+
+    
