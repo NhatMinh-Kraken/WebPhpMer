@@ -89,10 +89,7 @@
               {
                 include("Add-Type-Accesory.php");
               }
-              elseif($tam=='Add-Type-Accesory-NgoaiThatNoiThat')
-              {
-                include("Add-Type-Accesory-NgoaiThatNoiThat.php");
-              }
+              
               elseif($tam=='Add-Type-Accesory-Body')
               {
                 include("Add-Type-Accesory-Body.php");
@@ -145,16 +142,10 @@
                 include("Edit-Type-Accesory5.php");
               }
 
-              elseif($tam=='Edit-Accesory-NoiThatNgoaiThat')
-              {
-                include("Edit-Accesory-NoiThatNgoaiThat.php");
-              }
+              
 
 
-              elseif($tam=='Default-Accesory-NoiThatNgoaiThat')
-              {
-                include("Default-Accesory-NoiThatNgoaiThat.php");
-              }
+              
               elseif($tam=='Default-Accesory-Body')
               {
                 include("Default-Accesory-Body.php");
@@ -234,10 +225,7 @@
               }
 
 
-              elseif($tam=='Edit-Accesory-NoiThatNgoaiThat')
-              {
-                include("Edit-Accesory-NoiThatNgoaiThat.php");
-              }
+              
               elseif($tam=='Edit-Accesory-Body')
               {
                 include("Edit-Accesory-Body.php");

@@ -12,27 +12,127 @@
                         <div class="form-group padding">
                             <div class="Name-Product-Car">
                                 <label for="exampleInputNameCar1">Tên Phụ Kiện</label>
-                                <input type="text" class="form-control" id="exampleInputNameCar1" name="TenPhuKienNoiThatNgoaiThat"
+                                <input type="text" class="form-control" id="exampleInputNameCar1" name="TenPhuKien"
                                     placeholder="Tên Phụ Kiện">
                             </div>
                         </div>
 
                         <div class="form-group padding">
                             <div class="Name-Product-Car">
-                                <label for="exampleInputNameCar1">Loại Phụ Kiện</label>
-                                <select id="loaiphukien" name="loaiphukienNoiThatNgoaiThat" class="form-control">
+                                <label for="exampleInputNameCar1">Loại Phụ Kiện Body</label>
+                                <select id="loaiphukien" name="loaiphukienBody" class="form-control">
                                     <option value="">Chọn Loại Phụ Kiện</option>
                                     <?php
                                         include('config.php');
-                                        $sql = "SELECT IdLoaiPhuKienNoiThatNgoaiThat, TenLoaiPhuKienNoiThatNgoaiThat FROM loaiphukiennoithatngoaithat"; 
+                                        $sql = "SELECT IdLoaiPhuKienBody, TenLoaiPhuKienBody FROM loaiphukienbody"; 
                                         $ktloaixe = mysqli_query($mysqli,$sql);
                                         $num = mysqli_num_rows($ktloaixe);
                                         if($num > 0){
                                             while($row = mysqli_fetch_array($ktloaixe))
                                             {   
                                     ?>
-                                    <option value="<?php echo $row['IdLoaiPhuKienNoiThatNgoaiThat'] ?>">
-                                        <?php echo $row['TenLoaiPhuKienNoiThatNgoaiThat'] ?></option>
+                                    <option value="<?php echo $row['IdLoaiPhuKienBody'] ?>">
+                                        <?php echo $row['TenLoaiPhuKienBody'] ?></option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group padding">
+                            <div class="Name-Product-Car">
+                                <label for="exampleInputNameCar1">Loại Phụ Kiện Bảo Vệ</label>
+                                <select id="loaiphukien" name="loaiphukienBaoVe" class="form-control">
+                                    <option value="">Chọn Loại Phụ Kiện</option>
+                                    <?php
+                                        include('config.php');
+                                        $sql2 = "SELECT IdLoaiPhuKienBaoVe, TenLoaiPhuKienBaoVe FROM loaiphukienbaove"; 
+                                        $ktloaixe2 = mysqli_query($mysqli,$sql2);
+                                        $num2 = mysqli_num_rows($ktloaixe2);
+                                        if($num2 > 0){
+                                            while($row2 = mysqli_fetch_array($ktloaixe2))
+                                            {   
+                                    ?>
+                                    <option value="<?php echo $row2['IdLoaiPhuKienBaoVe'] ?>">
+                                        <?php echo $row2['TenLoaiPhuKienBaoVe'] ?></option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group padding">
+                            <div class="Name-Product-Car">
+                                <label for="exampleInputNameCar1">Loại Phụ Kiện Tiện Nghi</label>
+                                <select id="loaiphukien" name="loaiphukienTienNghi" class="form-control">
+                                    <option value="">Chọn Loại Phụ Kiện</option>
+                                    <?php
+                                        include('config.php');
+                                        $sql3 = "SELECT IdLoaiPhuKienTienNghi, TenLoaiPhuKienTienNghi FROM loaiphukientiennghi"; 
+                                        $ktloaixe3 = mysqli_query($mysqli,$sql3);
+                                        $num3 = mysqli_num_rows($ktloaixe3);
+                                        if($num3 > 0){
+                                            while($row3 = mysqli_fetch_array($ktloaixe3))
+                                            {   
+                                    ?>
+                                    <option value="<?php echo $row3['IdLoaiPhuKienTienNghi'] ?>">
+                                        <?php echo $row3['TenLoaiPhuKienTienNghi'] ?></option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group padding">
+                            <div class="Name-Product-Car">
+                                <label for="exampleInputNameCar1">Loại Phụ Kiện Trang Tri</label>
+                                <select id="loaiphukien" name="loaiphukienTrangTri" class="form-control">
+                                    <option value="">Chọn Loại Phụ Kiện</option>
+                                    <?php
+                                        include('config.php');
+                                        $sql4 = "SELECT IdLoaiPhuKienTrangTri, TenLoaiPhuKienTrangTri FROM loaiphukientrangtri"; 
+                                        $ktloaixe4 = mysqli_query($mysqli,$sql4);
+                                        $num4 = mysqli_num_rows($ktloaixe4);
+                                        if($num4 > 0){
+                                            while($row4 = mysqli_fetch_array($ktloaixe4))
+                                            {   
+                                    ?>
+                                    <option value="<?php echo $row4['IdLoaiPhuKienTrangTri'] ?>">
+                                        <?php echo $row4['TenLoaiPhuKienTrangTri'] ?></option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group padding">
+                            <div class="Name-Product-Car">
+                                <label for="exampleInputNameCar1">Loại Phụ Kiện Mâm Xe</label>
+                                <select id="loaiphukien" name="loaiphukienMamXe" class="form-control">
+                                    <option value="">Chọn Loại Phụ Kiện</option>
+                                    <?php
+                                        include('config.php');
+                                        $sql5 = "SELECT IdLoaiPhuKienMamXe, TenLoaiPhuKienMamXe FROM loaiphukienmamxe"; 
+                                        $ktloaixe5 = mysqli_query($mysqli,$sql5);
+                                        $num5 = mysqli_num_rows($ktloaixe5);
+                                        if($num5 > 0){
+                                            while($row5 = mysqli_fetch_array($ktloaixe5))
+                                            {   
+                                    ?>
+                                    <option value="<?php echo $row5['IdLoaiPhuKienMamXe'] ?>">
+                                        <?php echo $row5['TenLoaiPhuKienMamXe'] ?></option>
                                     <?php
                                             }
                                         }
@@ -55,7 +155,7 @@
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload">
-                                <input type="file" id="ImageUploadInputt" accept=".jpg,.png" name="AnhPhuKienNoiThatNgoaiThat1">
+                                <input type="file" id="ImageUploadInputt" accept=".jpg,.png" name="AnhPhuKien1">
                                 <div class="input-group col-xs-12">
                                     <span class="form-control file-upload-info" id="fileInfomation_name" disabled
                                         placeholder="Upload Image">Upload Image</span>
@@ -78,7 +178,7 @@
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload1">
-                                <input type="file" id="ImageUploadInputt1" accept=".jpg,.png" name="AnhPhuKienNoiThatNgoaiThat2">
+                                <input type="file" id="ImageUploadInputt1" accept=".jpg,.png" name="AnhPhuKien2">
                                 <div class="input-group col-xs-12">
                                     <span class="form-control file-upload-info" id="fileInfomation_name1" disabled
                                         placeholder="Upload Image">Upload Image</span>
@@ -100,7 +200,7 @@
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload2">
-                                <input type="file" id="ImageUploadInputt2" accept=".jpg,.png" name="AnhPhuKienNoiThatNgoaiThat3">
+                                <input type="file" id="ImageUploadInputt2" accept=".jpg,.png" name="AnhPhuKien3">
                                 <div class="input-group col-xs-12">
                                     <span class="form-control file-upload-info" id="fileInfomation_name2" disabled
                                         placeholder="Upload Image">Upload Image</span>
@@ -122,7 +222,7 @@
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload3">
-                                <input type="file" id="ImageUploadInputt3" accept=".jpg,.png" name="AnhPhuKienNoiThatNgoaiThat4">
+                                <input type="file" id="ImageUploadInputt3" accept=".jpg,.png" name="AnhPhuKien4">
                                 <div class="input-group col-xs-12">
                                     <span class="form-control file-upload-info" id="fileInfomation_name3" disabled
                                         placeholder="Upload Image">Upload Image</span>
@@ -145,7 +245,7 @@
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload4">
-                                <input type="file" id="ImageUploadInputt4" accept=".jpg,.png" name="AnhPhuKienNoiThatNgoaiThat5">
+                                <input type="file" id="ImageUploadInputt4" accept=".jpg,.png" name="AnhPhuKien5">
                                 <div class="input-group col-xs-12">
                                     <span class="form-control file-upload-info" id="fileInfomation_name4" disabled
                                         placeholder="Upload Image">Upload Image</span>
@@ -168,17 +268,17 @@
                                         <label for="exampleInputDetailXuatXu">Xuất Xứ:
                                         </label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailXuatXu"
-                                            placeholder="Xuất Xứ Sản Phẩm" name="XuatXuNoiThatNgoaiThat"></textarea>
+                                            placeholder="Xuất Xứ Sản Phẩm" name="XuatXu"></textarea>
                                     </span>
                                 </p>
                             </div>
                             <div class="form-group padding">
                                 <p class="detail-product-content-p">
                                     <span style="font-weight: 400;">
-                                        <label for="exampleInputDetailChatLuong">Chất Lượng Sản Phẩm:
+                                        <label for="exampleInputDetailChatLuong">Chất Liệu Sản Phẩm:
                                         </label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailChatLuong"
-                                            placeholder="Chất Lượng Sản Phẩm" name="ChatLuongNoiThatNgoaiThat"></textarea>
+                                            placeholder="Chất Liệu Sản Phẩm" name="ChatLieu"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -188,7 +288,7 @@
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailBoPhuKien">Bộ Phụ Kiện Đầy Đủ Gồm: </label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailBoPhuKien"
-                                            placeholder="Bộ Phụ Kiện Đầy Đủ Gồm:" name="BoPhuKienNoiThatNgoaiThat"></textarea>
+                                            placeholder="Bộ Phụ Kiện Đầy Đủ Gồm:" name="BoPhuKien"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -198,7 +298,7 @@
                                         <label for="exampleInputDetailPhuKien1">Dòng Giới Thiệu Phụ Kiện 1</label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailPhuKien1"
                                             placeholder="Dòng Giới Thiệu Phụ Kiện 1"
-                                            name="Gioi-THieu-PhuKien-NoiThatNgoaiThat-1"></textarea>
+                                            name="Gioi-THieu-PhuKien-1"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -209,7 +309,7 @@
                                         <label for="exampleInputDetailPhuKien2">Dòng Giới Thiệu Phụ Kiện 2</label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailPhuKien2"
                                             placeholder="Dòng Giới Thiệu Phụ Kiện 2"
-                                            name="Gioi-THieu-PhuKien-NoiThatNgoaiThat-2"></textarea>
+                                            name="Gioi-THieu-PhuKien-2"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -220,7 +320,7 @@
                                         <label for="exampleInputDetailPhuKien3">Dòng Giới Thiệu Phụ Kiện 3</label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailPhuKien3"
                                             placeholder="Dòng Giới Thiệu Phụ Kiện 3"
-                                            name="Gioi-THieu-PhuKien-NoiThatNgoaiThat-3"></textarea>
+                                            name="Gioi-THieu-PhuKien-3"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -230,7 +330,7 @@
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailGiaBan">Giá Bán</label>
                                         <textarea type="text" class="form-control" id="exampleInputDetailGiaBan"
-                                            placeholder="Giá Bán" name="GiaBanNoiThatNgoaiThat"></textarea>
+                                            placeholder="Giá Bán" name="GiaBan"></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -240,7 +340,7 @@
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailSoLuong">Số Lượng</label>
                                         <input type="number" class="form-control" id="exampleInputDetailSoLuong"
-                                            placeholder="Số Lượng" name="SoLuongNoiThatNgoaiThat">
+                                            placeholder="Số Lượng" name="SoLuong">
                                     </span>
                                 </p>
                             </div>
@@ -249,7 +349,7 @@
                                 <p class="detail-product-content-p">
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailTinhTrang">Tình Trạng</label>
-                                        <select id="exampleInputDetailTinhTrang" name="TinhTrangNoiThatNgoaiThat" class="form-control">
+                                        <select id="exampleInputDetailTinhTrang" name="TinhTrang" class="form-control">
                                             <option value="0">Chọn Tình Trạng</option>
                                             <option value="1">Còn Hàng</option>
                                             <option value="2">Hết Hàng</option>
@@ -263,7 +363,7 @@
                             <div class="footer-laithu">
                                 <div class="button-laithu">
                                     <input class="button-laithu-link" type="submit" value="Thêm Phụ Kiện"
-                                        name="ThemPhuKienNoiThatNgoaiThat">
+                                        name="ThemPhuKien">
                                 </div>
                             </div>
                         </div>

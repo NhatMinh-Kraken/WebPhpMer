@@ -1,7 +1,7 @@
 <?php
     include('config.php');
 
-    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukienmamxe";
+    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukien, loaiphukienmamxe WHERE chitietphukien.IdLoaiPhuKienMamXe = loaiphukienmamxe.IdLoaiPhuKienMamXe";
     $query_lietke_loaiphukien_1 = mysqli_query($mysqli,$sql_lietke_loaiphukien_1);
     
 ?>
@@ -37,15 +37,15 @@
                                         <ul class="nav flex-column nav-assesory">
                                             <li class="nav-item nav-item-namee">
                                                 <div class="nav-item-name1">
-                                                    <?php echo $row1['TenChiTietPhuKienMamXe']; ?>
+                                                    <?php echo $row1['TenChiTietPhuKien']; ?>
                                                 </div>
 
                                                 <span class="Muc-TieuDe-trangthai-Accesory1">
-                                                    <a href="?action=Default-Accesory5&idaccesory=<?php echo $row1['IdChiTietPhuKienMamXe'] ?>"
+                                                    <a href="?action=Default-Accesory5&idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-eye"></i></a>
-                                                    <a href="?action=Edit-Accesory-MamXe&idaccesory=<?php echo $row1['IdChiTietPhuKienMamXe'] ?>"
+                                                    <a href="?action=Edit-Accesory-MamXe&idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-pencil"></i></a>
-                                                    <a href="XuLyXoaPhuKien5.php?idaccesory=<?php echo $row1['IdChiTietPhuKienMamXe'] ?>"
+                                                    <a href="XuLyXoaPhuKien5.php?idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-trash"></i>
                                                     </a>
                                                 </span>

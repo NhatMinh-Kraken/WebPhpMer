@@ -2,89 +2,7 @@
     include('config.php');
 // --------------------------------------------- khởi tạo dữ liệu ------------------------------------ //
 
-if(isset($_POST['SuaPhuKienNoiThatNgoaiThat']))
-{
 
-$TenPhuKienNoiThatNgoaiThat = $_POST['TenPhuKienNoiThatNgoaiThat'];
-$loaiphukienNoiThatNgoaiThat = $_POST['loaiphukienNoiThatNgoaiThat'];
-//Ảnh
-$AnhPhuKienNoiThatNgoaiThat1 = $_FILES['AnhPhuKienNoiThatNgoaiThat1']['name'];
-$AnhPhuKienNoiThatNgoaiThat1_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat1']['tmp_name'];
-$AnhPhuKienNoiThatNgoaiThat1 = time().'_'.$AnhPhuKienNoiThatNgoaiThat1;
-//Ảnh
-$AnhPhuKienNoiThatNgoaiThat2 = $_FILES['AnhPhuKienNoiThatNgoaiThat2']['name'];
-$AnhPhuKienNoiThatNgoaiThat2_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat2']['tmp_name'];
-$AnhPhuKienNoiThatNgoaiThat2 = time().'_'.$AnhPhuKienNoiThatNgoaiThat2;
-//Ảnh
-$AnhPhuKienNoiThatNgoaiThat3 = $_FILES['AnhPhuKienNoiThatNgoaiThat3']['name'];
-$AnhPhuKienNoiThatNgoaiThat3_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat3']['tmp_name'];
-$AnhPhuKienNoiThatNgoaiThat3 = time().'_'.$AnhPhuKienNoiThatNgoaiThat3;
-//Ảnh
-$AnhPhuKienNoiThatNgoaiThat4 = $_FILES['AnhPhuKienNoiThatNgoaiThat4']['name'];
-$AnhPhuKienNoiThatNgoaiThat4_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat4']['tmp_name'];
-$AnhPhuKienNoiThatNgoaiThat4 = time().'_'.$AnhPhuKienNoiThatNgoaiThat4;
-//Ảnh
-$AnhPhuKienNoiThatNgoaiThat5 = $_FILES['AnhPhuKienNoiThatNgoaiThat5']['name'];
-$AnhPhuKienNoiThatNgoaiThat5_tmp = $_FILES['AnhPhuKienNoiThatNgoaiThat5']['tmp_name'];
-$AnhPhuKienNoiThatNgoaiThat5 = time().'_'.$AnhPhuKienNoiThatNgoaiThat5;
-
-$XuatXuNoiThatNgoaiThat = $_POST['XuatXuNoiThatNgoaiThat'];
-$ChatLuongNoiThatNgoaiThat = $_POST['ChatLuongNoiThatNgoaiThat'];
-$BoPhuKienNoiThatNgoaiThat = $_POST['BoPhuKienNoiThatNgoaiThat'];
-$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-1'];
-$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-2'];
-$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3 = $_POST['Gioi-THieu-PhuKien-NoiThatNgoaiThat-3'];
-$GiaBanNoiThatNgoaiThat = $_POST['GiaBanNoiThatNgoaiThat'];
-$SoLuongNoiThatNgoaiThat = $_POST['SoLuongNoiThatNgoaiThat'];
-$TinhTrangNoiThatNgoaiThat = $_POST['TinhTrangNoiThatNgoaiThat'];
-
-
-// --------------------------------------------------- XỬ lý dữ liệu -------------------------------- //
-if(!$TenPhuKienNoiThatNgoaiThat
-|| !$loaiphukienNoiThatNgoaiThat
-|| !$AnhPhuKienNoiThatNgoaiThat1
-|| !$AnhPhuKienNoiThatNgoaiThat2
-|| !$AnhPhuKienNoiThatNgoaiThat3
-|| !$AnhPhuKienNoiThatNgoaiThat4
-|| !$AnhPhuKienNoiThatNgoaiThat5
-|| !$XuatXuNoiThatNgoaiThat
-|| !$ChatLuongNoiThatNgoaiThat
-|| !$BoPhuKienNoiThatNgoaiThat
-|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1
-|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2
-|| !$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3
-|| !$GiaBanNoiThatNgoaiThat
-|| !$SoLuongNoiThatNgoaiThat
-|| !$TinhTrangNoiThatNgoaiThat)
-{
-    echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>' ;
-    exit;
-}
-    $sqlXoa = "SELECT * FROM chitietphukiennoithatngoaithat WHERE idchitietsanphamnoithatngoaithat = '$_GET[idaccesory]' LIMIT 1";
-    $query = mysqli_query($mysqli,$sqlXoa);
-    while($row = mysqli_fetch_array($query)){
-        unlink('Uploads/'.$row['AnhPhuKienNoiThatNgoaiThat1']);
-        unlink('Uploads/'.$row['AnhPhuKienNoiThatNgoaiThat2']);
-        unlink('Uploads/'.$row['AnhPhuKienNoiThatNgoaiThat3']);
-        unlink('Uploads/'.$row['AnhPhuKienNoiThatNgoaiThat4']);
-        unlink('Uploads/'.$row['AnhPhuKienNoiThatNgoaiThat5']);
-    }
-    //Them
-        $sql_suaphukienbaove = "UPDATE chitietphukiennoithatngoaithat SET TenPhuKienNoiThatNgoaiThat = '$TenPhuKienNoiThatNgoaiThat',IdLoaiPhuKienNoiThatNgoaiThat = '$loaiphukienNoiThatNgoaiThat',AnhPhuKienNoiThatNgoaiThat1 = '$AnhPhuKienNoiThatNgoaiThat1',AnhPhuKienNoiThatNgoaiThat2 = '$AnhPhuKienNoiThatNgoaiThat2',AnhPhuKienNoiThatNgoaiThat3 = '$AnhPhuKienNoiThatNgoaiThat3',AnhPhuKienNoiThatNgoaiThat4 = '$AnhPhuKienNoiThatNgoaiThat4',AnhPhuKienNoiThatNgoaiThat5 = '$AnhPhuKienNoiThatNgoaiThat5',XuatXuNoiThatNgoaiThat = '$XuatXuNoiThatNgoaiThat',ChatLieuNoiThatNgoaiThat = '$ChatLuongNoiThatNgoaiThat',BoDayDuNoiThatNgoaiThat = '$BoPhuKienNoiThatNgoaiThat',DongGioiThieuPhuKienNoiThatNgoaiThat1 = '$Gioi_THieu_PhuKien_NoiThatNgoaiThat_1',DongGioiThieuPhuKienNoiThatNgoaiThat2 = '$Gioi_THieu_PhuKien_NoiThatNgoaiThat_2',DongGioiThieuPhuKienNoiThatNgoaiThat3 = '$Gioi_THieu_PhuKien_NoiThatNgoaiThat_3',GiaCaNoiThatNgoaiThat = '$GiaBanNoiThatNgoaiThat',SoLuongNoiThatNgoaiThat = '$SoLuongNoiThatNgoaiThat',TinhTrangNoiThatNgoaiThat = '$TinhTrangNoiThatNgoaiThat' Where idchitietsanphamnoithatngoaithat = '$_GET[idaccesory]'"; 
-        mysqli_query($mysqli,$sql_suaphukienbaove);
-
-                    move_uploaded_file($AnhPhuKienNoiThatNgoaiThat1_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat1);
-                    move_uploaded_file($AnhPhuKienNoiThatNgoaiThat2_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat2);
-                    move_uploaded_file($AnhPhuKienNoiThatNgoaiThat3_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat3);
-                    move_uploaded_file($AnhPhuKienNoiThatNgoaiThat4_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat4);
-                    move_uploaded_file($AnhPhuKienNoiThatNgoaiThat5_tmp,'Uploads/'.$AnhPhuKienNoiThatNgoaiThat5);
-                    
-
-        
-       echo '<script> alert("Bạn đã Sửa thành công");window.location="indexAdmin.php?action=Default-Type-Accesory";</script>';
-
-    
-}
 
 
 
@@ -135,7 +53,7 @@ if(!$TenPhuKien || !$loaiphukien || !$AnhPhuKien1 || !$AnhPhuKien2 || !$AnhPhuKi
     exit;
 }
 
-$sqlXoa = "SELECT * FROM chitietphukienbody WHERE IdPhuKienBody = '$_GET[idaccesory]' LIMIT 1";
+$sqlXoa = "SELECT * FROM chitietphukien WHERE IdChiTietPhuKien = '$_GET[idaccesory]' LIMIT 1";
 $query = mysqli_query($mysqli,$sqlXoa);
 
     while($row = mysqli_fetch_array($query)){
@@ -145,7 +63,7 @@ $query = mysqli_query($mysqli,$sqlXoa);
         unlink('Uploads/'.$row['AnhPhuKien4']);
         unlink('Uploads/'.$row['AnhPhuKien5']);
     }
-        $sql_suaphukien1 = "UPDATE chitietphukienbody SET TenPhuKienBody = '$TenPhuKien', IdLoaiPhuKienBody = '$loaiphukien', AnhPhuKien1 = '$AnhPhuKien1', AnhPhuKien2 = '$AnhPhuKien2', AnhPhuKien3 = '$AnhPhuKien3', AnhPhuKien4 = '$AnhPhuKien4', AhhPhuKien5 = '$AnhPhuKien5', XuatXuPhuKien = '$XuatXu', ChatLieu = '$ChatLuong', BoDayDu = '$BoPhuKien', DongGioiThieuPhuKien1 = '$Gioi_THieu_PhuKien_1', DongGioiThieuPhuKien2 = '$Gioi_THieu_PhuKien_2', DongGioiThieuPhuKien3 = '$Gioi_THieu_PhuKien_3', GiaCa = '$GiaBan', SoLuong = '$SoLuong', TinhTrangPhuKien = '$TinhTrang' Where IdPhuKienBody = '$_GET[idaccesory]'"; 
+        $sql_suaphukien1 = "UPDATE chitietphukien SET TenChiTietPhuKien = '$TenPhuKien', IdLoaiPhuKienBody = '$loaiphukien', AnhPhuKien1 = '$AnhPhuKien1', AnhPhuKien2 = '$AnhPhuKien2', AnhPhuKien3 = '$AnhPhuKien3', AnhPhuKien4 = '$AnhPhuKien4', AnhPhuKien5 = '$AnhPhuKien5', XuatXuPhuKien = '$XuatXu', ChatLieu = '$ChatLuong', BoDayDu = '$BoPhuKien', DongGioiThieuPhuKien1 = '$Gioi_THieu_PhuKien_1', DongGioiThieuPhuKien2 = '$Gioi_THieu_PhuKien_2', DongGioiThieuPhuKien3 = '$Gioi_THieu_PhuKien_3', GiaCaPhuKien = '$GiaBan', SoLuongPhuKien = '$SoLuong', TinhTrangPhuKien = '$TinhTrang' Where IdChiTietPhuKien = '$_GET[idaccesory]'"; 
         mysqli_query($mysqli,$sql_suaphukien1);
 
                     move_uploaded_file($AnhPhuKien1_tmp,'Uploads/'.$AnhPhuKien1);

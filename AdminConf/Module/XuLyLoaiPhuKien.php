@@ -1,29 +1,7 @@
 <?php
 include('config.php');
 
-if(isset($_POST['ThemLoaiPhuKienNgoaiThatNoiThat']))
-{
-    $LoaiPhuKienNoiThatNgoaiThat = $_POST['LoaiPhuKienNgoaiThatNoiThat'];
-    if(!$LoaiPhuKienNoiThatNgoaiThat)
-    {
-        echo '<script language="javascript"> alert("Vui lòng nhập đầy đủ thông tin"); window.location="IndexAdmin.php?action=Add-Type-Accesory-Body";</script>' ;
-        exit;
-    }
 
-    $ktLoaiPhuKienNoiThatNgoaiThat = mysqli_query($mysqli,"SELECT TenLoaiPhuKienNoiThatNgoaiThat FROM loaiphukiennoithatngoaithat WHERE TenLoaiPhuKienNoiThatNgoaiThat ='$LoaiPhuKienNoiThatNgoaiThat'");
-
-    if(mysqli_num_rows($ktLoaiPhuKienNoiThatNgoaiThat) == 1)
-    {
-        echo '<script language="javascript"> alert("Loại phụ kiện đã tồn tại."); window.location="IndexAdmin.php?action=Add-Type-Accesory-Body";</script>' ;
-        exit;
-    }
-
-    $sql_ThemLoaiPhuKienNoiThatNgoaiThat = "INSERT INTO loaiphukiennoithatngoaithat(TenLoaiPhuKienNoiThatNgoaiThat) VALUE ('".$LoaiPhuKienNoiThatNgoaiThat."')";
-
-    mysqli_query($mysqli,$sql_ThemLoaiPhuKienNoiThatNgoaiThat);
-
-    echo '<script> alert("Bạn đã thêm thành công");window.location="IndexAdmin.php?action=Default-Type-Accesory";</script>';
-}
 
 if(isset($_POST['ThemLoaiPhuKienBody']))
 {

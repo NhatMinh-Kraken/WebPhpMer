@@ -1,7 +1,7 @@
 <?php
     include('config.php');
 
-    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukientrangtri";
+    $sql_lietke_loaiphukien_1 = "SELECT * FROM chitietphukien, loaiphukientrangtri WHERE chitietphukien.IdLoaiPhuKienTrangTri = loaiphukientrangtri.IdLoaiPhuKienTrangTri";
     $query_lietke_loaiphukien_1 = mysqli_query($mysqli,$sql_lietke_loaiphukien_1);
     
 ?>
@@ -37,15 +37,15 @@
                                         <ul class="nav flex-column nav-assesory">
                                             <li class="nav-item nav-item-namee">
                                                 <div class="nav-item-name1">
-                                                    <?php echo $row1['TenChiTietPhuKienTrangTri']; ?>
+                                                    <?php echo $row1['TenChiTietPhuKien']; ?>
                                                 </div>
 
                                                 <span class="Muc-TieuDe-trangthai-Accesory1">
-                                                    <a href="?action=Default-Accesory4&idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
+                                                    <a href="?action=Default-Accesory4&idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-eye"></i></a>
-                                                    <a href="?action=Edit-Accesory-TrangTri&idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
+                                                    <a href="?action=Edit-Accesory-TrangTri&idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-pencil"></i></a>
-                                                    <a href="XuLyXoaPhuKien4.php?idaccesory=<?php echo $row1['Idchitietphukientrangtri'] ?>"
+                                                    <a href="XuLyXoaPhuKien4.php?idaccesory=<?php echo $row1['IdChiTietPhuKien'] ?>"
                                                         class="button-laithu-link-01"><i class="bi bi-trash"></i>
                                                     </a>
                                                 </span>

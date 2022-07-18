@@ -40,7 +40,7 @@
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Product-Car">Thêm Loại Xe</a></li>
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Product">Thêm Xe</a></li>
                 <li class="nav-item"> <a class="nav-link" href="?action=Add-Type-Accesory">Thêm Loại Phụ Kiện</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?action=Add-Accesory">Thêm Phụ Kiện</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?action=Add-Accesory0">Thêm Phụ Kiện</a></li>
               </ul>
             </div>
           </li>

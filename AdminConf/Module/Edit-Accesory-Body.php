@@ -1,7 +1,7 @@
 <?php
     include('config.php');
 
-    $sql_Sua_PhuKien = "SELECT * FROM chitietphukienbody WHere IdPhuKienBody='$_GET[idaccesory]' LIMIT 1"; 
+    $sql_Sua_PhuKien = "SELECT * FROM chitietphukien WHere IdChiTietPhuKien='$_GET[idaccesory]' LIMIT 1"; 
     $query_sua_PhuKien = mysqli_query($mysqli,$sql_Sua_PhuKien);
     
 ?>
@@ -26,7 +26,7 @@
                             <div class="Name-Product-Car">
                                 <label for="exampleInputNameCar1">Tên Phụ Kiện</label>
                                 <input type="text" class="form-control" id="exampleInputNameCar1" name="TenPhuKien"
-                                    placeholder="Tên Phụ Kiện" value="<?php echo $row['TenPhuKienBody'] ?>">
+                                    placeholder="Tên Phụ Kiện" value="<?php echo $row['TenChiTietPhuKien'] ?>">
                             </div>
                         </div>
 
@@ -154,7 +154,7 @@
                             <p>
                             <div>
                                 <img loading="lazy" id="imagePreview4" class="detail-product-content-img"
-                                    src="Uploads/<?php echo $row['AhhPhuKien5'] ?>" title="Ảnh Xem Trước" width="640" height="auto"
+                                    src="Uploads/<?php echo $row['AnhPhuKien5'] ?>" title="Ảnh Xem Trước" width="640" height="auto"
                                     sizes="(max-width: 640px) 100vw, 640px" alt="Ảnh xem trước">
                             </div>
                             <div class="padding imageUpload4">
@@ -243,7 +243,7 @@
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailGiaBan">Giá Bán</label>
                                         <textarea rows="3" cols="5" type="text" class="form-control" id="exampleInputDetailGiaBan"
-                                            placeholder="Giá Bán" name="GiaBan"><?php echo $row['GiaCa'] ?></textarea>
+                                            placeholder="Giá Bán" name="GiaBan"><?php echo $row['GiaCaPhuKien'] ?></textarea>
                                     </span>
                                 </p>
                             </div>
@@ -253,7 +253,7 @@
                                     <span style="font-weight: 400;">
                                         <label for="exampleInputDetailSoLuong">Số Lượng</label>
                                         <input type="number" class="form-control" id="exampleInputDetailSoLuong"
-                                            placeholder="Số Lượng" name="SoLuong" value="<?php echo $row['SoLuong'] ?>">
+                                            placeholder="Số Lượng" name="SoLuong" value="<?php echo $row['SoLuongPhuKien'] ?>">
                                     </span>
                                 </p>
                             </div>
