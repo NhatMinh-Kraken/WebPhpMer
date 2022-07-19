@@ -10,11 +10,11 @@ Lỗi XuLySuaSuKien.php Sửa chức năng sửa phụ kiện bảo vệ ---->Xo
 
 
 {
-    sửa csdl phụ kiện gộp chi tiết sản phẩm lại
+    sửa csdl phụ kiện gộp chi tiết sản phẩm lại => xong
 
     phân trang xe and phụ kiện
-    Tạo trang phụ kiện 
-    Thêm phụ kiện vào giỏ hàng
+    Tạo trang phụ kiện => xong
+    Thêm phụ kiện vào giỏ hàng =>gần xong
     thanh toán bình thường
     thanh toán onl
 

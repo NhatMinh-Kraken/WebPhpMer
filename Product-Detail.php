@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 
 <?php
     include("AdminConf/Configure/config.php");
@@ -10,26 +8,9 @@
 
     
 ?>
-<?php
-    include("Layout/Head.php");
-?>
     
 
-<?php
-        if(isset($_SESSION['dangnhap']))
-        {
-            include("Profile/Profile.php");
-        }
-    ?>
-<?php
-        include("page/menu-nav.php");
-    ?>
-<!---->
-<div id="wrapper">
-    <!--nav-->
-    <?php
-            include("page/nav.php");
-        ?>
+
 
     <div class="main-content-wrap">
         <div class="container">
@@ -509,12 +490,4 @@
             </div>
         </div>
     </div>
-    <?php
-            include("page/Footer.php");
-        ?>
-    <!---->
-</div>
-
-<?php
-    include("Layout/Head-end.php");
-?>
+    

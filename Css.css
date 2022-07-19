@@ -2225,6 +2225,8 @@
         margin: 0 auto;
         margin-top: 40px;
         transition: 0.2s;
+        position: relative;
+        border: 2px solid #fff;
     }
 
     .Btn-Profile .IconProfile i {
@@ -2570,199 +2572,240 @@
 
 
     /*************************************************************** Chi tiết phụ kiên *******************************************************************/
-    
 
-
-
-    .Product {
-        padding: 50px 0;
-        
+    .Body-main-Product-Accesory {
+        margin-bottom: 40px;
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
     }
 
-    .product-content {
+
+    .Body-Right-Product-Accesory {
         display: flex;
-        flex-wrap: wrap;
+        width: 100%;
     }
 
-    .product-content-left {
-        width: 50%;
-        background: #fff;
-        border-bottom-left-radius: 20px;
+    .Product-Accesory-Left {
         display: flex;
-    }
-
-    .product-content-right {
-        width: 50%;
-        padding-left: 20px;
-        display: flex;
+        width: 49%;
         flex-flow: column;
-        padding-top: 20px;
-        background: #ecc1c1;
-        border-bottom-right-radius: 20px;
-
-    }
-    /* Zoom */
-
-    .product-content-left-big-img {
-        width: 80%;
-        margin: auto;
-        position: relative;
+        background: #fff;
     }
 
-    .product-content-left-big-img 
-
-    .product-content-left-big-img img {
-        width: 100%;
-        margin: 10px;
-    }
-
-    .product-content-left-small-img {
-        width: 20%;
-        padding-top: 20px;
-
-    }
-
-    .product-content-left-small-img img {
-        width: 100%;
-        border: 5px solid rgb(230, 229, 229);
-        cursor: pointer;
-
-    }
-
-    .product-content-right-product-name h1 {
-        font-size: 18px;
-        font-weight: bold;
-
-    }
-
-    .product-content-right-product-name p {
-        color: #00ADEF;
-        font-size: 14px;
-    }
-
-    .product-content-right-product-price {
-        margin: 12px 0;
-        font-size: 20px;
-        font-weight: bold;
-
-    }
-
-    .product-content-right-product-quantity {
+    .Product-Accesory-Right {
         display: flex;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        width: 49%;
+        background-color: #fff;
+        flex-flow: column;
+    }
+
+    .Product-Accesory-Left-img {
+        display: flex;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .Product-Accesory-Left-img img {
+        width: 100%;
+    }
+
+    .Product-Accesory-Left-Small-img {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    .product-content-right-product-quantity input {
-        width: 35px;
-        height: 35px;
-        padding-left: 3px;
+
+    .Product-Accesory-Left-Small-img img {
+        margin: 0 12px 12px 0;
+        width: 58px;
+        height: 58px;
+        border: 2px solid #00ef93;
     }
 
-    .product-content-right-product-button {
-
-        padding-bottom: 10px;
-    }
-
-    .product-content-right-product-thongtin p {
-        padding-bottom: 10px;
-    }
-
-    .product-Header {
-        background: #000;
-        width: 100%;
-        height: 100px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .product-Header h3 {
-        color: #00ef93;
-        text-align: center;
-    }
-
-    .product-content-left-small-img .trong {
-        display: flex;
-        background-color: #000;
-    }
-
-    #main-img {
-        display: block;
-        margin: 20px auto;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        filter: grayscale(0);
-        width: 100%;
-    }
-
-    #zoom-img {
-        pointer-events: none;
-        position: relative;
-        top: 50%;
-        left: 50%;
-    }
-
-    #zoom {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5),
-            5px 5px 10px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        pointer-events: none;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-
-
-    /************************************************Prodct-Relate**********************************/
-    .Product-Related {
-        padding-bottom: 50px;
-    }
-
-    .Product-Related-Title {
-        margin: 20px;
-    }
-
-    .Product-Related-Title p {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .Product-Related-Content {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .Product-Related-Content-Item {
-        width: 20%;
-        text-align: center;
+    .Product-Accesory-Left-body {
         background: #fff;
-        border-left: 2px solid rgb(230, 229, 229);
-        border-right: 2px solid rgb(230, 229, 229);
+        display: inline-block;
     }
 
-    .Product-Related-Content-Item img {
+    .Product-Accesory-Right-Body {
+        padding: 5px;
         width: 100%;
     }
 
-    .Product-Related-Content-Item-ThongTin {
-        background: #00ADEF;
+    .Product-Accesory-Right-Header {
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 12px;
+        display: flex;
     }
 
-    .Product-Related-Content-Item-ThongTin h1 {
+    .Product-Accesory-Right-Header span {
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 700;
+        padding-left: 5px;
+
+    }
+
+    .Product-Accesory-Right-Header p {
         font-size: 18px;
-        font-weight: 600;
-        margin-top: 5px;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        width: 40%;
+        
     }
 
-    .Product-Related-Content-Item-ThongTin p {
-        font-size: 14px;
+    .LoaiSanPham {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .LoaiSanPham p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .LoaiSanPham span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    .XuatXu {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .XuatXu p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .XuatXu span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    .ChatLieu {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .ChatLieu p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .ChatLieu span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    .BoSanPham {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .BoSanPham p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .BoSanPham span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    .GioiThieu {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .GioiThieu p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .GioiThieu span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+    }
+
+    .Product-Accesory-Right-ThongTin {
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 12px;
+    }
+
+    .input-qty {
+        width: 50px;
+    }
+
+    .Product-Accesory-Right-MuaHang {
+        display: flex;
+        padding-top: 20px;
+    }
+
+
+    .Product-Accesory-Right-Submit {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 20px;
+    }
+
+    .Product-Accesory-Right-SoLuong {
+        align-items: center;
+        display: flex;
+    }
+
+    .Click-drop-1 {
+        position: relative;
+    }
+
+    #SoLuongSanPham {
+        font-size: 10px;
+        position: absolute;
+        top: -10px;
+        right: 90%;
+        width: 16px;
+        height: 16px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: 3px;
+        margin-right: -17px;
+        color: #fff;
+        background: #333;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    #SoLuongSanPham1{
+        font-size: 10px;
+        position: absolute;
+        top: -5px;
+        right: 100%;
+        width: 16px;
+        height: 16px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: 3px;
+        margin-right: -17px;
+        color: #fff;
+        background: #333;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
     }

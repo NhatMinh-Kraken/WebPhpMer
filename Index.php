@@ -50,10 +50,13 @@
                 include("Product/Product-Type.php");
             }
             elseif($tam =='Product-Detail'){
-                include("Product/Product-Detail.php");
+                include("Product-Detail.php");
             }
             elseif($tam =='Accesory'){
                 include("Accesory.php");
+            }
+            elseif($tam =='Detail-Product'){
+                include("Detail-Product.php");
             }
             
             else{

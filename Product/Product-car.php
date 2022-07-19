@@ -21,7 +21,7 @@
                 ?>
                 <div class="col-12 col-sm-6 col-md-4 product-khung">
                     <div class="Product-img">
-                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
+                        <a href="?quanly=Product-Detail&idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
                             <img src="AdminConf/Module/Uploads/<?php echo $row['HinhAnh1'] ?> ">
 
                     </div>
@@ -32,14 +32,14 @@
                             ?></span>
                     </div>
                     <div class="Product-name">
-                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
+                        <a href="?quanly=Product-Detail&idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
                             <span><?php
                                 echo $row['TenXe']
                             ?></span>
                         </a>
                     </div>
                     <div class="Product-money">
-                        <a href="Product-Detail.php?idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
+                        <a href="?quanly=Product-Detail&idchitietxe=<?php echo $row['idchitietsanpham'] ?>">
                             <span class="spleft"></span>
                             <span class="Money">Giá: <?php echo $row['GiaXeNiemYet'] ?> VNĐ</span>
                             <div class="spleft spright"></div>

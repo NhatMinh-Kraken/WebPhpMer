@@ -3,128 +3,110 @@
 ?>
 
 <?php
-    $sql_xe = "SELECT * FROM chitietphukien WHERE IdChiTietPhuKien='$_GET[idchitietphukien]'";
+    $sql_xe = "SELECT * FROM chitietphukien WHERE  IdChiTietPhuKien='$_GET[idchitietphukien]'";
     $query_xe = mysqli_query($mysqli,$sql_xe);
     
 ?>
+
+
 <?php
-    include("Layout/Head.php");
+    while($row = mysqli_fetch_array($query_xe))
+    {
+
 ?>
 
-<?php
-        if(isset($_SESSION['dangnhap']))
-        {
-            include("Profile/Profile.php");
-        }
-    ?>
-<?php
-        include("page/menu-nav.php");
-    ?>
-<!---->
-<div id="wrapper">
-    <!--nav-->
-    <?php
-            include("page/nav.php");
-        ?>
-
-
-
-    <div class="Product">
-        <div class="container">
-            <div class="product-Header">
-                <h3>Product</h3>
-                <div class="product-content">
-                    <?php
-                    while($row = mysqli_fetch_array($query_xe))
-                    {
-                        ?>
-                    <div class="product-content-left">
-                        <div class="product-content-left-big-img">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien1'] ?>" alt="Phu kien lon">
+<div class="Title-Product">
+    <h1 class="Title-Product-car">Chi Tiết Sản Phẩm</h3>
+</div>
+<div class="Product-Accesory">
+    <div class="container">
+        <div class="row">
+            <form method="POST" action="themgiohang.php?idchitietphukien=<?php echo $row['IdChiTietPhuKien'] ?>">
+                <div class="Body-main-Product-Accesory">
+                    <div class="Body-Right-Product-Accesory">
+                        <div class="Product-Accesory-Left">
+                            <div class="Product-Accesory-Left-body">
+                                <div class="Product-Accesory-Left-img">
+                                    <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien1'] ?>" width="500"
+                                        height="auto" sizes="(max-width: 500px) 100vw, 500px" alt="Ảnh xem trước" name="AnhPhuKien1">
+                                </div>
+                            </div>
+                            <div class="Product-Accesory-Left-Small-img">
+                                <li><img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien2'] ?>" width="58"
+                                        height="58" sizes="(max-width: 58px) 100vw, 58px" alt="Ảnh xem trước"></li>
+                                <li><img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien3'] ?>" width="58"
+                                        height="58" sizes="(max-width: 58px) 100vw, 58px" alt="Ảnh xem trước"></li>
+                                <li><img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien4'] ?>" width="58"
+                                        height="58" sizes="(max-width: 58px) 100vw, 58px" alt="Ảnh xem trước"></li>
+                                <li><img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien5'] ?>" width="58"
+                                        height="58" sizes="(max-width: 58px) 100vw, 58px" alt="Ảnh xem trước"></li>
+                            </div>
                         </div>
-                        <div class="product-content-left-small-img">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien2'] ?>" alt="Phu kien nho1">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien3'] ?>" alt="Phu kien nho2">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien4'] ?>" alt="Phu kien nho3">
-                            <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien5'] ?>" alt="Phu kien nho4">
+                        <div class="NganCach"></div>
+                        <div class="Product-Accesory-Right">
+                            <div class="Product-Accesory-Right-Body">
+                                <div class="Product-Accesory-Right-Header">
+                                    <p>Tên Sản Phẩm: </p><span name="TenChiTietPhuKien"><?php echo $row['TenChiTietPhuKien'] ?></span>
+
+                                </div>
+                                <div class="Product-Accesory-Right-ThongTin">
+                                    <div class="LoaiSanPham">
+                                        <p>Loại Sản Phẩm: </p><span style="color: red;" name="loaisanpham">moi</span>
+                                    </div>
+                                    <div class="XuatXu">
+                                        <p>Xuất Xứ: </p><span name="XuatXuPhuKien"><?php echo $row['XuatXuPhuKien'] ?></span>
+                                    </div>
+                                    <div class="ChatLieu">
+                                        <p>Chất Liệu: </p><span name="ChatLieu"><?php echo $row['ChatLieu'] ?></span>
+                                    </div>
+                                    <div class="BoSanPham">
+                                        <p>Bộ Sản Phẩm Gồm: </p><span name="BoDayDu"><?php echo $row['BoDayDu'] ?></span>
+                                    </div>
+                                    <div class="GioiThieu">
+                                        <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
+                                        <span name="DongGioiThieuPhuKien1"><?php echo $row['DongGioiThieuPhuKien1'] ?></span>
+                                    </div>
+                                    <div class="GioiThieu">
+                                        <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
+                                        <span name="DongGioiThieuPhuKien2"><?php echo $row['DongGioiThieuPhuKien2'] ?></span>
+                                    </div>
+                                    <div class="GioiThieu">
+                                        <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
+                                        <span name="DongGioiThieuPhuKien3"><?php echo $row['DongGioiThieuPhuKien3'] ?></span>
+                                    </div>
+                                </div>
+                                <div class="Product-Accesory-Right-MuaHang">
+                                    <div class="Product-Accesory-Right-SoLuong">
+                                        <lable class="SoLuong" value="Số Lượng">Số lượng</lable>
+                                        <input aria-label="quantity" class="input-qty" max="100" min="1" name="SoLuongPhuKien"
+                                            type="number" value="<?php echo $row['SoLuongPhuKien'] ?>">
+                                    </div>
+                                    <div class="Product-Accesory-Right-Submit">
+                                        <button class="button-deafault-link" type="submit" name="ThemVaoGioHang">Thêm
+                                            Vào Giỏ Hàng</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-content-right">
-                        <div class="product-content-right-product-name">
-                            <h1><?php echo $row['TenChiTietPhuKien'] ?></h1>
-                            <p> Loại phụ kiện: <span style="color: blue; font-weight: bold;"><?php
-                                if($row['IdLoaiPhuKienBody']!='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
-                                {
-                                    echo $row['TenLoaiPhuKienBody'];
-                                } 
-                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']!='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
-                                {
-                                    echo $row['TenLoaiPhuKienBaoVe'];
-                                }
-                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']!='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']=='')
-                                {
-                                    echo $row['TenLoaiPhuKienTienNghi'];
-                                }
-                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']!='' && $row['IdLoaiPhuKienMamXe']=='')
-                                {
-                                    echo $row['TenLoaiPhuKienTrangTri'];
-                                }
-                                elseif($row['IdLoaiPhuKienBody']=='' && $row['IdLoaiPhuKienBaoVe']=='' && $row['IdLoaiPhuKienTienNghi']=='' && $row['IdLoaiPhuKienTrangTri']=='' && $row['IdLoaiPhuKienMamXe']!='')
-                                {
-                                    echo $row['TenLoaiPhuKienMamXe'];
-                                }
-                            ?><span><span style="color: red;">*</span></p>
-                        </div>
-                        <div class="product-content-right-product-price">
-                            <p><?php echo $row['GiaCaPhuKien'] ?><sup>đ</sup></p>
-                        </div>
-                        <div class="product-content-right-product-thongtin">
-                            <p>Chất liệu: <?php echo $row['ChatLieu'] ?></p>
-                            <p>Trọn bộ gồm: <?php echo $row['BoDayDu'] ?></p>
-                            <p><?php echo $row['DongGioiThieuPhuKien1'] ?></p>
-                            <p><?php echo $row['DongGioiThieuPhuKien2'] ?></p>
-                            <p><?php echo $row['DongGioiThieuPhuKien3'] ?></p>
-
-                        </div>
-                        <div class="product-content-right-product-quantity">
-                            <p style="font-weight: bold;">Tình Trạng:</p>
-                            <p style="color: red; padding-left: 10px;"><?php
-                            if($row['TinhTrangPhuKien'] == 1)
-                            {
-                                echo "Còn Hàng";
-                            }
-                            else{
-                                echo "Hết Hàng";
-                            }
-                        ?><span style="color: red;">*</span></p>
-                        </div>
-                        <div class="product-content-right-product-button">
-                            <button class="button-deafault-link"><i class="bi bi-cart-plus"></i><span
-                                    class="button-deafault-text">Mua Hàng</span></button>
-                        </div>
-
-                    </div>
-                    <?php
-                    }
-                ?>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <?php
-            include("page/Footer.php");
-        ?>
-    <!---->
 </div>
+<?php
+    }
+?>
+
+
 
 
 
 <!---------------------------------------------Product Related---------------------------------------------->
 
-
 <script>
-const ImgBig = document.querySelector(".product-content-left-big-img img")
-const ImgSmall = document.querySelectorAll(".product-content-left-small-img img")
+const ImgBig = document.querySelector(".Product-Accesory-Left-img img")
+const ImgSmall = document.querySelectorAll(".Product-Accesory-Left-Small-img li img")
 
 ImgSmall.forEach(function(imgItem, X) {
     imgItem.addEventListener("click", function() {
@@ -132,6 +114,3 @@ ImgSmall.forEach(function(imgItem, X) {
     })
 })
 </script>
-<?php
-    include("Layout/Head-end.php");
-?>

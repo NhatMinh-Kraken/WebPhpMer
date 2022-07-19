@@ -27,12 +27,7 @@
             include("page/nav.php");
         ?>
         <!---->
-        <?php
-            include("page/slider.php");
-        ?>
-        <?php
-            include("page/offer.php");
-        ?>
+        
         <!--slide-->
         <?php
             include("Index.php");

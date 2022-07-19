@@ -29,7 +29,7 @@
                             {
                         ?>
                         <li>
-                            <a href="?quanly=danhmucsanphamxe&idloaisanphamxe=<?php echo $row['IdLoaiXe']  ?>"><?php echo $row['tenloaixe'] ?></a>
+                            <a href="?quanly=danhmucsanphamxe&idchitietxe=<?php echo $row['IdLoaiXe']  ?>"><?php echo $row['tenloaixe'] ?></a>
                         </li>
                         <?php
                             }
