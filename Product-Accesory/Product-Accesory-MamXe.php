@@ -1,11 +1,11 @@
-<!---->
-<!--nav-->
 <?php
     include("AdminConf/Configure/config.php");
 ?>
+
 <?php
-    $sql_xe = "SELECT * FROM chitietphukien Where IdChiTietPhuKien";
-    $query_xe = mysqli_query($mysqli,$sql_xe);
+    $sql_quanly_mamxe = "SELECT * FROM chitietphukien, loaiphukienmamxe WHere chitietphukien.IdLoaiPhuKienMamXe = loaiphukienmamxe.IdLoaiPhuKienMamXe and chitietphukien.IdLoaiPhuKienMamXe = '$_GET[idchitietphukien]' Order by IdChiTietPhuKien DESC LIMIT 6";
+    $query_quanly_mamxe = mysqli_query($mysqli,$sql_quanly_mamxe);
+    
 
     $sql_body = "SELECT * FROM loaiphukienbody Where IdLoaiPhuKienBody";
     $query_body = mysqli_query($mysqli,$sql_body);
@@ -20,14 +20,15 @@
     $query_trangbi = mysqli_query($mysqli,$sql_trangbi);
 
     $sql_mamxe = "SELECT * FROM loaiphukienmamxe where IdLoaiPhuKienMamXe";
-    $query_mamxe = mysqli_query($mysqli,$sql_mamxe);
-    
+    $query_mamxe = mysqli_query($mysqli,$sql_mamxe);    
 ?>
+
 
 <div class="Product-Website">
     <div class="Title-Product1">
-        <h1 class="Title-Product1-car">Các Loại Phụ Kiện Mercedes</h1>
+        <h1 class="Title-Product1-car">Phụ Kiện Theo Loại Sản Phẩm</h1>
     </div>
+    
     <div class="dropdown-tyle-accesory">
         
         <div class="dropdown-body">
@@ -72,7 +73,7 @@
         while($row3 = mysqli_fetch_array($query_tiennghi))
         {
         ?>
-                <a href=""><?php echo $row3['TenLoaiPhuKienTienNghi'] ?></a>
+                <a href="?quanly=danhmucsanphamphukientiennghi&idchitietphukien=<?php echo $row3['IdLoaiPhuKienTienNghi']  ?>"><?php echo $row3['TenLoaiPhuKienTienNghi'] ?></a>
                 <?php
         }
         ?>
@@ -89,7 +90,7 @@
         while($row4 = mysqli_fetch_array($query_trangbi))
         {
         ?>
-                <a href=""><?php echo $row4['TenLoaiPhuKienTrangTri'] ?></a>
+                <a href="?quanly=danhmucsanphamphukientrangtri&idchitietphukien=<?php echo $row4['IdLoaiPhuKienTrangTri']  ?>"><?php echo $row4['TenLoaiPhuKienTrangTri'] ?></a>
                 <?php
         }
         ?>
@@ -106,7 +107,7 @@
         while($row5 = mysqli_fetch_array($query_mamxe))
         {
         ?>
-                <a href=""><?php echo $row5['TenLoaiPhuKienMamXe'] ?></a>
+                <a href="?quanly=danhmucsanphamphukienmamxe&idchitietphukien=<?php echo $row5['IdLoaiPhuKienMamXe']  ?>"><?php echo $row5['TenLoaiPhuKienMamXe'] ?></a>
                 <?php
         }
         ?>
@@ -115,12 +116,13 @@
         </div>
         
     </div>
+
     <div class="container">
         <div class="row">
             <div class="row-tyle-accesory"></div>
             <div class="row-accesory">
                 <?php
-                    while($row = mysqli_fetch_array($query_xe))
+                    while($row = mysqli_fetch_array($query_quanly_mamxe))
                     {
                     ?>
                 <div class="col-12 col-sm-6 col-md-4 product-khung">

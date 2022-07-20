@@ -31,15 +31,15 @@
                 </a>
                 
             </li>
-            <li class="ItemProfile" data-toggle="collapse" data-target="#Type-cart">
+            <li class="ItemProfile ItemProfile1" data-toggle="collapse" data-target="#Type-cart">
                 <a class="Click-drop-1" data-toggle="collapse" href="#Type-cart" aria-controls="Type-cart">
                     <span id="SoLuongSanPham" class="SoLuongSanPham">0</span>
                     <span class="IconProfile"><i class="bi bi-basket"></i></span>
                     <span class="NameProfile">Giỏ Hàng</span>
                 </a>
-                <ul class="sub-menu collapse" id="Type-cart">
+                <!-- <ul class="sub-menu collapse" id="Type-cart">
                     <li>2</li>
-                </ul>
+                </ul> -->
             </li>
             <li class="ItemProfile">
                 <a href="Index.php?action=dangxuat">

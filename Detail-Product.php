@@ -15,8 +15,8 @@
 
 ?>
 
-<div class="Title-Product">
-    <h1 class="Title-Product-car">Chi Tiết Sản Phẩm</h3>
+<div class="Title-Product1">
+    <h1 class="Title-Product1-car">Chi Tiết Sản Phẩm</h3>
 </div>
 <div class="Product-Accesory">
     <div class="container">
@@ -28,7 +28,8 @@
                             <div class="Product-Accesory-Left-body">
                                 <div class="Product-Accesory-Left-img">
                                     <img src="AdminConf/Module/Uploads/<?php echo $row['AnhPhuKien1'] ?>" width="500"
-                                        height="auto" sizes="(max-width: 500px) 100vw, 500px" alt="Ảnh xem trước" name="AnhPhuKien1">
+                                        height="auto" sizes="(max-width: 500px) 100vw, 500px" alt="Ảnh xem trước"
+                                        name="AnhPhuKien1">
                                 </div>
                             </div>
                             <div class="Product-Accesory-Left-Small-img">
@@ -46,7 +47,8 @@
                         <div class="Product-Accesory-Right">
                             <div class="Product-Accesory-Right-Body">
                                 <div class="Product-Accesory-Right-Header">
-                                    <p>Tên Sản Phẩm: </p><span name="TenChiTietPhuKien"><?php echo $row['TenChiTietPhuKien'] ?></span>
+                                    <p>Tên Sản Phẩm: </p><span
+                                        name="TenChiTietPhuKien"><?php echo $row['TenChiTietPhuKien'] ?></span>
 
                                 </div>
                                 <div class="Product-Accesory-Right-ThongTin">
@@ -54,32 +56,36 @@
                                         <p>Loại Sản Phẩm: </p><span style="color: red;" name="loaisanpham">moi</span>
                                     </div>
                                     <div class="XuatXu">
-                                        <p>Xuất Xứ: </p><span name="XuatXuPhuKien"><?php echo $row['XuatXuPhuKien'] ?></span>
+                                        <p>Xuất Xứ: </p><span
+                                            name="XuatXuPhuKien"><?php echo $row['XuatXuPhuKien'] ?></span>
                                     </div>
                                     <div class="ChatLieu">
                                         <p>Chất Liệu: </p><span name="ChatLieu"><?php echo $row['ChatLieu'] ?></span>
                                     </div>
                                     <div class="BoSanPham">
-                                        <p>Bộ Sản Phẩm Gồm: </p><span name="BoDayDu"><?php echo $row['BoDayDu'] ?></span>
+                                        <p>Bộ Sản Phẩm Gồm: </p><span
+                                            name="BoDayDu"><?php echo $row['BoDayDu'] ?></span>
                                     </div>
                                     <div class="GioiThieu">
                                         <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
-                                        <span name="DongGioiThieuPhuKien1"><?php echo $row['DongGioiThieuPhuKien1'] ?></span>
+                                        <span
+                                            name="DongGioiThieuPhuKien1"><?php echo $row['DongGioiThieuPhuKien1'] ?></span>
                                     </div>
                                     <div class="GioiThieu">
                                         <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
-                                        <span name="DongGioiThieuPhuKien2"><?php echo $row['DongGioiThieuPhuKien2'] ?></span>
+                                        <span
+                                            name="DongGioiThieuPhuKien2"><?php echo $row['DongGioiThieuPhuKien2'] ?></span>
                                     </div>
                                     <div class="GioiThieu">
                                         <p style="color: #efdf00;"><i class="bi bi-star-fill"></i></p>
-                                        <span name="DongGioiThieuPhuKien3"><?php echo $row['DongGioiThieuPhuKien3'] ?></span>
+                                        <span
+                                            name="DongGioiThieuPhuKien3"><?php echo $row['DongGioiThieuPhuKien3'] ?></span>
                                     </div>
                                 </div>
                                 <div class="Product-Accesory-Right-MuaHang">
                                     <div class="Product-Accesory-Right-SoLuong">
-                                        <lable class="SoLuong" value="Số Lượng">Số lượng</lable>
-                                        <input aria-label="quantity" class="input-qty" max="100" min="1" name="SoLuongPhuKien"
-                                            type="number" value="<?php echo $row['SoLuongPhuKien'] ?>">
+                                        <span name="SoLuongPhuKien"><?php echo $row['SoLuongPhuKien'] ?></span>
+                                        <p> Sản Phẩm Có Sẳn</p>
                                     </div>
                                     <div class="Product-Accesory-Right-Submit">
                                         <button class="button-deafault-link" type="submit" name="ThemVaoGioHang">Thêm
