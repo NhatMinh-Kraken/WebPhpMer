@@ -3,36 +3,139 @@
     include("AdminConf/Configure/config.php");
 
     // thêm vào giỏ hàng
-    if(isset($_POST['ThemVaoGioHang'])){
-        $id = $_GET['idchitietphukien'];
-        $SoLuong = 1;
-        $SQL_them = "SELECT * FROM chitietphukien Where IdChiTietPhuKien='$id' LIMIT 1";
-
-        $query = mysqli_query($mysqli,$SQL_them);
-        $row = mysqli_fetch_array($query);
-        if($row)
+    if(!isset($_SESSION['dangnhap'])){
+        header('Location:Login.php');
+    }
+    else
+    {
+        if(isset($_POST['ThemVaoGioHang']))
         {
-            $New_Product = array(array('tensanpham'=>$row['TenChiTietPhuKien'], 'id'=>$id,'AnhPhuKien1'=>$row['AnhPhuKien1'],'XuatXu'=>$row['XuatXuPhuKien'],'ChatLieu'=>$row['ChatLieu'],'BoDayDu'=>$row['BoDayDu'],'DongGioiThieu1'=>$row['DongGioiThieuPhuKien1'],'DongGioiThieu2'=>$row['DongGioiThieuPhuKien2'],'DongGioiThieu3'=>$row['DongGioiThieuPhuKien3'],'SoLuong'=>$SoLuong));
-            //Kiểm tra session đã tồn tài chưa
+            
+            $id = $_GET['idchitietphukien'];
+            $SoLuong = 1;
+            $SQL_them = "SELECT * FROM chitietphukien Where IdChiTietPhuKien='$id' LIMIT 1";
 
-            if(isset($_SESSION['cart']))
+            $query = mysqli_query($mysqli,$SQL_them);
+            $row = mysqli_fetch_array($query);
+            if($row)
             {
-                $found = false;
-                foreach($_SESSION['cart'] as $cart_item)
+                $New_Product = array(array('TenChiTietPhuKien'=>$row['TenChiTietPhuKien'], 'id'=>$id, 'AnhPhuKien1'=>$row['AnhPhuKien1'], 'XuatXuPhuKien'=>$row['XuatXuPhuKien'], 'ChatLieu'=>$row['ChatLieu'], 'BoDayDu'=>$row['BoDayDu'], 'DongGioiPhuKienThieu1'=>$row['DongGioiThieuPhuKien1'], 'DongGioiPhuKienThieu2'=>$row['DongGioiThieuPhuKien2'], 'DongGioiPhuKienThieu3'=>$row['DongGioiThieuPhuKien3'], 'GiaCaPhuKien'=>$row['GiaCaPhuKien'], 'SoLuong'=>$SoLuong));
+                //Kiểm tra session đã tồn tài chưa
+
+                if(isset($_SESSION['cart']))
                 {
-                    if($cart_item['id'] != $id){
-                        $Product = array(array('tensanpham'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item,'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXu'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'SoLuong'=>$cart_item['SoLuongPhuKien']));
-                        $found = true;
-                    }elseif($cart_item['id'] == $id){
-                        $Product = array(array('tensanpham'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item,'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXu'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'SoLuong'=>$cart_item['SoLuongPhuKien']+1));
+                    $found = false;
+                    foreach($_SESSION['cart'] as $cart_item)
+                    {
+                        if($cart_item['id'] == $id){
+                            $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$SoLuong+1);
+                            $found = true;
+                        }elseif($cart_item['id'] != $id){
+                            $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$SoLuong);
+                        }
+                    }
+                    if($found == false){
+                        $_SESSION['cart'] = array_merge($Product,$New_Product);
+                    }
+                    else{
+                        $_SESSION['cart'] = $Product;
                     }
                 }
+                else{
+                    $_SESSION['cart'] = $New_Product;
+                }
+
+                //session_destroy();
             }
-            else{
-                $_SESSION['cart'] = $New_Product;
+            echo '<script> alert("Bạn đã thêm thành công");window.location="Index.php?quanly=Accesory";</script>';
+            // echo '<pre>';
+            // print_r($_SESSION['cart']);
+            // echo '</pre>';
+        }
+        
+    }
+
+
+    //xóa tất cả
+    if(isset($_GET['xoatatca']) && $_GET['xoatatca'] == 1)
+    {
+        unset($_SESSION['cart']);
+        echo '<script> alert("Bạn đã xóa thành công");window.location="Index.php?quanly=thongtingiohang";</script>';
+    }
+
+    //Xóa từng sản phẩm
+    if(isset($_SESSION['cart']) && isset($_GET['xoatungsanpham'])){
+        $id = $_GET['xoatungsanpham'];
+        foreach($_SESSION['cart'] as $cart_item){
+            if($cart_item['id']!=$id)
+            {
+                $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$cart_item['SoLuong']);
+            }
+            $_SESSION['cart'] = $Product;
+            echo '<script> alert("Bạn đã xóa thành công");window.location="Index.php?quanly=thongtingiohang";</script>';
+        }
+    }
+
+
+    //Thêm Số lượng
+    if(isset($_GET['cong'])){
+
+
+        $SQL_cong = "SELECT * FROM chitietphukien Where IdChiTietPhuKien='$id'";
+        $query1 = mysqli_query($mysqli,$SQL_cong);
+        $row1 = mysqli_fetch_array($query1);
+
+        $id = $_GET['cong'];
+        foreach($_SESSION['cart'] as $cart_item){
+            if($cart_item['id']!=$id){
+                $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$cart_item['SoLuong']);
+                $_SESSION['cart'] = $Product;
+            }
+            elseif($cart_item['id']==$id){
+
+                $TangSoLuong = $cart_item['SoLuong'] + 1;
+                if($cart_item['SoLuong'] <= 9){
+                    
+                    $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$TangSoLuong);
+                }
+                else{
+                    $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$cart_item['SoLuong']);
+                }
+                $_SESSION['cart'] = $Product;
             }
         }
-        echo '<script> alert("Bạn đã thêm thành công");window.location="Index.php?quanly=Accesory";</script>';
+        header('Location:Index.php?quanly=thongtingiohang');
+    }
 
+
+    // trừ số lượng
+
+    if(isset($_GET['tru'])){
+
+
+        $SQL_cong = "SELECT * FROM chitietphukien Where IdChiTietPhuKien='$id'";
+        $query1 = mysqli_query($mysqli,$SQL_cong);
+        $row1 = mysqli_fetch_array($query1);
+
+        $id = $_GET['tru'];
+        foreach($_SESSION['cart'] as $cart_item){
+            if($cart_item['id']!=$id){
+                $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$cart_item['SoLuong']);
+                $_SESSION['cart'] = $Product;
+            }
+            elseif($cart_item['id']==$id){
+                
+                $TangSoLuong = $cart_item['SoLuong'] - 1;
+                if($cart_item['SoLuong'] > 1){
+                    
+                    $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$TangSoLuong);
+                }
+                else{
+                    $Product[] = array('TenChiTietPhuKien'=>$cart_item['TenChiTietPhuKien'], 'id'=>$cart_item['id'],'AnhPhuKien1'=>$cart_item['AnhPhuKien1'],'XuatXuPhuKien'=>$cart_item['XuatXuPhuKien'],'ChatLieu'=>$cart_item['ChatLieu'],'BoDayDu'=>$cart_item['BoDayDu'],'DongGioiPhuKienThieu1'=>$cart_item['DongGioiThieuPhuKien1'],'DongGioiPhuKienThieu2'=>$cart_item['DongGioiThieuPhuKien2'],'DongGioiPhuKienThieu3'=>$cart_item['DongGioiThieuPhuKien3'],'GiaCaPhuKien'=>$cart_item['GiaCaPhuKien'] ,'SoLuong'=>$cart_item['SoLuong']);
+                }
+                $_SESSION['cart'] = $Product;
+            }
+        }
+        header('Location:Index.php?quanly=thongtingiohang');
     }
 ?>

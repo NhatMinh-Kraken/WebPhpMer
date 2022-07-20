@@ -31,8 +31,8 @@
                 </a>
                 
             </li>
-            <li class="ItemProfile ItemProfile1" data-toggle="collapse" data-target="#Type-cart">
-                <a class="Click-drop-1" data-toggle="collapse" href="#Type-cart" aria-controls="Type-cart">
+            <li class="ItemProfile ItemProfile1" >
+                <a href="?quanly=thongtingiohang&IdUser=<?php echo $row['IdUser'] ?>" class="Click-drop-1" >
                     <span id="SoLuongSanPham" class="SoLuongSanPham">0</span>
                     <span class="IconProfile"><i class="bi bi-basket"></i></span>
                     <span class="NameProfile">Giỏ Hàng</span>

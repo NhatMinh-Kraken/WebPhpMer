@@ -8,7 +8,6 @@
     
 ?>
 
-
 <?php
     while($row = mysqli_fetch_array($query_xe))
     {
@@ -54,6 +53,9 @@
                                 <div class="Product-Accesory-Right-ThongTin">
                                     <div class="LoaiSanPham">
                                         <p>Loại Sản Phẩm: </p><span style="color: red;" name="loaisanpham">moi</span>
+                                    </div>
+                                    <div class="GiaSanPham">
+                                        <p>Giá: </p><span name="GiaCaPhuKien"><?php echo $row['GiaCaPhuKien'] ?>VNĐ</span>
                                     </div>
                                     <div class="XuatXu">
                                         <p>Xuất Xứ: </p><span

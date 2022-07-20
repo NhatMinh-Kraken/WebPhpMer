@@ -101,6 +101,14 @@
         z-index: 1200;
     }
 
+    .echos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        width: 100%;
+    }
+
     /**/
 
     #wrapper {
@@ -820,7 +828,7 @@
         background-color: #e0dfdf;
         padding: 40px 0px 25px 0px;
         text-align: center;
-        padding-top: 10%;
+        padding-top: 6%;
     }
 
     .Title-Product1 .Title-Product1-car {
@@ -843,6 +851,7 @@
         width: 100%;
         padding: 30px 0;
         flex-wrap: wrap;
+        height: 100%;
     }
 
     .Product-img {
@@ -2432,7 +2441,7 @@
         background: #FFF;
         border: 1px solid #f4f6f7;
         margin-left: 30px;
-        
+
     }
 
     .NganCach {
@@ -2447,7 +2456,7 @@
         padding: 10px 10px;
         background: #fff;
         border: 1px solid #f4f6f7;
-        
+
         margin-right: 30px;
     }
 
@@ -2793,6 +2802,26 @@
         padding-left: 15px;
     }
 
+    .GiaSanPham {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: rgb(219, 218, 218);
+    }
+
+    .GiaSanPham p {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .GiaSanPham span {
+        font-size: 18px;
+        font-style: italic;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+
     .XuatXu {
         display: flex;
         padding-bottom: 10px;
@@ -2964,11 +2993,11 @@
         z-index: 1;
     }
 
-    .dropdown-body:hover .nut_dropdown:hover{
+    .dropdown-body:hover .nut_dropdown:hover {
         background-color: #0080ff;
     }
 
-    .NoiDung-body a{
+    .NoiDung-body a {
         float: none;
         color: black;
         padding: 12px 16px;
@@ -2977,41 +3006,55 @@
         text-align: left;
     }
 
-    .NoiDung-body a:hover{
+    .NoiDung-body a:hover {
         background: #ddd;
     }
 
-    .dropdown-body:hover .NoiDung-body{
+    .dropdown-body:hover .NoiDung-body {
         display: block;
     }
 
     /****************************************** back to top ***************************************/
     #myBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
-        color: white; /* Text color */
-        cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 50%; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: red;
+        /* Set a background color */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 15px;
+        /* Some padding */
+        border-radius: 50%;
+        /* Rounded corners */
+        font-size: 18px;
+        /* Increase font size */
         width: 50px;
         height: 50px;
-      }
-      
-      #myBtn:hover {
-        background-color: rgb(225, 163, 18); /* Add a dark-grey background on hover */
-      }
+    }
+
+    #myBtn:hover {
+        background-color: rgb(225, 163, 18);
+        /* Add a dark-grey background on hover */
+    }
 
 
 
-      /***/
-      .to-top{
+    /***/
+    .to-top {
         background: #fff;
         position: fixed;
         bottom: 16px;
@@ -3026,10 +3069,247 @@
         opacity: 0;
         pointer-events: none;
         transition: all 0.4s;
-      }
+    }
 
-      .to-top.active{
+    .to-top.active {
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
-      }
+    }
+
+    .row-body-accesory {
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*********************************************************************** Giỏ Hàng **********************************************************************************/
+    .Cart-Accesory {
+        padding-top: 20px;
+        
+       
+    }
+
+    .Cart-Accesory form{
+        min-height: 50vh;
+    }
+
+    .Cart-Accesory-Body {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Cart-Accesory-Body-Header{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+        border-bottom: 1px dashed rgb(221, 219, 219);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background: rgb(145, 143, 143);
+    }
+
+    .Cart-Accesory-Body-Bottom {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+        border-bottom: 1px dashed rgb(221, 219, 219);
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .Cart-Icon {
+        display: flex;
+        width: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cart-Icon i {
+        color: rgb(7, 7, 7);
+        font-size: 14px;
+    }
+
+    .Cart-Anh {
+        display: flex;
+        width: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cart-Anh img {
+        width: 80px;
+        height: 80px;
+        display: flex;
+    }
+
+    .Cart-Name {
+        display: flex;
+        width: 36%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Cart-Name span {
+        display: flex;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    .Cart-Gia {
+        display: flex;
+        width: 15%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cart-Gia span {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        display: flex;
+
+    }
+
+    .Cart-SoLuong {
+        display: flex;
+        width: 10%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Cart-SoLuong .form-control {
+        background: #fff !important;
+        color: #000;
+    }
+
+    .Cart-SoLuong a{
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #000;
+    }
+
+    .Cart-SoLuong a:hover{
+        color: #0080ff;
+    }
+
+    .Cart-TongGiaPhuKien {
+        display: flex;
+        width: 20%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .Cart-TongGiaPhuKien span {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        display: flex;
+
+
+    }
+
+    .Cart-Xoa {
+        display: flex;
+        width: 5%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .Cart-Xoa a {
+        color: red;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+    }
+
+    .Cart-CapNhat a {
+        color: blue;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+    }
+
+    .Cart-Accesory-Footer {
+        display: flex;
+        width: 100%;
+        border-top: 1px dashed rgb(221, 219, 219);
+    }
+
+    .Cart-Accesory-Body-Footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Cart-TongGiaTien {
+        display: flex;
+        width: 30%;
+        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cart-TongGiaTien p {
+        color: #000;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .Cart-TongGiaTien span {
+        color: red;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+    }
+
+    .DatHang{
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    .Cart-XoaTatCa{
+        display: flex;
+        width: 46%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    .Cart-XoaTatCa a{
+        color: red;
+        font-size: 16px;
+        font-style: italic;
+    }

@@ -80,6 +80,10 @@
             {
                 include("Product-Accesory/Product-Accesory-MamXe.php");
             }
+            elseif($tam =='thongtingiohang')
+            {
+                include("ThongTinGioHang.php");
+            }
             
             else{
                 include("Product/Product-car.php");
