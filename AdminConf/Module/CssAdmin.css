@@ -1757,14 +1757,14 @@
         font-weight: normal;
         font-size: 0.875rem;
         padding: 0.625rem 0.6875rem;
-        background-color: #2a3038 !important;
+        background-color: #d2d4d6 !important;
         border-radius: 2px;
-        color: #fff;
+        color: #000;
     }
     
     input[type=text] {
-        background-color: #2a3038 !important;
-        color: #fff;
+        background-color: #d2d4d6 !important;
+        color: #000;
     }
     
     .form-check {

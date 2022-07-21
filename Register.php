@@ -10,6 +10,7 @@
         $Username = $_POST['Username'];
         $Email = $_POST['Email'];
         $SDT = $_POST['SDT'];
+        $DiaChi = $_POST['DiaChi'];
         $Password = ($_POST['Password']);
         $ConfirmPassword = ($_POST['Confirm-Password']);
         $NgaySinh = $_POST['NgaySinh'];
@@ -42,7 +43,7 @@
             exit;
         }
     
-        if(mysqli_query($mysqli,"INSERT INTO taikhoanuser(HoVaTen,Email,SDT,pasword,NgaySinh,GioiTinh) VALUE('".$Username."','".$Email."','".$SDT."','".(md5($Password))."','".$NgaySinh."','".$GioiTinh."')"))
+        if(mysqli_query($mysqli,"INSERT INTO taikhoanuser(HoVaTen,Email,SDT,DiaChi,pasword,NgaySinh,GioiTinh) VALUE('".$Username."','".$Email."','".$SDT."','".$DiaChi."','".(md5($Password))."','".$NgaySinh."','".$GioiTinh."')"))
         {
             //header("location:Login.php");
             echo '<script> alert("Bạn đã đăng ký thành công");window.location="Login.php";</script>';   
@@ -80,6 +81,10 @@
                                             <div class="form-group">
                                                 <label>Số Điện Thoại *</label>
                                                 <input type="number" class="form-control" name="SDT" placeholder="Số điện thoại">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Địa Chỉ *</label>
+                                                <textarea type="text" class="form-control" name="DiaChi" placeholder="Địa Chỉ">
                                             </div>
                                             <div class="form-group">
                                                 <label>Giới Tính *</label>

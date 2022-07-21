@@ -19,7 +19,7 @@
             }
             $TKPass = md5($TKPass);
 
-            $TextTKEmail = mysqli_query($mysqli,"SELECT Email, pasword, HoVaTen FROM taikhoanuser WHERE Email='$TKEmail'");
+            $TextTKEmail = mysqli_query($mysqli,"SELECT * FROM taikhoanuser WHERE Email='$TKEmail'");
             if(mysqli_num_rows($TextTKEmail) == 0)
             {
                 echo '<script language="javascript"> alert("Email không tồn tại."); window.location="Login.php";</script>' ;
@@ -34,6 +34,8 @@
                 exit;
             }   
             $_SESSION['dangnhap'] = $row['HoVaTen'];
+            
+            $_SESSION['Id_KhachHang'] = $row['IdUser'];
             echo '<script> alert("Bạn đã đăng nhập thành công");window.location="Index.php";</script>';
         }
     ?>

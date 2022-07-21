@@ -101,7 +101,7 @@
         z-index: 1200;
     }
 
-    .echos{
+    .echos {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -826,9 +826,9 @@
 
     .Title-Product1 {
         background-color: #e0dfdf;
-        padding: 40px 0px 25px 0px;
+        padding: 60px 0px 25px 0px;
         text-align: center;
-        padding-top: 6%;
+        
     }
 
     .Title-Product1 .Title-Product1-car {
@@ -1872,14 +1872,14 @@
         font-weight: normal;
         font-size: 0.875rem;
         padding: 0.625rem 0.6875rem;
-        background-color: #2a3038 !important;
+        background-color: #d2d4d6 !important;
         border-radius: 2px;
-        color: #fff;
+        color: #000;
     }
 
     input[type=text] {
-        background-color: #2a3038 !important;
-        color: #fff;
+        background-color: #d2d4d6 !important;
+        color: #000;
     }
 
     .form-check {
@@ -3087,11 +3087,11 @@
     /*********************************************************************** Giỏ Hàng **********************************************************************************/
     .Cart-Accesory {
         padding-top: 20px;
-        
-       
+
+
     }
 
-    .Cart-Accesory form{
+    .Cart-Accesory form {
         min-height: 50vh;
     }
 
@@ -3104,7 +3104,7 @@
         padding-bottom: 20px;
     }
 
-    .Cart-Accesory-Body-Header{
+    .Cart-Accesory-Body-Header {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
@@ -3112,7 +3112,8 @@
         border-bottom: 1px dashed rgb(221, 219, 219);
         padding-bottom: 5px;
         padding-top: 5px;
-        background: rgb(145, 143, 143);
+        background: #deeef9;
+        color: #bbb !important;
     }
 
     .Cart-Accesory-Body-Bottom {
@@ -3196,13 +3197,13 @@
         color: #000;
     }
 
-    .Cart-SoLuong a{
+    .Cart-SoLuong a {
         padding-left: 10px;
         padding-right: 10px;
         color: #000;
     }
 
-    .Cart-SoLuong a:hover{
+    .Cart-SoLuong a:hover {
         color: #0080ff;
     }
 
@@ -3254,13 +3255,14 @@
         display: flex;
         width: 100%;
         border-top: 1px dashed rgb(221, 219, 219);
+        padding-bottom: 20px;
     }
 
     .Cart-Accesory-Body-Footer {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        background: #fff;
+        background: #c4e4f9;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -3292,7 +3294,7 @@
         text-align: center;
     }
 
-    .DatHang{
+    .DatHang {
         display: flex;
         width: 20%;
         justify-content: center;
@@ -3300,7 +3302,7 @@
         padding-right: 50px;
     }
 
-    .Cart-XoaTatCa{
+    .Cart-XoaTatCa {
         display: flex;
         width: 46%;
         justify-content: flex-start;
@@ -3308,8 +3310,95 @@
         padding-right: 50px;
     }
 
-    .Cart-XoaTatCa a{
+    .Cart-XoaTatCa span{
+        color: red;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .Cart-XoaTatCa a {
         color: red;
         font-size: 16px;
         font-style: italic;
+    }
+
+    .Cart-Accesory-Body-Header-Top {
+        border-bottom: 1px dashed rgb(221, 219, 219);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background: #fff;
+    }
+
+    .Cart-Accesory-Body-Header-Top2 {
+        height: 3px;
+        width: 100%;
+        background-position-x: -30px;
+        background-size: 116px 3px;
+        background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+    }
+
+    .Cart-Accesory-TieuDe {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .Cart-Icon1 {
+        display: flex;
+        width: 2%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .Cart-Icon1 i {
+        color: #014880;
+        font-size: 14px;
+    }
+
+
+    .Cart-Anh1 {
+        display: flex;
+        width: 98%;
+        justify-content: flex-start;
+        align-items: center;
+        color: #00ADEF;
+    }
+
+    .Cart-Accesory-NoiDung {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .Cart-Accesory-NoiDung-Name-SDT {
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+    .Cart-Accesory-NoiDung-Name {
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .Cart-Accesory-NoiDung-SDT {
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .Cart-Accesory-NoiDung-DiaChi {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .Cart-Accesory-NoiDung-ThayDoi {
+        display: flex;
+        flex-wrap: wrap;
+        width: 10%;
     }

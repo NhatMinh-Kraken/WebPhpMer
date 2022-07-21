@@ -19,7 +19,7 @@
                 <a class="Click-drop" data-toggle="collapse" href="#ui-basic" aria-controls="ui-basic">
                     <span class="IconProfile"><i class="bi bi-person-badge"></i></span>
                     <span class="NameProfile">
-                        <?php if(isset($_SESSION['dangnhap'])){
+                        <?php if(isset($_SESSION['dangnhap']) && isset($_SESSION['Id_KhachHang'])){
                                echo $_SESSION['dangnhap'];
                             } ?></span>
                 </a>
@@ -32,7 +32,7 @@
                 
             </li>
             <li class="ItemProfile ItemProfile1" >
-                <a href="?quanly=thongtingiohang&IdUser=<?php echo $row['IdUser'] ?>" class="Click-drop-1" >
+                <a href="?quanly=thongtingiohang" class="Click-drop-1" >
                     <span id="SoLuongSanPham" class="SoLuongSanPham">0</span>
                     <span class="IconProfile"><i class="bi bi-basket"></i></span>
                     <span class="NameProfile">Giỏ Hàng</span>

@@ -84,7 +84,10 @@
             {
                 include("ThongTinGioHang.php");
             }
-            
+            elseif($tam =='thanhtoan')
+            {
+                include("ThanhToan.php");
+            }
             else{
                 include("Product/Product-car.php");
             }

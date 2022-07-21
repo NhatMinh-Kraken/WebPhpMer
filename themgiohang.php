@@ -138,4 +138,8 @@
         }
         header('Location:Index.php?quanly=thongtingiohang');
     }
+
+
+    //Thanh toán
+    //Sửa thông tin khách hàng
 ?>
