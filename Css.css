@@ -109,6 +109,10 @@
         width: 100%;
     }
 
+    button{
+        border: 0px solid #fff;
+    }
+
     /**/
 
     #wrapper {
@@ -810,6 +814,10 @@
 
     /* Product */
 
+    .Product-Website {
+        padding-top: 50px;
+    }
+
     .Title-Product {
         background-color: #e0dfdf;
         padding: 40px 0px 25px 0px;
@@ -828,7 +836,7 @@
         background-color: #e0dfdf;
         padding: 60px 0px 25px 0px;
         text-align: center;
-        
+
     }
 
     .Title-Product1 .Title-Product1-car {
@@ -844,6 +852,7 @@
         width: 100%;
         padding: 30px 0;
         flex-wrap: wrap;
+        min-height: 60vh;
     }
 
     .row-accesory {
@@ -3270,19 +3279,36 @@
     .Cart-TongGiaTien {
         display: flex;
         width: 30%;
-        padding-left: 50px;
         justify-content: center;
         align-items: center;
     }
 
+    .Cart-TongGiaTien input{
+        border: 0px;
+        background: #c4e4f9;
+        color: red;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+        min-width: 30px;
+        display: flex;
+        width: 100%;
+    }
+
+    .Cart-TongGiaTien input:focus{
+        outline: 0;
+    }
+
     .Cart-TongGiaTien p {
         color: #000;
-        font-size: 20px;
+        font-size: 12px;
         font-style: italic;
         font-weight: 400;
         display: flex;
         text-align: center;
         padding-right: 10px;
+        width: 50%;
+        justify-content: flex-end;
     }
 
     .Cart-TongGiaTien span {
@@ -3310,7 +3336,7 @@
         padding-right: 50px;
     }
 
-    .Cart-XoaTatCa span{
+    .Cart-XoaTatCa span {
         color: red;
         font-size: 20px;
         font-style: italic;
@@ -3402,3 +3428,84 @@
         flex-wrap: wrap;
         width: 10%;
     }
+
+    .Cart-Anh2 {
+        display: flex;
+        width: 10%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Cart-Anh2 img {
+        width: 80px;
+        height: 80px;
+        display: flex;
+    }
+
+    .Cart-Name2 {
+        display: flex;
+        width: 56%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Cart-Accesory-Footer-GhiChu {
+        display: flex;
+        width: 100%;
+        border-top: 1px dashed rgb(221, 219, 219);
+        padding-bottom: 20px;
+        background: #fff;
+    }
+
+    .Cart-Accesory-Body-Foote-GhiChu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000;
+        border: 1px solid #00ADEF;
+    }
+
+    .input-ghichu {
+        height: 38px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        flex: 1;
+        outline: none;
+        font-size: .875rem;
+        min-width: 0;
+        color: #222;
+        border: 0;
+    }
+
+    .Cart-GhiChu1{
+        display: flex;
+        width: 10%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    .Cart-GhiChu{
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Cart-Accesory-Body-Footer-GhiChu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;       
+    }
+
+    .button-laithu-link .button-laithu-text{
+        margin: 0;
+    }
+

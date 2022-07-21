@@ -5,7 +5,9 @@
 <?php
     include("Layout/Head.php");
 ?>
-
+        <?php
+            include("Loadding.php");
+        ?>
 
 <?php
         if(isset($_SESSION['dangnhap']))
@@ -24,6 +26,7 @@
     
 <!---->
 <div id="wrapper">
+        
 
         <!-- <a href="" class="to-top"></a> -->
 
@@ -87,6 +90,10 @@
             elseif($tam =='thanhtoan')
             {
                 include("ThanhToan.php");
+            }
+            elseif($tam =='camon')
+            {
+                include("CamOn.php");
             }
             else{
                 include("Product/Product-car.php");

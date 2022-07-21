@@ -10,6 +10,9 @@
 
         $User = mysqli_query($mysqli,"SELECT * FROM taikhoanuser WHERE IdUser");
         $row = mysqli_fetch_array($User);
+
+        
+        
     ?>
 
 <div class="body">
@@ -33,7 +36,7 @@
             </li>
             <li class="ItemProfile ItemProfile1" >
                 <a href="?quanly=thongtingiohang" class="Click-drop-1" >
-                    <span id="SoLuongSanPham" class="SoLuongSanPham">0</span>
+                    <span id="SoLuongSanPham" class="SoLuongSanPham"><?php echo $_SESSION['SoLuong'] ?></span>
                     <span class="IconProfile"><i class="bi bi-basket"></i></span>
                     <span class="NameProfile">Giỏ Hàng</span>
                 </a>
@@ -50,7 +53,7 @@
         </ul>
 
         <div class="Btn-Profile">
-            <span id="SoLuongSanPham1" class="SoLuongSanPham1">0</span>
+            <span id="SoLuongSanPham1" class="SoLuongSanPham1"><?php echo $_SESSION['SoLuong'] ?></span>
             <span class="IconProfile"><i id="iconX" class="bi bi-person-square"></i></span>
         </div>
     </div>

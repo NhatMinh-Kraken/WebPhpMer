@@ -11,6 +11,9 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
+
+
+    <script src="Loadding.js"></script>
 </body>
 
 </html>

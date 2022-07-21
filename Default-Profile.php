@@ -1,6 +1,9 @@
 <?php
     include("Layout/Head.php");
 ?>
+        <?php
+            include("Loadding.php");
+        ?>
 
     <?php
     session_start();

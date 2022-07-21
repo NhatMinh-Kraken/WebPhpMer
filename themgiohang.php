@@ -40,6 +40,8 @@
                     else{
                         $_SESSION['cart'] = $Product;
                     }
+                    $_SESSION['SoLuong'] = $cart_item['SoLuong'];
+
                 }
                 else{
                     $_SESSION['cart'] = $New_Product;
@@ -141,5 +143,31 @@
 
 
     //Thanh toán
+    if(isset($_POST['ThanhToan'])){
+        $id_khachang = $_SESSION['Id_KhachHang'];
+        $GhiChu = $_POST['GhiChu'];
+        $TongTien = $_POST['TongTien'];
+        $insert_cart = "INSERT INTO orderaccesory(IdUser,GhiChu,TongTien,NgayMua) Value('".$id_khachang."','".$GhiChu."','".$TongTien."',now())";
+        $query_cart = mysqli_query($mysqli,$insert_cart);
+
+        if($query_cart){
+            //thêm giỏ hàng chi tiết
+            foreach($_SESSION['cart'] as $key => $value){
+                $id_chitiet_phukien = $value['id'];
+                $SoLuongMua = $value['SoLuong'];
+                $GiaTungPhuKien = $value['GiaCaPhuKien'];
+
+                $insert_Detail_cart = "INSERT INTO detailorder(IdOrder,IdChiTietPhuKien,SoLuongPhuKien,GiaTungPhuKien,NgayMua) Value('".$id_khachang."','".$id_chitiet_phukien."','".$SoLuongMua."','".$GiaTungPhuKien."',now())";
+
+                $query_detail_cart = mysqli_query($mysqli,$insert_Detail_cart);
+            }
+        }
+        unset($_SESSION['cart']);
+        header('Location:Index.php?quanly=camon');
+    }
+
+    
+
+
     //Sửa thông tin khách hàng
 ?>

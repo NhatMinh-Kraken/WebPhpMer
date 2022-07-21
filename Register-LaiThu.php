@@ -8,6 +8,9 @@
 <?php
     include("Layout/Head.php");
 ?>
+<?php
+            include("Loadding.php");
+        ?>
 <div class="DangKy-LaiThu">
         <div class="container container-login">
             <div class="row Login-width">
