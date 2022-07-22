@@ -244,6 +244,26 @@
                 include("Default-User.php");
               }
 
+              elseif($tam=='SuaThongTinKhachHang')
+              {
+                include("SuaThongTinKhachHang.php");
+              }
+
+              elseif($tam=='XemDonHang')
+              {
+                include("XemDonHang.php");
+              }
+
+              elseif($tam=='XemChiTietDonHang')
+              {
+                include("XemChiTietDonHang.php");
+              }
+
+              elseif($tam=='SuaChiTietDonHang')
+              {
+                include("SuaChiTietDonHang.php");
+              }
+
               else{
                 include("Admin-IndexAdmin-Content.php");
               }

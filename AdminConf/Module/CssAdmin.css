@@ -1399,10 +1399,13 @@
     .footer-laithu {
         justify-content: center;
         padding-bottom: 10px;
+        display: flex;
     }
     
     .button-laithu {
         text-align: center;
+        padding-top: 10px;
+        margin-left: 20px;
     }
     
     .button-laithu-link {
@@ -2201,52 +2204,105 @@
         display: flex;
         width: 100%;
         flex-wrap: nowrap;
+        background: #00ADEF;
+        color: rgb(223, 217, 217);
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .Muc-TieuDe-User1{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
         background: #fff;
-        color: #014880;
+        color: #000;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px dashed rgb(221, 219, 219);
     }
 
     .Muc-id{
         display: flex;
         width: 5%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-name{
         display: flex;
         width: 15%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-Email
     {
         display: flex;
         width: 35%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-SDT
     {
         display: flex;
         width: 10%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-TieuDe-DiaChi
     {
         display: flex;
         width: 20%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-TieuDe-NgaySinh
     {
         display: flex;
         width: 10%;
         flex-wrap:nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .Muc-TieuDe-GioiTinh{
         display: flex;
         width: 10%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .Muc-TieuDe-TrangThai-0{
         display: flex;
-        width: 20%;
+        width: 10%;
         flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .body-thongtincanhan-border{
+        border: 1px solid #efefef;
+        box-shadow: 8px 5px 5px  rgb(71 71 71);
+        background: rgb(222, 221, 221);
+        transform: translateX(10px);
+        margin-bottom: 10px;
+    }
+
+    .body-thongtin{
+        padding: 15px;
+    }
+
+    .form-group .lable{
+        color: #00ADEF;
     }

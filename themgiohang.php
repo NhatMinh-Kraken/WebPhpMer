@@ -49,10 +49,11 @@
 
                 //session_destroy();
             }
-            echo '<script> alert("Bạn đã thêm thành công");window.location="Index.php?quanly=Accesory";</script>';
+            //echo '<script> alert("Bạn đã thêm thành công");window.location="Index.php?quanly=Accesory";</script>';
             // echo '<pre>';
             // print_r($_SESSION['cart']);
             // echo '</pre>';
+            header('Location:Index.php?quanly=Accesory');
         }
         
     }

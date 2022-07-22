@@ -2621,6 +2621,10 @@
         width: 80%;
     }
 
+    .body-thongtincanhan-right1 {
+        width: 100%;
+    }
+
     .body-thongtincanhan-border {
         border: 1px solid #efefef;
         box-shadow: 8px 5px 5px 5px rgb(71 71 71);
@@ -3514,3 +3518,46 @@
         color: #00ef93;
     }
 
+    .nav-item-search{
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .Cart-TinhTrang{
+        display: flex;
+        width: 15%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cart-TinhTrang p{
+        color: #00ef93;
+        font-weight: bold;
+    }
+
+    .Cart-Name1 {
+        display: flex;
+        width: 31%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Cart-Name1 span {
+        display: flex;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    .Cart-NgayMua{
+        display: flex;
+        width: 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }

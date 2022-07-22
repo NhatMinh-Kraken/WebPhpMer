@@ -98,6 +98,14 @@
         justify-content: center;
     }
 
+    .footer-laithu{
+        display: block !important;
+    }
+
+    .button-laithu{
+        margin-left: 0px !important;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -153,5 +161,11 @@
         width: 30%;
     }
 
-    
+    .footer-laithu{
+        display: block !important;
+    }
+
+    .button-laithu{
+        margin-left: 0px !important;
+    }
 }

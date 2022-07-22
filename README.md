@@ -15,18 +15,18 @@ Lỗi XuLySuaSuKien.php Sửa chức năng sửa phụ kiện bảo vệ ---->Xo
     phân trang xe and phụ kiện
     Tạo trang phụ kiện => xong
     Thêm phụ kiện vào giỏ hàng =>gần xong
-    thanh toán bình thường
+    thanh toán bình thường=> xong
     thanh toán onl
 
-    Load dữ liệu giỏ hàng user
+    Load dữ liệu giỏ hàng user => xong
 
     admin:
-    load dữ liệu đơn hàng
+    load dữ liệu đơn hàng =>xong
     tình trạng đơn hàng
     laod đăng ký lái thử
     thêm sửa xóa lái thử
 
-    thêm-sửa-xóa đơn hàng
+    thêm-sửa-xóa đơn hàng => sửa thông tin khách hàng "xong", Xóa đơn hàng xóa luôn chi tiết "chưa" =>> xóa chi tiết đơn hanbg2 admin
     
 
     đăng ký lái thử
