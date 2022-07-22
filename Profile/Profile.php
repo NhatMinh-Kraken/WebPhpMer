@@ -11,7 +11,7 @@
         $User = mysqli_query($mysqli,"SELECT * FROM taikhoanuser WHERE IdUser");
         $row = mysqli_fetch_array($User);
 
-        
+        $cart = (isset($_SESSION['cart']))? $_SESSION['cart'] : [];
         
     ?>
 
@@ -36,7 +36,13 @@
             </li>
             <li class="ItemProfile ItemProfile1" >
                 <a href="?quanly=thongtingiohang" class="Click-drop-1" >
-                    <span id="SoLuongSanPham" class="SoLuongSanPham"><?php echo $_SESSION['SoLuong'] ?></span>
+                    <span id="SoLuongSanPham" class="SoLuongSanPham"><?php if(isset($_SESSION['cart']))
+                                                                            {
+                                                                                echo count($cart);
+                                                                            }
+                                                                            else{
+                                                                                    echo "0";
+                                                                                } ?></span>
                     <span class="IconProfile"><i class="bi bi-basket"></i></span>
                     <span class="NameProfile">Giỏ Hàng</span>
                 </a>
@@ -53,7 +59,13 @@
         </ul>
 
         <div class="Btn-Profile">
-            <span id="SoLuongSanPham1" class="SoLuongSanPham1"><?php echo $_SESSION['SoLuong'] ?></span>
+            <span id="SoLuongSanPham1" class="SoLuongSanPham1"><?php if(isset($_SESSION['cart']))
+                                                                        {
+                                                                            echo count($cart);
+                                                                        }
+                                                                        else{
+                                                                                echo "0";
+                                                                            } ?></span>
             <span class="IconProfile"><i id="iconX" class="bi bi-person-square"></i></span>
         </div>
     </div>

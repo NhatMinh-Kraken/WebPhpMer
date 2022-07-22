@@ -2196,3 +2196,57 @@
         justify-content: flex-start;
         padding-left: 15px;
     }
+
+    .Muc-TieuDe-User{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        background: #fff;
+        color: #014880;
+    }
+
+    .Muc-id{
+        display: flex;
+        width: 5%;
+        flex-wrap: nowrap;
+    }
+    .Muc-name{
+        display: flex;
+        width: 15%;
+        flex-wrap: nowrap;
+    }
+    .Muc-Email
+    {
+        display: flex;
+        width: 35%;
+        flex-wrap: nowrap;
+    }
+    .Muc-SDT
+    {
+        display: flex;
+        width: 10%;
+        flex-wrap: nowrap;
+    }
+    .Muc-TieuDe-DiaChi
+    {
+        display: flex;
+        width: 20%;
+        flex-wrap: nowrap;
+    }
+    .Muc-TieuDe-NgaySinh
+    {
+        display: flex;
+        width: 10%;
+        flex-wrap:nowrap;
+    }
+    .Muc-TieuDe-GioiTinh{
+        display: flex;
+        width: 10%;
+        flex-wrap: nowrap;
+    }
+
+    .Muc-TieuDe-TrangThai-0{
+        display: flex;
+        width: 20%;
+        flex-wrap: nowrap;
+    }

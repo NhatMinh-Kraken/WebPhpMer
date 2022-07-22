@@ -37,9 +37,7 @@
                         <div class="Default-Prodile-Search">
                             <ul class="navbar-nav-search w-100">
                                 <li class="nav-item-search w-100">
-                                    <form class="nav-search">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </form>
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -83,7 +81,7 @@
                                     </a>
                                 </div>
                                 <div class="DonMua-Left">
-                                    <a href="">
+                                    <a href="?Profile=thongtindonhang&IdUser=<?php echo $row['IdUser'] ?>">
                                         <span class="DonMua-Icon"><i class="bi bi-clipboard-minus"></i></span>
                                         <span class="DonMua-TieuDe">Thông Tin Giỏ Hàng</span>
                                     </a>
@@ -107,6 +105,10 @@
                                     include("ThongTinCaNhan-User.php");
                                 }
                                 elseif($tam == 'thongtingiohang')
+                                {
+                                    include("ThongTinGioHang-User.php");
+                                }
+                                elseif($tam == 'thongtindonhang')
                                 {
                                     include("ThongTinGioHang-User.php");
                                 }

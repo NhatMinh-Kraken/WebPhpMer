@@ -217,9 +217,7 @@
               {
                 include("Add-Accesory5.php");
               }
-
-
-              
+ 
               elseif($tam=='Edit-Accesory-Body')
               {
                 include("Edit-Accesory-Body.php");
@@ -239,6 +237,11 @@
               elseif($tam=='Edit-Accesory-MamXe')
               {
                 include("Edit-Accesory-MamXe.php");
+              }
+
+              elseif($tam=='ThongTinKhachHang')
+              {
+                include("Default-User.php");
               }
 
               else{

@@ -2623,9 +2623,10 @@
 
     .body-thongtincanhan-border {
         border: 1px solid #efefef;
-        box-shadow: 8px 5px 5px rgb(71 71 71);
+        box-shadow: 8px 5px 5px 5px rgb(71 71 71);
         background: rgb(222, 221, 221);
         transform: translateX(10px);
+        margin-bottom: 10px;
     }
 
     .body-thongtin {
@@ -3507,5 +3508,9 @@
 
     .button-laithu-link .button-laithu-text{
         margin: 0;
+    }
+
+    .form-group .tinhtrang{
+        color: #00ef93;
     }
 

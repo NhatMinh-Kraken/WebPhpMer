@@ -40,7 +40,7 @@
                     else{
                         $_SESSION['cart'] = $Product;
                     }
-                    $_SESSION['SoLuong'] = $cart_item['SoLuong'];
+                    
 
                 }
                 else{
@@ -146,8 +146,9 @@
     if(isset($_POST['ThanhToan'])){
         $id_khachang = $_SESSION['Id_KhachHang'];
         $GhiChu = $_POST['GhiChu'];
+        $Code_cart = rand(0,9999);
         $TongTien = $_POST['TongTien'];
-        $insert_cart = "INSERT INTO orderaccesory(IdUser,GhiChu,TongTien,NgayMua) Value('".$id_khachang."','".$GhiChu."','".$TongTien."',now())";
+        $insert_cart = "INSERT INTO orderaccesory(IdUser,Code_Cart,GhiChu,TongTien,NgayMua) Value('".$id_khachang."','".$Code_cart."','".$GhiChu."','".$TongTien."',now())";
         $query_cart = mysqli_query($mysqli,$insert_cart);
 
         if($query_cart){
@@ -157,7 +158,7 @@
                 $SoLuongMua = $value['SoLuong'];
                 $GiaTungPhuKien = $value['GiaCaPhuKien'];
 
-                $insert_Detail_cart = "INSERT INTO detailorder(IdOrder,IdChiTietPhuKien,SoLuongPhuKien,GiaTungPhuKien,NgayMua) Value('".$id_khachang."','".$id_chitiet_phukien."','".$SoLuongMua."','".$GiaTungPhuKien."',now())";
+                $insert_Detail_cart = "INSERT INTO detailorder(Code_Cart,IdOrder,IdChiTietPhuKien,SoLuongPhuKien,GiaTungPhuKien,NgayMua) Value('".$Code_cart."','".$id_khachang."','".$id_chitiet_phukien."','".$SoLuongMua."','".$GiaTungPhuKien."',now())";
 
                 $query_detail_cart = mysqli_query($mysqli,$insert_Detail_cart);
             }
@@ -170,4 +171,6 @@
 
 
     //Sửa thông tin khách hàng
+
+    
 ?>

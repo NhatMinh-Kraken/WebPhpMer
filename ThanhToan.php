@@ -35,7 +35,7 @@
                             <p><?php echo $row['DiaChi'] ?></p>
                         </div>
                         <div class="Cart-Accesory-NoiDung-ThayDoi">
-                            <a href="">Thay đổi</a>
+                            
                         </div>
                         <?php
                 }

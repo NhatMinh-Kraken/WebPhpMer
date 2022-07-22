@@ -52,7 +52,7 @@
 
                     <div class="footer-laithu">
                         <div class="button-laithu">
-                            <input class="button-laithu-link" type="submit" value="Sửa Thông Tin" name="SuaTTCaNhan">
+                            <a href="" class="button-laithu-link" type="submit" name="SuaTTCaNhan">Sửa Thông Tin</a>
                         </div>
                     </div>
                 </form>
